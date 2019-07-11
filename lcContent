@@ -1,0 +1,124 @@
+
+Initializing
+
+
+Hey I'm Daniel Barenboim.
+I'm a full stack developer. I write simple lines of text that create magical worlds on the internet. With a well rounded foundation in both backend and frontend development, as well as a huge passion for all things programming, there's no limit to what we can create. 
+
+
+
+JavaScript Profiency
+	Sure, HTML and CSS help construct the webpages but JavaScript breathes the life into them. With JS, we turn a dull book-like page into an experience that will leave a lasting impression.
+
+	Being my favorite programming language, I am constantly up to date with the latest frameworks and libraries in javaScript. I've discovered some amazing capabilities during my time experimenting, such as the ability to create desktop applications using the Ionic framework and even mobile apps, using React Native. 
+
+	JavaScript is the da Vinci of computer languages. What was once simply a web coding language has now opened the doors into desktop and mobile application design. Using the latest frameworks like Ionic, a JavaScript engineer can now create applications for the desktop. With React Native, mobile apps for Apple or Android!
+
+
+Mobile App Development (Apple or Android)
+	No more settling for "mobile web apps", "HTML5 apps", or a "hybrid app".
+
+	React Native lets us build mobile apps indistinguishable from an app built using Objective-C/Swift (for Apple) or Java (for Android). It uses the same design as React, which allows for code to be moved from web to mobile efficiently while retaining the same rich user interface.
+
+
+Ruby, Rails, and Databases
+	Working on the backend with Ruby on Rails is where I had my beginning. Ruby started me off in the world of object oriented program, rails sped up the build process. 
+
+	I've witnessed the efficiency of businesses increase through the implementation of relational databases using both MySql and PostgreSQL. MongoDB is my current go-to for database architecture as I find it to be more versatile and have significantly improved query performance over SQL. 
+
+
+Security and Scalability Oriented
+	Responsive design has you covered whether you plan to build for desktop, laptop, tablet, or any other device. Scalible design patterns ensure that each user gets an enriched experience, regardless of the device they are using.
+
+	Security is largely overlooked by most companies because it rarely affects the user experience...until it does. Having seen how much money security breaches can cost, I understood it was an important but largely neglected issue in development.
+
+	Starting a project with these two aspects in mind allows for optimal coding and lots of time saved down the line.
+
+
+
+Project Management
+	Using the Agile Development Lifecycle to ensure efficiency and constant improvement in the work-flow process is largely important but not everything. 
+	Real challenges arise when you incorporate international professionals in fields such as graphic design or video editing. Luckily, I've dealt with these circumstances before and learned how to maximize the potential of these dealings.
+
+	Experience as a lead developer has given me a great deal of insight on how to effectively and efficiently approach project management. By leveraging the Agile Development Lifecycle, I am often able to increase weekly performance and use daily reports to identify bottlenecks that might be slowing workflow down. 
+
+	Producing a Web Application on time and within budget requires a great deal of coordination between the various roles involved.
+	Leveraging the Agile Development Lifecycle has, on more than one occassion, provided the ability to break any size project down into smaller and workable chunks.
+
+
+
+
+
+
+		PROJECTS
+FireWater : 
+	Back before the days of Uber Eats and Amazon drone delivery, there was FireWater. An alcohol delivery service that made life easier by keeping you away from the wheel while getting all the finest spirits and liquors. 
+24HourHealth :
+	The elixir for good health. Everyone wants it. 
+	24HourHealth came in to revolutionize an industry that was still using un natural ingredients but promising wholesome value. This product changed the whole game. All natural, non-gmo ingredients, designed by someone who took the journey called health, losing over a hundred pounds in the process. 
+SocialSync :
+	A way to manage the minor details surrounding your social life. Where was that vacation to that Jenny and Tom took last year? What day is Alexandra's birthday? Who was an expert on wine? 
+	With a direct and simple user interface(UI), searching for any of these answers takes no more than seconds!
+	Franklin mentally reflected upon his day, every night. 
+	SocialSync allows you to do it more efficiently and have a record of it all.
+1st Portfolio :
+	Nostalgia can get the best of us. My first portfolio brings back memories of a young lad dipping his toes into the water called JavaScript. Years have gone by and I still haven't finished exploring this ocean but I'm comfortably swimming across it now.
+Mobile App :
+
+
+
+
+
+
+
+
+
+Determine if the elements we are animating are within viewport.
+Use selector caching 
+$window.on('scroll', check_if_in_view);
+
+We go through and look for all items that will be animating in.
+For each of these elements we collect its height along with its top and bottom position (so we know where it lives on the page).
+We compare each item to see if its bottom position is greater than the top position of the window but also that the item's top position is less than the bottom position of the window. 
+
+
+
+
+
+
+Cutting Edge Skills
+	JavaScript Proficiency
+		-Favorite Language
+		-Knowledge of all the latest Frameworks and Syntax's including ES6 & ES7
+		-Exploring the ability to build desktop apps using Ionic
+		-Three.JS library for extreme graphics
+
+	React & React Native
+		-Facebooks very own library for complex apps
+		-React Native gives the ability to create a sophisticated mobile app without using Java  or Objective-C. 
+
+	Ruby & Rails
+		-First language I started with
+		-Experience with latest version of Ruby on Rails 5
+
+	Database Creation and Management
+		-PostgreSql, MySql, and Sql 
+		-MongoDB non-relational database(noSQL database)
+
+	HTML/CSS
+		- Up-to-date with the latest changes in HTML5
+		- Leveraging Flex-box and responsive media to enhance pages
+
+	Project Management
+		-Trained in the Agile Software Development Lifecycle
+		-Experience in a Lead Developer Role at a national enterprise
+		-Time spent managing third party/external resources
+The Network
+	PHP Developer
+	Graphic Design Artist
+	Sketch Artist
+	Video Editor
+Extras:
+	Versioning w/ Github
+	VirtualBox systems for easy testing across multiple browsers and operating systems.
+	Trained in Linux for better troubleshooting and CLI support. 

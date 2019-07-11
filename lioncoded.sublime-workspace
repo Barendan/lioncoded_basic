@@ -1,0 +1,450 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 20559,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "\n\n# test number 3\n# test number 2 in progress\n# --------------\n# Please enter the commit message for your changes. Everything below\n# this paragraph is ignored, and an empty message aborts the commit.\n# Just close the window to accept your message.\ndiff --git a/index.html b/index.html\nnew file mode 100644\nindex 0000000..57ad716\n--- /dev/null\n+++ b/index.html\n@@ -0,0 +1,371 @@\n+<!DOCTYPE html> \n+<html lang=\"en\"> \n+<head>\n+    <title>LionCoded: Bold Designs</title>\n+    <meta charset=\"utf-8\"> \n+    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n+    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n+\n+    <link href=\"https://fonts.googleapis.com/css?family=Lato|Montserrat:300,400,600|Open+Sans:400,600|Roboto:300,400&display=swap\" rel=\"stylesheet\">\n+\n+    <link rel=\"stylesheet\" type=\"text/css\" href=\"styles.css\" />\n+</head>\n+<body>\n+\n+    <div class=\"app\">\n+\n+        <section class=\"welcome\">\n+            <h1> Constructing virtual worlds <br/>\n+            \t\t that turn browsing into an experience</h1>\n+          \n+            <div class=\"video\">\n+            \t\t<div class=\"player\">\n+            \t\t\t\t<video autoplay=\"\" loop=\"\" muted=\"\" style=\"margin: auto; position: absolute; z-index: -1; top: 0%; left: 0%; transform: translate(0%, 0%);\">\n+\t\t\t\t\t\t\t\t\t\t\t\t\t<source src=\"videos/lionCGI.mp4\" type=\"video/mp4\">\n+\t\t\t\t\t\t\t\t\t\t</video>\n+            \t\t</div>\n+            </div>\n+        </section>\n+\n+\n+\n+        <section class=\"whowhatwhy\">\n+        \t\t<div class=\"background\">\n+\n+\t\t        \t\t<div class=\"cover-image\">\n+\t\t        \t\t\t\t\n+\t\t        \t\t\t\t<div class=\"container container-2\">\n+\t\t        \t\t\t\t\t\t<div class=\"background background-2\">\n+\n+\t\t        \t\t\t\t\t\t</div>\n+\t\t        \t\t\t\t</div>\n+\n+\t\t        \t\t\t\t<div class=\"container container-4\">\n+\t\t        \t\t\t\t\t\t<div class=\"background background-4\">\n+\n+\t\t        \t\t\t\t\t\t</div>\n+\t\t        \t\t\t\t</div>\n+\n+\t\t        \t\t\t\t<div class=\"container container-6\">\n+\t\t        \t\t\t\t\t\t<div class=\"background background-6\">\n+\n+\t\t        \t\t\t\t\t\t</div>\n+\t\t        \t\t\t\t</div>\n+\n+\t\t        \t\t</div>\n+\n+\t\t        \t\t<div class=\"cover-image\">\n+\n+\t\t        \t\t\t\t<div class=\"container container-1\">\n+\t\t        \t\t\t\t\t\t<div class=\"background background-1\">\n+\n+\t\t        \t\t\t\t\t\t</div>\n+\t\t        \t\t\t\t</div>\n+\n+\t\t        \t\t\t\t<div class=\"container container-3\">\n+\t\t        \t\t\t\t\t\t<div class=\"background background-3\">\n+\n+\t\t        \t\t\t\t\t\t</div>\n+\t\t        \t\t\t\t</div>\n+\n+\t\t        \t\t\t\t<div class=\"container container-5\">\n+\t\t        \t\t\t\t\t\t<div class=\"background background-5\">\n+\n+\t\t        \t\t\t\t\t\t</div>\n+\t\t        \t\t\t\t</div>\n+\n+\t\t        \t\t</div>\n+\n+\t\t        \t\t<div class=\"cover-text\">\n+\n+\t\t        \t\t\t\t<div class=\"container cont1\">\n+\t\t        \t\t\t\t</div>\n+\n+\t\t        \t\t\t\t<div class=\"container cont2\">\n+\t\t        \t\t\t\t</div>\n+\n+\t\t        \t\t\t\t<div class=\"container cont3\">\n+\t\t        \t\t\t\t</div>\n+\t\t        \t\t\n+\t\t        \t\t</div>\n+\n+\t\t        </div>\n+        </section>\n+\n+\n+        <section class=\"mywork\">\n+            <pre class=\"source-viewer\">    \n+                <code class=\"language-markup\" content=\"<!doctype html>\n+                    <main>\n+                        <section id=&quot;speakers&quot; class=&quot;section&quot;>\n+                            <header class=&quot;section-header has-section-spacing&quot;>\n+                                <h2 class=&quot;section-title&quot;>Speakers</h2>\n+\n+                                <h3 class=&quot;section-subtitle&quot;>Meet Our Speakers</h3>\n+                            </header>\n+                            <ul class=&quot;speakers&quot;>\n+                                <li class=&quot;speaker&quot;>\n+                                    <img class=&quot;speaker-image&quot; src=&quot;images/speakers/Martin_Kleppe_Square.jpg&quot; alt=&quot;Martin Kleppe&quot;>\n+\n+                                    <div class=&quot;speaker-details&quot;>\n+                                        <h4 class=&quot;speaker-name&quot;>Martin Kleppe</h4>\n+\n+                                        <p class=&quot;speaker-bio&quot;>\n+                                            Martin is the HHJS organizer and &quot;Head of Development&quot; at Ubilabs. He is the maniac who\n+                                            built the spinning globe in <a href=&quot;http://aem1k.com/&quot; target=&quot;_blank&quot; class=&quot;link&quot;>1K of\n+                                            JavaScript</a>\n+                                            and hacked Tetris in less than 140 bytes.&nbsp;He is an active speaker at conferences and loves\n+                                            to share the latest insights with the community.\n+                                        </p>\n+                                    </div>\n+                                </li>\n+                                <li class=&quot;speaker&quot;>\n+                                    <img class=&quot;speaker-image&quot; src=&quot;images/speakers/serge_krul.jpg&quot; alt=&quot;Sergey Krul&quot;>\n+\n+                                    <div class=&quot;speaker-details&quot;>\n+                                        <h4 class=&quot;speaker-name&quot;>Serge Krul</h4>\n+\n+                                        <p class=&quot;speaker-bio&quot;>\n+                                            Serge is VP R&amp;D at Netcraft and is focused on creating things that last.\n+                                            Growing his team from 4 to 24 developers in less than two years served as a track for personal\n+                                            empowerment\n+                                            and a few lessons learned. Has 8 years of hands-on and leadership experience with clients\n+                                            ranging from\n+                                            successful startups to enterprises.\n+                                        </p>\n+                                    </div>\n+                                </li>\n+                                <li class=&quot;speaker&quot;>\n+                                    <img class=&quot;speaker-image&quot; src=&quot;images/speakers/alex_wolkov.jpg&quot; alt=&quot;Alex Wolkov&quot;>\n+\n+                                    <div class=&quot;speaker-details&quot;>\n+                                        <h4 class=&quot;speaker-name&quot;>Alex Wolkov</h4>\n+\n+                                        <p class=&quot;speaker-bio&quot;>\n+                                            Alex is senior web dude at Fundbox. He is the creator of <a href=&quot;http://extensionizr.com/&\n+                                <li class=&quot;speaker&quot;>\n+                                    <img class=&quot;speaker-image&quot; src=&quot;images/speakers/vladimir.jpg&quot; alt=&quot;Vladimir Grinenko&quot;>\n+\n+                                    <div class=&quot;speaker-details&quot;>\n+                                        <h4 class=&quot;speaker-name&quot;>Vladimir Grinenko</h4>\n+\n+                                        <p class=&quot;speaker-bio&quot;>\n+                                            Vladimir is the head of BEM development team. HTML/CSS/JS-professional.\n+                                            BEM-addict. Answers BEM questions 24/7. Outside Yandex runs his own web development agency,\n+                                            consults projects and helps them stay healthy and wealthy with BEM.\n+                                        </p>\n+                                    </div>\n+                                </li>\n+                                <li class=&quot;speaker&quot;>\n+                                    <img class=&quot;speaker-image&quot; src=&quot;images/speakers/yelena.jpg&quot; alt=&quot;Yelena Jetpyspayeva&quot;>\n+\n+                                    <div class=&quot;speaker-details&quot;>\n+                                        <h4 class=&quot;speaker-name&quot;>Yelena Jetpyspayeva</h4>\n+\n+                                        <p class=&quot;speaker-bio&quot;>\n+                                            Yelena is BEM Developer Relations Specialist.\n+                                            Helps BEM team with coordination of an open source activity inside and outside <a href=&quot;//yandex.com&quot; target=&quot;_blank&quot; class=&quot;link&quot;>Yandex</a> and\n+                                            the community making sure everyone is happy with BEM. Outside Yandex volunteers for open source\n+                                            and helps developers run developer events. Dreamer of the better web and believer in true power of open source.\n+                                        </p>\n+                                    </div>\n+                                </li>\n+                                <li class=&quot;speaker&quot;>\n+                                    <img class=&quot;speaker-image&quot; src=&quot;images/speakers/igal.jpg&quot; alt=&quot;Igal Steklov&quot;>\n+\n+                                    <div class=&quot;speaker-details&quot;>\n+                                        <h4 class=&quot;speaker-name&quot;>Igal Steklov</h4>\n+\n+                                        <p class=&quot;speaker-bio&quot;>\n+                                            Starting to code at 16 out of curiosity, Igal is your typical generation Y web development monster.\n+                                            Swimming through a sea of JavaScript frameworks, CSS tricks and semantic HTML5,\n+                                            makes Igal feel safe and protected. He is now flourishing as the Client Side Lead at the Wix Stores start up,\n+                                            growing a team of talents, and attending every client event he can.\n+                                        </p>\n+                                    </div>\n+                                </li>\n+                                <li class=&quot;speaker&quot;>\n+                                    <img class=&quot;speaker-image&quot; src=&quot;images/speakers/philnash.jpg&quot; alt=&quot;Phil Nash&quot;>\n+\n+                                    <div class=&quot;speaker-details&quot;>\n+                                        <h4 class=&quot;speaker-name&quot;>Phil Nash</h4>\n+\n+                                        <p class=&quot;speaker-bio&quot;>\n+                                            Phil Nash is a developer evangelist at <a href=&quot;//twilio.com&quot; class=&quot;link&quot; target=&quot;_blank&quot;>Twilio</a>.\n+                                            He likes to code in Ruby, Rails, HTML, JavaScript and CSS. He also tweets a lot, plays rugby,\n+                                            loves music, drinks beer and codes in his spare time.\n+                                        </p>\n+                                    </div>\n+                                </li>\n+                                <li class=&quot;speaker&quot;>\n+                                    <img class=&quot;speaker-image&quot; src=&quot;images/speakers/matthieu-mayran.jpg&quot; alt=&quot;Matthieu Mayran&quot;>\n+\n+                                    <div class=&quot;speaker-details&quot;>\n+                                        <h4 class=&quot;speaker-name&quot;>Matthieu Mayran</h4>\n+\n+                                        <p class=&quot;speaker-bio&quot;>\n+                                            Matthieu works as a solution engineer for Google.\n+                                            While having worked in various domains such as online application development,\n+                                            BI consulting and CRM installations, he always nurtured a particular interest in\n+                                            front-end technologies and UX/UI.\n+                                        </p>\n+                                    </div>\n+                                </li>\n+                                <li class=&quot;speaker&quot;>\n+                                    <img class=&quot;speaker-image&quot; src=&quot;images/speakers/eran-z.jpg&quot; alt=&quot;Eran Zinman&quot;>\n+\n+                                    <div class=&quot;speaker-details&quot;>\n+                                        <h4 class=&quot;speaker-name&quot;>Eran Zinman</h4>\n+\n+                                        <p class=&quot;speaker-bio&quot;>\n+                                            Eran is Co-founder &amp; CTO at <a href=&quot;//dapulse.com/&quot; target=&quot;_blank&quot; class=&quot;link&quot;>dapulse</a>.\n+                                            Formerly he co-founded and was R&amp;D Manager at COMO (Conduit Mobile).\n+                                            Eran started coding when he was 9 years old and immediately fell in love with web development.\n+                                            He enjoys all aspects of it, from server side to rich clients, creating beautiful UI and great user experiences.\n+                                        </p>\n+                                    </div>\n+                                </li>\n+                                <li class=&quot;speaker&quot;>\n+                                    <img class=&quot;speaker-image&quot; src=&quot;images/speakers/or-h.jpg&quot; alt=&quot;Or Hiltch&quot;>\n+\n+                                    <div class=&quot;speaker-details&quot;>\n+                                        <h4 class=&quot;speaker-name&quot;>Or Hiltch</h4>\n+\n+                                        <p class=&quot;speaker-bio&quot;>\n+                                            Or is a software engineer who likes to learn new and old technologies and apply them in\n+                                            smart or stupid applications. Recently he co-founded StreamRail, where he is focused on\n+                                            creating the next-gen CDN and improving on video streaming technology. Also runs some pet\n+                                            projects such as <a href=&quot;//www.photoneditor.com/&quot; target=&quot;_blank&quot; class=&quot;link&quot;>photon</a>,\n+                                            <a href=&quot;//www.3dyoutube.nl/&quot; target=&quot;_blank&quot; class=&quot;link&quot;>youtube3d</a>, and more.\n+                                        </p>\n+                                    </div>\n+                                </li>\n+                                <li class=&quot;speaker&quot;>\n+                                    <img class=&quot;speaker-image&quot; src=&quot;images/speakers/shay-chen.jpg&quot; alt=&quot;Shay Chen&quot;>\n+\n+                                    <div class=&quot;speaker-details&quot;>\n+                                        <h4 class=&quot;speaker-name&quot;>Shay Chen</h4>\n+\n+                                        <p class=&quot;speaker-bio&quot;>\n+                                            Shay Chen is the CTO of Hacktics, an advanced security center of Ernst &amp; Young.\n+                                            He is also a prominent blogger, international speaker and researcher, and is responsible many security publications,\n+                                            including new application level attacks, various security tools comparison initiatives and\n+                                            the biggest research to date in the field of automated security scanners.\n+                                        </p>\n+                                    </div>\n+                                </li>\n+                                <li class=&quot;speaker&quot;>\n+                                    <img class=&quot;speaker-image&quot; src=&quot;images/speakers/efim-dimenstein.jpg&quot; alt=&quot;Efim Dimenstein&quot;>\n+\n+                                    <div class=&quot;speaker-details&quot;>\n+                                        <h4 class=&quot;speaker-name&quot;>Efim Dimenstein</h4>\n+\n+                                        <p class=&quot;speaker-bio&quot;>\n+                                            Efim is the Chief Architect of Liveperson responsible for creating scalable,\n+                                            high performance and maintainable architecture in the company using the best technology to solve the problem.\n+                                        </p>\n+                                    </div>\n+                                </li>\n+                                <li class=&quot;speaker&quot;>\n+                                    <img class=&quot;speaker-image&quot; src=&quot;images/speakers/itai-chejanovsky.jpg&quot; alt=&quot;Itai Chejanovsky&quot;>\n+\n+                                    <div class=&quot;speaker-details&quot;>\n+                                        <h4 class=&quot;speaker-name&quot;>Itai Chejanovsky</h4>\n+\n+                                        <p class=&quot;speaker-bio&quot;>\n+                                            Itai is the system architect for LivePerson's Front End teams.\n+                                            He works with the teams on building and evolving our products and technologies.\n+                                            His focus is to help us to adhere to best practices and maintain high performance\n+                                            throughout our Front End code.\n+                                        </p>\n+                                    </div>\n+                                </li>\n+\n+                            </ul>\n+                        </section>\n+                    </main>\n+\n+                    <script src=&quot;http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js&quot;></script>\n+                    <script src=&quot;http://cdnjs.cloudflare.com/ajax/libs/gsap/1.16.0/plugins/CSSPlugin.min.js&quot;></script>\n+                    <script src=&quot;http://cdnjs.cloudflare.com/ajax/libs/gsap/1.16.0/plugins/CSSRulePlugin.min.js&quot;></script>\n+                    <script src=&quot;http://cdnjs.cloudflare.com/ajax/libs/gsap/1.16.0/plugins/ScrollToPlugin.min.js&quot;></script>\n+                    <script src=&quot;http://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.2/jquery.min.js&quot;></script>\n+                    <script src=&quot;https://maps.googleapis.com/maps/api/js?sensor=false&quot;></script>\n+\n+\n+                    <script>\n+                        (function (b, o, i, l, e, r) {\n+                            b.GoogleAnalyticsObject = l;\n+                            b[l] || (b[l] =\n+                                    function () {\n+                                        (b[l].q = b[l].q || []).push(arguments)\n+                                    });\n+                            b[l].l = +new Date;\n+                            e = o.createElement(i);\n+                            r = o.getElementsByTagName(i)[0];\n+                            e.src = '//www.google-analytics.com/analytics.js';\n+                            r.parentNode.insertBefore(e, r)\n+                        }(window, document, 'script', 'ga'));\n+                        ga('create', 'UA-61020025-1');\n+                        ga('send', 'pageview');\n+                    </script>\n+                    <script>\n+                        if (window.console &amp;&amp; console.log) {\n+                            console.log('%cCurious how is it built!? You are the true FED. Buy a ticket with a discount now!', 'color: #0700e2; font-size: 18px;');\n+                            console.log('https://www.eventbrite.com/e/you-gotta-love-frontend-tickets-15946084167?discount=YGLF-5SH-WS-VIP');\n+                        }\n+                    </script>\n+\n+                    <script src=&quot;scripts/b49be0fb.main.js&quot;></script>\n+                    </body>\n+                    </html>\n+                    \">\n+                  \n+                </code>\n+            </pre>\n+\n+            <h1> <u>Project Archive</u> </h1>\n+\n+            <div class=\"display-row start\">\n+\t\t            <div class=\"display-box display-one\">\n+\t\t            </div>\n+\t\t            <div class=\"display-text\">\n+\t\t            </div>\n+\t\t        </div>\n+\n+            <div class=\"display-row\">\n+\t\t            <div class=\"display-box display-two\">\n+\t\t            </div>\n+\t\t           \t<div class=\"display-text\">\n+\t\t            </div>\n+\t\t        </div>\n+\n+            <div class=\"display-row finish\">\n+\t\t            <div class=\"display-box display-three\">\n+\t\t            </div>\n+\t\t            <div class=\"display-text\">\n+\t\t            </div>\n+\t\t        </div>\n+\n+        </section>\n+\n+        <section class=\"contact\">\n+        </section>\n+\n+    </div>\n+\n+\n+    <!-- jQuery -->\n+    <script src=\"https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js\"></script>\n+    <!-- ScrollMagic -->\n+    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js\"></script>\n+    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js\"></script>\n+    <!-- GreenSock TweenMax -->\n+    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/TweenMax.min.js\"></script>\n+    <!-- ScrollMagic GreenSock Plugin -->\n+    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js\"></script>\n+\n+    <script src=\"app.js\"></script>\n+\n+</body>\n+</html>\n\\ No newline at end of file",
+			"settings":
+			{
+				"buffer_size": 21337,
+				"line_ending": "Windows",
+				"name": "COMMIT_EDITMSG",
+				"scratch": true
+			}
+		},
+		{
+			"file": "styles.css",
+			"settings":
+			{
+				"buffer_size": 9485,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app.js",
+			"settings":
+			{
+				"buffer_size": 3384,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"git commit",
+				"Git: Commit"
+			],
+			[
+				"git add ",
+				"Git: Add Current File"
+			],
+			[
+				"git init",
+				"Git: Init"
+			],
+			[
+				"git ",
+				"Git: Gui"
+			],
+			[
+				"git status",
+				"Git: Status"
+			],
+			[
+				"git push",
+				"Git: Push"
+			],
+			[
+				"git add",
+				"Git: Add..."
+			],
+			[
+				"git push ",
+				"Git: Push"
+			],
+			[
+				"git remote add",
+				"git: remote add"
+			],
+			[
+				"git config",
+				"Set Syntax: Git Config"
+			],
+			[
+				"git add .",
+				"Git: Add..."
+			],
+			[
+				"Git: Status",
+				"Git: Status"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"remove package",
+				"Package Control: Remove Package"
+			],
+			[
+				"install package",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Controll: install",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/Users/Trigger/Desktop/Architect/Websites/Projects/LionCoded2.0"
+	],
+	"file_history":
+	[
+		"/C/Users/Trigger/Desktop/Architect/Websites/Projects/LionCoded2.0/lioncoded.sublime-project",
+		"/C/Users/Trigger/Desktop/Architect/RevEngineer/HPMagicWords/progress/style.css",
+		"/C/Users/Trigger/Desktop/Architect/RevEngineer/HPMagicWords/restructured/style.css",
+		"/C/Users/Trigger/Documents/roommate",
+		"/C/Users/Trigger/Desktop/Architect/RevEngineer/HPMagicWords/progress/destyle.css",
+		"/C/Users/Trigger/Desktop/Architect/RevEngineer/HPMagicWords/progress/index.html",
+		"/C/Users/Trigger/Desktop/Architect/RevEngineer/HPMagicWords/original (almost)/index.html",
+		"/C/Users/Trigger/Documents/education_links.txt",
+		"/C/Users/Trigger/Desktop/Architect/RevEngineer/HPMagicWords/projectTweenExt.js",
+		"/C/Users/Trigger/Desktop/Architect/RevEngineer/HPMagicWords/homeTweenExt.js",
+		"/C/Users/Trigger/Desktop/Architect/RevEngineer/HPMagicWords/docTween.js",
+		"/C/Users/Trigger/Desktop/Architect/RevEngineer/HPMagicWords/introTween.js",
+		"/C/Users/Trigger/Desktop/Architect/RevEngineer/HPMagicWords/restructured/index.html",
+		"/C/Users/Trigger/Desktop/Architect/RevEngineer/HPMagicWords/progress/vendors.js",
+		"/C/Users/Trigger/Desktop/Architect/RevEngineer/HPMagicWords/hpmagicwords.com original/index.html",
+		"/C/Users/Trigger/Desktop/Architect/RevEngineer/HPMagicWords/hpmagicwords.com original/main.js",
+		"/C/Users/Trigger/Desktop/Architect/RevEngineer/HPMagicWords/hpmagicwords.com/dlete.js",
+		"/C/Users/Trigger/Desktop/Architect/RevEngineer/HPMagicWords/hpmagicwords.com original/style.css",
+		"/C/Users/Trigger/Downloads/scrollMagic101-master/js/main.js",
+		"/C/Users/Trigger/Desktop/Architect/Websites/Exercises/ScrollMagic/styles.css",
+		"/C/Users/Trigger/Desktop/Architect/Websites/Exercises/ScrollMagic 101/js/plugins.js",
+		"/C/Users/Trigger/Desktop/Architect/Websites/Exercises/ScrollMagic/app.js.js",
+		"/C/Users/Trigger/Desktop/Architect/Websites/Exercises/ScrollMagic/index.html",
+		"/C/Users/Trigger/Desktop/Architect/Websites/Exercises/fireman/public/index.html",
+		"/C/Users/Trigger/Desktop/Architect/practiceScroll.js",
+		"/C/Users/Trigger/Documents/Recently",
+		"/C/Users/Trigger/Desktop/Architect/Websites/VMProjects/socialsync/src/components/app.css",
+		"/C/Users/Trigger/Desktop/Architect/Websites/Exercises/fireman/src/components/Admin/index.js",
+		"/C/Users/Trigger/Desktop/Architect/Websites/Exercises/fireman/src/components/SignUp/index.js",
+		"/C/Users/Trigger/Desktop/Architect/Websites/Exercises/fireman/src/components/Firebase/firebase.js",
+		"/C/Users/Trigger/Desktop/Architect/Websites/Exercises/fireman/src/components/SignIn/index.js",
+		"/C/Users/Trigger/Desktop/Architect/Websites/Projects/SocialSync(backup)/src/friends.json",
+		"/C/Users/Trigger/Desktop/Architect/Websites/Exercises/fireman/src/components/PasswordChange/index.js",
+		"/C/Users/Trigger/Desktop/Architect/Websites/Exercises/fireman/src/components/PasswordForget/index.js",
+		"/C/Users/Trigger/Desktop/Architect/Websites/Exercises/fireman/src/components/Home/index.js",
+		"/C/Users/Trigger/Desktop/Architect/Websites/Exercises/fireman/src/constants/routes.js",
+		"/C/Users/Trigger/Desktop/Architect/Websites/Exercises/fireman/src/components/App/index.js",
+		"/C/Users/Trigger/Desktop/Architect/Websites/Exercises/fireman/src/components/Account/index.js",
+		"/C/Users/Trigger/Desktop/Architect/Websites/Exercises/fireman/src/components/Navigation/index.js",
+		"/C/Users/Trigger/Desktop/Architect/Websites/VMProjects/socialsync/src/components/Header/header.css",
+		"/C/Users/Trigger/Desktop/Architect/Websites/Exercises/fireman/src/components/Landing/index.js",
+		"/C/Users/Trigger/Desktop/Architect/Websites/Exercises/fireman/src/components/SignOut/index.js",
+		"/C/Users/Trigger/Desktop/Architect/Websites/Exercises/fireman/src/constants/roles.js",
+		"/C/Users/Trigger/Desktop/Architect/Websites/Exercises/fireman/src/components/Session/context.js",
+		"/C/Users/Trigger/Desktop/Architect/Websites/Exercises/fireman/src/components/Session/index.js",
+		"/C/Users/Trigger/Desktop/Architect/Websites/Exercises/fireman/package.json",
+		"/C/Users/Trigger/Desktop/Architect/Websites/Exercises/fireman/src/index.js",
+		"/C/Users/Trigger/Desktop/Architect/Websites/Exercises/fireman/src/components/Firebase/context.js",
+		"/C/Users/Trigger/Desktop/Architect/Websites/Exercises/fireman/src/components/Firebase/index.js",
+		"/C/Users/Trigger/Desktop/Architect/Websites/Exercises/fireman/src/index.css",
+		"/C/Users/Trigger/Desktop/Architect/delete.js"
+	],
+	"find":
+	{
+		"height": 36.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 20559,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								473,
+								473
+							]
+						],
+						"settings":
+						{
+							"git_savvy.repo_path": "C:\\Users\\Trigger\\Desktop\\Architect\\Websites\\Projects\\LionCoded2.0",
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 21337,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"rulers":
+							[
+								70
+							],
+							"syntax": "Packages/Git/syntax/Git Commit Message.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "styles.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 9485,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"git_savvy.repo_path": "C:\\Users\\Trigger\\Desktop\\Architect\\Websites\\Projects\\LionCoded2.0",
+							"syntax": "Packages/CSS/CSS.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "app.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3384,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"git_savvy.repo_path": "C:\\Users\\Trigger\\Desktop\\Architect\\Websites\\Projects\\LionCoded2.0",
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 28.0
+	},
+	"input":
+	{
+		"height": 36.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.GitSavvy":
+	{
+		"height": 130.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.git":
+	{
+		"height": 130.0
+	},
+	"pinned_build_system": "",
+	"project": "lioncoded.sublime-project",
+	"replace":
+	{
+		"height": 52.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 169.0,
+	"status_bar_visible": false,
+	"template_settings":
+	{
+	}
+}
