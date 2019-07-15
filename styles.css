@@ -9,22 +9,9 @@ body {
     vertical-align: middle;
 }
 
-@font-face {
-    font-family: 'consolas';
-    src: url('fonts/consolas/consolas.ttf') format('truetype'),
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'consolaz';
-    src: url('fonts/consolas/consolaz.ttf') format('truetype'),
-    font-weight: normal;
-    font-style: normal;
-}
-
 .app {
     overflow: hidden;
+    background-color: black;
     /*opacity: 0;*/
 }
 
@@ -34,15 +21,41 @@ section {
     width: 100vw;
     min-height: 100vh;
 
+    background-color: black;
     color: #DAA520;
+    /*z-index: -1;*/
 }
 
 /*===================================================*/
 /*===================================================*/
 
 .welcome {
-    background-color: #000000;
-    opacity: 0.9;
+    /*background-image: url('./images/1welcome/fulldemo.png');*/
+    background-image: url('./images/1welcome/wildlife.jpg');
+    background-size: 100% 100%;
+    /*opacity: 0.9;*/
+
+    -moz-box-shadow:    inset 0 0 10px #000000;
+    -webkit-box-shadow: inset 0 0 10px #000000;
+    box-shadow:         inset 0 0 10px #000000;
+}
+
+.welcome-shadow {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 20px;
+    box-shadow: inset 3px 3px 10px 0 #000000;
+
+    background: -moz-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0.5)));
+    background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+    background: -o-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+    background: -ms-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+    background: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);
 }
 
 .welcome h1 {
@@ -51,7 +64,6 @@ section {
     left: 35%;
     transform: translate(-50%, -50%);
     font-size: 48px;
-    /*padding-right: 10%;*/
 }
 
 .welcome .video {
@@ -86,7 +98,7 @@ section {
 /*===================================================*/
 
 .whowhatwhy {
-    background-color: #fff;
+    /*background-color: #fff;*/
     color: #fff;
     overflow: hidden;
 /*    -webkit-transform: translate3d(0, 100%, 0);
@@ -274,8 +286,8 @@ section.mywork .display-box {
     position: relative;
     width: 25em;
     height: 15em;
-    border: 1px outset #aaa;
-    /*opacity: 0.7;*/
+    border: 1px outset #fff;
+    opacity: 0.7;
 }
 
 section.mywork .display-text {
@@ -291,12 +303,37 @@ section.mywork .display-text {
 }
 
 .display-one {
-    background-color: green;
-
     background-image: url(images/3mywork/CompCoding.png);
     background-repeat: no-repeat;
-    /*background-size: cover;*/
     background-size: 100% 100%;
+
+    -webkit-transform: rotateY(-20deg);
+    -moz-transform: rotateY(-20deg);
+    -ms-transform: rotateY(-20deg);
+    -o-transform: rotateY(-20deg);
+    transform: rotateY(-20deg);
+    -webkit-transform-origin: left center;
+    -moz-transform-origin: left center;
+    -ms-transform-origin: left center;
+    -o-transform-origin: left center;
+    transform-origin: left center;
+
+/*    background-color: #ccc;
+    overflow: hidden;
+    position: relative;
+    transform-style: flat;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center, center center;
+    -webkit-box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.1);
+    -webkit-transition: all 450ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
+    -moz-transition: all 450ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
+    -ms-transition: all 450ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
+    -o-transition: all 450ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
+    transition: all 450ms cubic-bezier(0.175, 0.885, 0.320, 1.275);*/
 }
 
 .display-two {
@@ -315,6 +352,45 @@ section.mywork .display-text {
     background-repeat: no-repeat;
     /*background-size: cover;*/
     background-size: 100% 100%;
+}
+
+.shadow {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 10;
+    left: 0;
+    top: 0;
+
+    -webkit-transition: all 650ms cubic-bezier(0.165, 0.840, 0.440, 1.000);
+    -moz-transition: all 650ms cubic-bezier(0.165, 0.840, 0.440, 1.000);
+    -ms-transition: all 650ms cubic-bezier(0.165, 0.840, 0.440, 1.000);
+    -o-transition: all 650ms cubic-bezier(0.165, 0.840, 0.440, 1.000);
+    transition: all 650ms cubic-bezier(0.165, 0.840, 0.440, 1.000);
+}
+
+.shadow:hover {
+    opacity: 0;
+}
+
+.shadow-left {
+    background: -moz-linear-gradient(left, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%);
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(0, 0, 0, 0.5)), color-stop(100%, rgba(0, 0, 0, 0)));
+    background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%);
+    background: -o-linear-gradient(left, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%);
+    background: -ms-linear-gradient(left, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%);
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1);
+}
+
+.shadow-right {
+    background: -moz-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0.5)));
+    background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+    background: -o-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+    background: -ms-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+    background: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);
 }
 
 
@@ -418,3 +494,73 @@ code[class*=language-] ::selection,code[class*=language-]::selection {
         font-size:20px
     }
 }
+
+
+
+
+
+/*====================================================*/
+/*BORDER*/
+.app-border {
+    position: fixed;
+    z-index: 10010;
+    -webkit-transition: all .1s ease;
+    transition: all .1s ease;
+    background-color: black;
+}
+.border-bottom, .border-top {
+    left: 0;
+    width: 0;
+    height: 8px;
+}
+.border-bottom {
+    left: 100%;
+    right: 0;
+    bottom: 0;
+    box-shadow: -8px 0 4px 0 rgba(0,0,0,.2);
+}
+.border-top {
+    top: 0;
+    box-shadow: 0 0 4px 0 rgba(0,0,0,.2);
+}
+.border-left, .border-right {
+    width: 8px;
+    height: 0;
+}
+.border-right {
+    top: 0;
+    right: 0;
+    box-shadow: 0 8px 4px 0 rgba(0,0,0,.2);
+}
+.border-left {
+    top: 100%;
+}
+.border-left {
+    bottom: 0;
+    left: 0;
+    box-shadow: 0 8px 4px 0 rgba(0,0,0,.2);
+}
+.border-left.fix-border:after {
+    content: " ";
+    position: absolute;
+    bottom: 0;
+    left: 4px;
+    display: block;
+    width: 8px;
+    height: 8px;
+    background-color: #fff
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

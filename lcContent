@@ -1,9 +1,36 @@
 
-Initializing
+Section 1: Full-Stack Developer
+	Front-end
+	Back-end
+	Databases
+
+Section 2: Laptop, Tablet, or Phone
+	Fully responsive designs
+	Mobile App Store (no websites allowed)
+	Reusable JavaScript (highly efficient)
+
+Section 3: Scalability and Security
+	Rarely hear about
+	Pentesting enthusiast
+	ransomware proof
 
 
-Hey I'm Daniel Barenboim.
-I'm a full stack developer. I write simple lines of text that create magical worlds on the internet. With a well rounded foundation in both backend and frontend development, as well as a huge passion for all things programming, there's no limit to what we can create. 
+1. Welcome:
+
+	"Turning boring old newspaper type websites 
+	into interactive displays of how awesome you're product really is."
+
+	LionCoded
+	Hey I'm Daniel Barenboim, a full-stack developer.
+	I spend most of my time writing simple lines of text that translate into immersive web-browsing experiences. With a well rounded foundation in both backend and frontend development, as well as a huge passion for all things programming, there's no limit to what we can create. 
+
+
+
+
+2. WhoWhatWhy:
+
+
+
 
 
 
@@ -48,8 +75,6 @@ Project Management
 
 
 
-
-
 		PROJECTS
 FireWater : 
 	Back before the days of Uber Eats and Amazon drone delivery, there was FireWater. An alcohol delivery service that made life easier by keeping you away from the wheel while getting all the finest spirits and liquors. 
@@ -73,17 +98,6 @@ Mobile App :
 
 
 
-Determine if the elements we are animating are within viewport.
-Use selector caching 
-$window.on('scroll', check_if_in_view);
-
-We go through and look for all items that will be animating in.
-For each of these elements we collect its height along with its top and bottom position (so we know where it lives on the page).
-We compare each item to see if its bottom position is greater than the top position of the window but also that the item's top position is less than the bottom position of the window. 
-
-
-
-
 
 
 Cutting Edge Skills
@@ -103,7 +117,7 @@ Cutting Edge Skills
 
 	Database Creation and Management
 		-PostgreSql, MySql, and Sql 
-		-MongoDB non-relational database(noSQL database)
+		-MongoDB and Mongoose non-relational database(noSQL database)
 
 	HTML/CSS
 		- Up-to-date with the latest changes in HTML5
@@ -113,12 +127,35 @@ Cutting Edge Skills
 		-Trained in the Agile Software Development Lifecycle
 		-Experience in a Lead Developer Role at a national enterprise
 		-Time spent managing third party/external resources
+
 The Network
-	PHP Developer
-	Graphic Design Artist
-	Sketch Artist
+	Graphic Designer
 	Video Editor
+	PHP Developer
+	JavaScript Guru
+
 Extras:
-	Versioning w/ Github
-	VirtualBox systems for easy testing across multiple browsers and operating systems.
-	Trained in Linux for better troubleshooting and CLI support. 
+	Proficient in Git / GitHub
+	Accomodated with Agile Methodology
+	Linux & CLI knowledge
+	Experience with Photoshop
+
+
+
+
+
+
+
+
+
+
+
+
+Determine if the elements we are animating are within viewport.
+Use selector caching 
+$window.on('scroll', check_if_in_view);
+
+We go through and look for all items that will be animating in.
+For each of these elements we collect its height along with its top and bottom position (so we know where it lives on the page).
+We compare each item to see if its bottom position is greater than the top position of the window but also that the item's top position is less than the bottom position of the window. 
+

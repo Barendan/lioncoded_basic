@@ -4,7 +4,9 @@ $(document).ready(function() {
 
 
 	function whoWhatWhy() {
-	    let container_1 = $(".background .cover-image .container-1"),
+	    let welcome = $("section.welcome"),
+	    	whoWhatWhy = $("section.whowhatwhy"),
+	    	container_1 = $(".background .cover-image .container-1"),
 		    background_1 = $(".background .cover-image .container-1 .background-1"),
 		    container_2 = $(".background .cover-image .container-2"),
 		    background_2 = $(".background .cover-image .container-2 .background-2"),
@@ -24,7 +26,11 @@ $(document).ready(function() {
 			.fromTo(container_1, 10, {y: '100%'}, {y: '0%', ease: Sine.easeInOut}, 0)
 			.fromTo(background_1, 10, {y: '-100%',opacity: 0}, {y: '0%',opacity: 0.5,ease: Sine.easeInOut}, 0)
 			.fromTo(container_2, 10, {x: "-100%"}, {x: "0%",ease: Sine.easeInOut}, 0)
-	    	.fromTo(background_2, 10, {x: "100%",opacity: 0}, {x: "0%",opacity: 1,ease: Sine.easeInOut}, 0);
+	    	.fromTo(background_2, 10, {x: "100%",opacity: 0}, {x: "0%",opacity: 1,ease: Sine.easeInOut}, 0)
+
+	    	.to(welcome, 10, {opacity: 0}, 0);
+	    	// .to(whoWhatWhy, 10, {y: '-20%'}, 0)
+	    	// .to(welcome, 10, {y: '-20%', scale: '0.2'}, .5);
 
 	    pinTween
 	    	.to(container_3, 1, {opacity: 1,ease: Sine.easeInOut}, 1)
@@ -55,6 +61,7 @@ $(document).ready(function() {
 			triggerElement: '.whowhatwhy',
 			triggerHook: 0,
 			duration: '100%'
+			// offset: -200 for page floating away effect
 		})
 		.addIndicators({
 			name: 'Pinhead',
@@ -65,6 +72,11 @@ $(document).ready(function() {
 		.setPin('.whowhatwhy')
 		.setTween(pinTween)
 		.addTo(controller);
+
+
+
+
+
 
 	}
 
