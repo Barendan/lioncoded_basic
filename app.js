@@ -6,6 +6,7 @@ $(document).ready(function() {
 	function whoWhatWhy() {
 	    let welcome = $("section.welcome"),
 	    	whoWhatWhy = $("section.whowhatwhy"),
+	    	myWork = $("section.myWork"),
 	    	container_1 = $(".background .cover-image .container-1"),
 		    background_1 = $(".background .cover-image .container-1 .background-1"),
 		    container_2 = $(".background .cover-image .container-2"),
@@ -19,18 +20,19 @@ $(document).ready(function() {
 		    container_6 = $(".background .cover-image .container-6"),
 		    background_6 = $(".background .cover-image .container-6 .background-6");
 	    
-		let whoTween = new TimelineMax();
+		let whoStart = new TimelineMax();
 		let pinTween = new TimelineMax();
+		let whoLeave = new TimelineMax();
 
-		whoTween
+		whoStart
 			.fromTo(container_1, 10, {y: '100%'}, {y: '0%', ease: Sine.easeInOut}, 0)
 			.fromTo(background_1, 10, {y: '-100%',opacity: 0}, {y: '0%',opacity: 0.5,ease: Sine.easeInOut}, 0)
 			.fromTo(container_2, 10, {x: "-100%"}, {x: "0%",ease: Sine.easeInOut}, 0)
 	    	.fromTo(background_2, 10, {x: "100%",opacity: 0}, {x: "0%",opacity: 1,ease: Sine.easeInOut}, 0)
 
 	    	.to(welcome, 10, {opacity: 0}, 0);
-	    	// .to(whoWhatWhy, 10, {y: '-20%'}, 0)
-	    	// .to(welcome, 10, {y: '-20%', scale: '0.2'}, .5);
+	    	// .to(whoWhatWhy, 10, {y: '-20%'}, 0) page floating away effect
+	    	// .to(welcome, 10, {y: '-20%', scale: '0.2'}, .5); 
 
 	    pinTween
 	    	.to(container_3, 1, {opacity: 1,ease: Sine.easeInOut}, 1)
@@ -47,6 +49,10 @@ $(document).ready(function() {
 	    	.fromTo(container_6, 5, {x: "-100%"}, {x: "0%",ease: Sine.easeInOut}, 5)
 	    	.fromTo(background_6, 5, {x: "95%",opacity: .5}, {x: "0%",opacity: 1,ease: Sine.easeInOut}, 5);
 
+	    whoLeave
+	    	.to(whoWhatWhy, 5, {opacity: 0}, 0);
+
+
 
 		let enterWho = new ScrollMagic.Scene({
 			triggerElement: '.whowhatwhy',
@@ -54,14 +60,14 @@ $(document).ready(function() {
 			duration: '100%'
 		})
 		// .setClassToggle(this, 'fade-in')
-		.setTween(whoTween)
+		.setTween(whoStart)
 		.addTo(controller);
 
 		let pinWho = new ScrollMagic.Scene({
 			triggerElement: '.whowhatwhy',
 			triggerHook: 0,
 			duration: '100%'
-			// offset: -200 for page floating away effect
+			// offset: -200 page floating away effect
 		})
 		.addIndicators({
 			name: 'Pinhead',
@@ -72,6 +78,8 @@ $(document).ready(function() {
 		.setPin('.whowhatwhy')
 		.setTween(pinTween)
 		.addTo(controller);
+
+		// pinWho.on("end",whoLeave);
 
 
 
