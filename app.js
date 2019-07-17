@@ -1,6 +1,5 @@
 $(document).ready(function() {
 	const controller = new ScrollMagic.Controller,
-		mainTL = new TimelineMax(),
 		welcome = $("section.welcome"),
 		about = $("section.whowhatwhy"),
 		myWork = $("section.myWork");
@@ -64,7 +63,7 @@ $(document).ready(function() {
 			.to(welcome, 10, {
 				opacity: 0, 
 				onComplete: function() {
-					TweenMax.css("visibility","hidden")
+					// TweenMax.set(welcome, {className: '+=hide'})
 				}
 			}, 0);
 

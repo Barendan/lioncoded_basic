@@ -11,7 +11,7 @@
 			"file": "app.js",
 			"settings":
 			{
-				"buffer_size": 3896,
+				"buffer_size": 4285,
 				"line_ending": "Windows"
 			}
 		},
@@ -19,7 +19,7 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 12842,
+				"buffer_size": 12710,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -28,7 +28,7 @@
 			"file": "styles.css",
 			"settings":
 			{
-				"buffer_size": 14308,
+				"buffer_size": 14704,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -254,7 +254,7 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3896,
+						"buffer_size": 4285,
 						"regions":
 						{
 						},
@@ -285,15 +285,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 12842,
+						"buffer_size": 12710,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1448,
-								1448
+								0,
+								0
 							]
 						],
 						"settings":
@@ -316,7 +316,7 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 14308,
+						"buffer_size": 14704,
 						"regions":
 						{
 						},

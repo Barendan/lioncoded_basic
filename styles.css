@@ -27,6 +27,10 @@ section {
     color: #DAA520;
 }
 
+.hide {
+    visibility: hidden;
+}
+
 /*===================================================*/
 /*===================================================*/
 
@@ -59,7 +63,7 @@ section {
     display: block;
     min-height: 800px;
 
-    position: fixed;
+    position: absolute;
     width: 100%;
     height: 100vh;
     overflow: hidden;
@@ -118,15 +122,10 @@ section {
 /*===================================================*/
 
 .whowhatwhy {
-    background-color: #000;
-    color: #fff;
     overflow: hidden;
-/*    -webkit-transform: translate3d(0, 100%, 0);
-    transform: translate3d(0, 100%, 0);*/
 }
 
 section.whowhatwhy .background {
-    /* background-color: black; */
     position: absolute;
     top: 0px;
     left: 0px;
@@ -170,14 +169,15 @@ section.whowhatwhy .background .cover-image .container-1,
 }
 
 section.whowhatwhy .background .cover-image .container .background-1 {
-    background-image: url(images/background_1.jpg);
-    background-color: #FBE08F;
-    background-size: cover;
-    background-position: center center;
+    background-image: url(./images/2whowhatwhy/fullstackInfo.jpg);
+    background-color: #fff;
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: 50% 20%;
 }
 section.whowhatwhy .background .cover-image .container .background-2 {
     background-image: url(images/background_2.jpg);
-    background-color: #E8A107;
+    background-color: #fff;
     background-size: cover;
     background-position: center center;
 }
