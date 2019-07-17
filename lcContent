@@ -1,20 +1,4 @@
 
-Section 1: Full-Stack Developer
-	Front-end
-	Back-end
-	Databases
-
-Section 2: Laptop, Tablet, or Phone
-	Fully responsive designs
-	Mobile App Store (no websites allowed)
-	Reusable JavaScript (highly efficient)
-
-Section 3: Scalability and Security
-	Rarely hear about
-	Pentesting enthusiast
-	ransomware proof
-
-
 1. Welcome:
 
 	"Turning boring old newspaper type websites 
@@ -25,12 +9,44 @@ Section 3: Scalability and Security
 	I spend most of my time writing simple lines of text that translate into immersive web-browsing experiences. With a well rounded foundation in both backend and frontend development, as well as a huge passion for all things programming, there's no limit to what we can create. 
 
 
-
-
 2. WhoWhatWhy:
 
+	Section 1: Full-Stack Developer
+		Front-end
+		Back-end
+		Databases
+
+	Section 2: Mobile Applications
+		Mobile App Store (no websites allowed)
+		Reusable JavaScript (highly efficient)
+
+	Section 3: Scalability and Security
+		Rarely hear about
+		Pentesting enthusiast
+		ransomware proof
+		fully responsive designs
 
 
+3. Projects:
+
+	FireWater
+		Back before the days of Uber Eats and Amazon drone delivery, there was FireWater. An alcohol delivery service that made life easier by keeping you away from the wheel while getting all the finest spirits and liquors. 
+	24HourHealth
+		The elixir for good health. Everyone wants it. 
+		24HourHealth came in to revolutionize an industry that was still using un natural ingredients but promising wholesome value. This product changed the whole game. All natural, non-gmo ingredients, designed by someone who took the journey called health, losing over a hundred pounds in the process. 
+	SocialSync
+		A way to manage the minor details surrounding your social life. Where was that vacation to that Jenny and Tom took last year? What day is Alexandra's birthday? Who was an expert on wine? 
+		With a direct and simple user interface(UI), searching for any of these answers takes no more than seconds!
+		Franklin mentally reflected upon his day, every night. 
+		SocialSync allows you to do it more efficiently and have a record of it all.
+	1st Portfolio
+		Nostalgia can get the best of us. My first portfolio brings back memories of a young lad dipping his toes into the water called JavaScript. Years have gone by and I still haven't finished exploring this ocean but I'm comfortably swimming across it now.
+	Mobile App
+
+
+4. Contact Me
+
+	
 
 
 
@@ -62,7 +78,6 @@ Security and Scalability Oriented
 	Starting a project with these two aspects in mind allows for optimal coding and lots of time saved down the line.
 
 
-
 Project Management
 	Using the Agile Development Lifecycle to ensure efficiency and constant improvement in the work-flow process is largely important but not everything. 
 	Real challenges arise when you incorporate international professionals in fields such as graphic design or video editing. Luckily, I've dealt with these circumstances before and learned how to maximize the potential of these dealings.
@@ -74,21 +89,6 @@ Project Management
 
 
 
-
-		PROJECTS
-FireWater : 
-	Back before the days of Uber Eats and Amazon drone delivery, there was FireWater. An alcohol delivery service that made life easier by keeping you away from the wheel while getting all the finest spirits and liquors. 
-24HourHealth :
-	The elixir for good health. Everyone wants it. 
-	24HourHealth came in to revolutionize an industry that was still using un natural ingredients but promising wholesome value. This product changed the whole game. All natural, non-gmo ingredients, designed by someone who took the journey called health, losing over a hundred pounds in the process. 
-SocialSync :
-	A way to manage the minor details surrounding your social life. Where was that vacation to that Jenny and Tom took last year? What day is Alexandra's birthday? Who was an expert on wine? 
-	With a direct and simple user interface(UI), searching for any of these answers takes no more than seconds!
-	Franklin mentally reflected upon his day, every night. 
-	SocialSync allows you to do it more efficiently and have a record of it all.
-1st Portfolio :
-	Nostalgia can get the best of us. My first portfolio brings back memories of a young lad dipping his toes into the water called JavaScript. Years have gone by and I still haven't finished exploring this ocean but I'm comfortably swimming across it now.
-Mobile App :
 
 
 
@@ -139,23 +139,3 @@ Extras:
 	Accomodated with Agile Methodology
 	Linux & CLI knowledge
 	Experience with Photoshop
-
-
-
-
-
-
-
-
-
-
-
-
-Determine if the elements we are animating are within viewport.
-Use selector caching 
-$window.on('scroll', check_if_in_view);
-
-We go through and look for all items that will be animating in.
-For each of these elements we collect its height along with its top and bottom position (so we know where it lives on the page).
-We compare each item to see if its bottom position is greater than the top position of the window but also that the item's top position is less than the bottom position of the window. 
-

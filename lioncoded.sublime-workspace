@@ -11,7 +11,7 @@
 			"file": "app.js",
 			"settings":
 			{
-				"buffer_size": 3851,
+				"buffer_size": 3896,
 				"line_ending": "Windows"
 			}
 		},
@@ -28,7 +28,7 @@
 			"file": "styles.css",
 			"settings":
 			{
-				"buffer_size": 14356,
+				"buffer_size": 14308,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -208,7 +208,7 @@
 	],
 	"find":
 	{
-		"height": 28.0
+		"height": 27.0
 	},
 	"find_in_files":
 	{
@@ -254,15 +254,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3851,
+						"buffer_size": 3896,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								79,
-								79
+								0,
+								0
 							]
 						],
 						"settings":
@@ -316,15 +316,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 14356,
+						"buffer_size": 14308,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								163,
-								163
+								0,
+								0
 							]
 						],
 						"settings":
@@ -346,7 +346,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 28.0
+		"height": 27.0
 	},
 	"input":
 	{
@@ -391,7 +391,7 @@
 	"project": "lioncoded.sublime-project",
 	"replace":
 	{
-		"height": 52.0
+		"height": 50.0
 	},
 	"save_all_on_build": true,
 	"select_file":

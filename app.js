@@ -19,12 +19,13 @@ $(document).ready(function() {
 				}
 			})
 
+			// then what?
 	}
 
 	function welcomeEnter() { console.log("Welcome entered") }
 
 	function aboutEnter() {
-		let container_1 = $(".background .cover-image .container-1"),
+		const container_1 = $(".background .cover-image .container-1"),
 		    background_1 = $(".background .cover-image .container-1 .background-1"),
 		    container_2 = $(".background .cover-image .container-2"),
 		    background_2 = $(".background .cover-image .container-2 .background-2"),
@@ -36,62 +37,57 @@ $(document).ready(function() {
 		    background_5 = $(".background .cover-image .container-5 .background-5"),
 		    container_6 = $(".background .cover-image .container-6"),
 		    background_6 = $(".background .cover-image .container-6 .background-6");
-	    
-		let whoStart = 
-			mainTL.fromTo(container_1, 10, {y: '100%'}, {y: '0%', ease: Sine.easeInOut}, 0)
-			mainTL.fromTo(background_1, 10, {y: '-100%',opacity: 0}, {y: '0%',opacity: 0.5,ease: Sine.easeInOut}, 0)
-			mainTL.fromTo(container_2, 10, {x: "-100%"}, {x: "0%",ease: Sine.easeInOut}, 0)
-			mainTL.fromTo(background_2, 10, {x: "100%",opacity: 0}, {x: "0%",opacity: 1,ease: Sine.easeInOut}, 0);
+		
+		const aboutStart = new TimelineMax();
+		aboutStart
+			.fromTo(container_1, 10, {y: '100%'}, {y: '0%', ease: Sine.easeInOut}, 0)
+			.fromTo(background_1, 10, {y: '-100%',opacity: 0}, {y: '0%',opacity: 0.5,ease: Sine.easeInOut}, 0)
+			.fromTo(container_2, 10, {x: "-100%"}, {x: "0%",ease: Sine.easeInOut}, 0)
+			.fromTo(background_2, 10, {x: "100%",opacity: 0}, {x: "0%",opacity: 1,ease: Sine.easeInOut}, 0)
+			.to(welcome, 10, {
+				opacity: 0, 
+				onComplete: function() {}
+			}, 0);
 
 		let enterWho = new ScrollMagic.Scene({
 			triggerElement: '.whowhatwhy',
 			triggerHook: 1,
 			duration: '100%'
 		})
+		.setTween(aboutStart)
+		.addTo(controller);
+
+		let aboutEnd = new TimelineMax();
+	    aboutEnd
+	    	.to(container_3, 1, {opacity: 1,ease: Sine.easeInOut}, 1)
+	    	.fromTo(container_3, 4, {y: "100%"}, {y: "0%",ease: Sine.easeInOut}, 1)
+	    	.fromTo(background_3, 4, {y: "-95%",opacity: .5}, {y: "0%",opacity: .5,ease: Sine.easeInOut}, 1)
+	    	.to(container_4, 1, {opacity: 1,ease: Sine.easeInOut}, 1)
+	    	.fromTo(container_4, 4, {x: "-100%"}, {x: "0%",ease: Sine.easeInOut}, 1)
+	    	.fromTo(background_4, 4, {x: "95%",opacity: .5}, {x: "0%",opacity: 1,ease: Sine.easeInOut}, 1)
+
+			.to(container_5, 1, {opacity: 1,ease: Sine.easeInOut}, 5)
+	    	.fromTo(container_5, 5, {y: "100%"}, {y: "0%",ease: Sine.easeInOut}, 5)
+	    	.fromTo(background_5, 5, {y: "-95%",opacity: .5}, {y: "0%",opacity: 1,ease: Sine.easeInOut}, 5)
+	    	.to(container_6, 1, {opacity: 1,ease: Sine.easeInOut}, 5)
+	    	.fromTo(container_6, 5, {x: "-100%"}, {x: "0%",ease: Sine.easeInOut}, 5)
+	    	.fromTo(background_6, 5, {x: "95%",opacity: .5}, {x: "0%",opacity: 1,ease: Sine.easeInOut}, 5);
+
+		let pinWho = new ScrollMagic.Scene({
+			triggerElement: '.whowhatwhy',
+			triggerHook: 0,
+			duration: '100%'
+			// offset: -200 page floating away effect
+		})
 		.addIndicators({
-			name: 'Pinhead',
+			name: 'DoctorWho!',
 			colorTrigger: 'black',
 			colorStart: 'green',
 			colorEnd: 'red'
 		})
-		// .setClassToggle(this, 'fade-in')
-		.setTween(whoStart)
+		.setPin('.whowhatwhy')
+		.setTween(aboutEnd)
 		.addTo(controller);
-
-
-
-	    	// .to(welcome, 10, {opacity: 0}, 0);
-
-	    // pinTween
-	    // 	.to(container_3, 1, {opacity: 1,ease: Sine.easeInOut}, 1)
-	    // 	.fromTo(container_3, 4, {y: "100%"}, {y: "0%",ease: Sine.easeInOut}, 1)
-	    // 	.fromTo(background_3, 4, {y: "-95%",opacity: .5}, {y: "0%",opacity: .5,ease: Sine.easeInOut}, 1)
-	    // 	.to(container_4, 1, {opacity: 1,ease: Sine.easeInOut}, 1)
-	    // 	.fromTo(container_4, 4, {x: "-100%"}, {x: "0%",ease: Sine.easeInOut}, 1)
-	    // 	.fromTo(background_4, 4, {x: "95%",opacity: .5}, {x: "0%",opacity: 1,ease: Sine.easeInOut}, 1)
-
-		// 	.to(container_5, 1, {opacity: 1,ease: Sine.easeInOut}, 5)
-	    // 	.fromTo(container_5, 5, {y: "100%"}, {y: "0%",ease: Sine.easeInOut}, 5)
-	    // 	.fromTo(background_5, 5, {y: "-95%",opacity: .5}, {y: "0%",opacity: 1,ease: Sine.easeInOut}, 5)
-	    // 	.to(container_6, 1, {opacity: 1,ease: Sine.easeInOut}, 5)
-	    // 	.fromTo(container_6, 5, {x: "-100%"}, {x: "0%",ease: Sine.easeInOut}, 5)
-	    // 	.fromTo(background_6, 5, {x: "95%",opacity: .5}, {x: "0%",opacity: 1,ease: Sine.easeInOut}, 5);
-
-
-
-		// let pinWho = new ScrollMagic.Scene({
-		// 	triggerElement: '.whowhatwhy',
-		// 	triggerHook: 0,
-		// 	duration: '100%'
-		// 	// offset: -200 page floating away effect
-		// })
-		// .setPin('.whowhatwhy')
-		// .setTween(pinTween)
-		// .addTo(controller);
-
-		// pinWho.on("end",whoLeave);
-
-
 
 	}
 
