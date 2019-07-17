@@ -13,10 +13,10 @@ $(document).ready(function() {
 			ease: Cubic.easeOut,
 			onStart: function() {
 					welcomeEnter()
+				},
+			onComplete: function() {
+					aboutEnter()
 				}
-			// onComplete: function() {
-			// 		aboutEnter()
-			// 	}
 			})
 			
 	}
@@ -28,12 +28,21 @@ $(document).ready(function() {
 			layer_4 = $("#layer4"),
 			layer_5 = $("#layer5");
 
-		
-		
+		let cloudTL = new TimelineMax({
+			delay: 1,
+			repeat: -1,
+			repeatDelay: 1
+		});
+
+		cloudTL
+			.to(layer_2, 20, {x: '+=50', ease: Power0.easeNone })
+			.to(layer_2, 20, {x: '-=100', ease: Power0.easeNone });
+
 	}
 
 	function aboutEnter() {
-		const container_1 = $(".background .cover-image .container-1"),
+		const background = $("")
+			container_1 = $(".background .cover-image .container-1"),
 		    background_1 = $(".background .cover-image .container-1 .background-1"),
 		    container_2 = $(".background .cover-image .container-2"),
 		    background_2 = $(".background .cover-image .container-2 .background-2"),
@@ -54,7 +63,9 @@ $(document).ready(function() {
 			.fromTo(background_2, 10, {x: "100%",opacity: 0}, {x: "0%",opacity: 1,ease: Sine.easeInOut}, 0)
 			.to(welcome, 10, {
 				opacity: 0, 
-				onComplete: function() {}
+				onComplete: function() {
+					TweenMax.css("visibility","hidden")
+				}
 			}, 0);
 
 		let enterWho = new ScrollMagic.Scene({

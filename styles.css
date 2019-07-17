@@ -31,8 +31,9 @@ section {
 /*===================================================*/
 
 .welcome {
+    /* height: 140vh; */
     opacity: 0;
-    height: 140vh;
+    z-index: 1;
 }
 
 .welcome-shadow {
@@ -117,7 +118,7 @@ section {
 /*===================================================*/
 
 .whowhatwhy {
-    /*background-color: #fff;*/
+    background-color: #000;
     color: #fff;
     overflow: hidden;
 /*    -webkit-transform: translate3d(0, 100%, 0);
@@ -125,6 +126,7 @@ section {
 }
 
 section.whowhatwhy .background {
+    /* background-color: black; */
     position: absolute;
     top: 0px;
     left: 0px;
