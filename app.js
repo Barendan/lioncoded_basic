@@ -13,16 +13,24 @@ $(document).ready(function() {
 			ease: Cubic.easeOut,
 			onStart: function() {
 					welcomeEnter()
-				},
-			onComplete: function() {
-					aboutEnter()
 				}
+			// onComplete: function() {
+			// 		aboutEnter()
+			// 	}
 			})
-
-			// then what?
+			
 	}
 
-	function welcomeEnter() { console.log("Welcome entered") }
+	function welcomeEnter() { 
+		const layer_1 = $("#layer1"),
+			layer_2 = $("#layer2"),
+			layer_3 = $("#layer3"),
+			layer_4 = $("#layer4"),
+			layer_5 = $("#layer5");
+
+		
+		
+	}
 
 	function aboutEnter() {
 		const container_1 = $(".background .cover-image .container-1"),
