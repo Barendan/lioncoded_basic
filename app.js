@@ -16,8 +16,7 @@ $(document).ready(function() {
 			onComplete: function() {
 					aboutEnter()
 				}
-			})
-			
+		})
 	}
 
 	function welcomeEnter() { 
@@ -32,10 +31,10 @@ $(document).ready(function() {
 			repeat: -1,
 			repeatDelay: 1
 		});
-
+		
 		cloudTL
 			.to(layer_2, 20, {x: '+=50', ease: Power0.easeNone })
-			.to(layer_2, 20, {x: '-=100', ease: Power0.easeNone });
+			.to(layer_2, 20, {x: '-=50', ease: Power0.easeNone });
 
 	}
 
@@ -124,6 +123,6 @@ $(document).ready(function() {
 	// 	.addTo(controller)		
 	// }
 
-	init()
+	init();
 
 })

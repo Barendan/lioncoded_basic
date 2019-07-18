@@ -125,6 +125,19 @@ section {
     overflow: hidden;
 }
 
+.whowhatwhy p {
+    padding: 60px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: lighter;
+}
+
+.whowhatwhy h2 {
+    font-size: 46px;
+    text-align: center;
+    padding-top: 20px;
+}
+
 section.whowhatwhy .background {
     position: absolute;
     top: 0px;
@@ -134,7 +147,7 @@ section.whowhatwhy .background {
 }
 
 section.whowhatwhy .background .cover-image .container .background {
-    position: relative;
+    /* position: relative; */
     top: 0px;
     left: 0px;
     width: 100%;
@@ -175,36 +188,41 @@ section.whowhatwhy .background .cover-image .container .background-1 {
     background-repeat: no-repeat;
     background-position: 50% 20%;
 }
-section.whowhatwhy .background .cover-image .container .background-2 {
+
+/* section.whowhatwhy .background .cover-image .container .background-2 {
     background-image: url(images/background_2.jpg);
     background-color: #fff;
     background-size: cover;
     background-position: center center;
-}
+} */
+
 section.whowhatwhy .background .cover-image .container .background-3 {
-    background-image: url(images/background_3.jpg);
-    background-color: #F76A77;
+    background-image: url(./images/2whowhatwhy/mobileUI.jpg);
+    background-repeat: no-repeat;
     background-size: cover;
-    background-position: center center;
+    background-position: 20% 20%;
 }
+/* 
 section.whowhatwhy .background .cover-image .container .background-4 {
     background-image: url(images/background_4.jpg);
     background-color: #7E1A1A;
     background-size: cover;
     background-position: center center;
-}
+} */
+
 section.whowhatwhy .background .cover-image .container .background-5 {
     background-image: url(images/background_5.jpg);
     background-color: #9DBCF6;
     background-size: cover;
     background-position: center center;
 }
+/* 
 section.whowhatwhy .background .cover-image .container .background-6 {
     background-image: url(images/background_6.jpg);
     background-color: #2A7EE7;
     background-size: cover;
     background-position: center center;
-}
+} */
 
 section.whowhatwhy .background .cover-image .container-4, 
     section.whowhatwhy .background .cover-image .container-6, 
@@ -213,12 +231,12 @@ section.whowhatwhy .background .cover-image .container-4,
     transform: translate3d(-100%, 0%, 0);
     opacity: 0;
 }
-
+/* 
 section.whowhatwhy .background .cover-image .container-4, 
     section.whowhatwhy .background .cover-image .container-6, 
     section.whowhatwhy .background .cover-image .container-8 {
     background-color: #000000;
-}
+} */
 
 section.whowhatwhy .background .cover-image .container-3, 
     section.whowhatwhy .background .cover-image .container-5, 
@@ -240,7 +258,7 @@ section.whowhatwhy .background .cover-text {
     left: 50%;
     width: 50%;
     height: 50%;
-    background-color: purple;
+    /* background-color: purple; */
 }
 
 section.whowhatwhy .background .cover-text .container {
@@ -250,7 +268,7 @@ section.whowhatwhy .background .cover-text .container {
     height: auto;
     -webkit-transform: translate3d(0px, -50%, 0px);
     transform: translate3d(0px, -50%, 0px);
-    opacity: 0;
+    /* opacity: 0; */
 }
 
 section.whowhatwhy .background .cover-text .container .title {
@@ -268,6 +286,9 @@ section.whowhatwhy .background .cover-text .container .title {
 
 
 
+
+
+
 /*===================================================*/
 /*===================================================*/
 
@@ -278,11 +299,11 @@ section.whowhatwhy .background .cover-text .container .title {
 
 .mywork h1 {
     padding-top:50px;
-    text-align: center;
+    padding-left: 18px;
+    /* text-align: center; */
 
-    letter-spacing: -3px;
     font-weight: 300;
-    font-size: 84px;
+    font-size: 66px;
     font-family: 'Montserrat', sans-serif;
     /*font-family: 'Roboto', sans-serif;*/
     /*font-family: 'Lato', sans-serif;*/
@@ -291,12 +312,12 @@ section.whowhatwhy .background .cover-text .container .title {
 
 section.mywork .display-row {
     position: relative;
-    margin: 20em 5em;
+    margin: 18em 5em;
     width: 100vw;
 }
 
 section.mywork .display-row.start {
-    margin-top: 10em;
+    margin-top: 7em;
 }
 
 section.mywork .display-row.finish {
@@ -305,22 +326,31 @@ section.mywork .display-row.finish {
 
 section.mywork .display-box {
     position: relative;
-    width: 25em;
-    height: 15em;
+    width: 30em;
+    height: 17em;
     border: 1px outset #fff;
-    opacity: 0.7;
+    /* opacity: 0.7; */
 }
 
-section.mywork .display-text {
+section.mywork .backdrop {
+    background-image: linear-gradient(to right top, #1c1800, #403c13, #6b631f, #998d2b, #cbb937);
+    position: absolute;
+    top: 4em;
+    left: 37%;
+    width: 27em;
+    height: 20em;
+    opacity: 0.9;
+    z-index: -1;
+}
+
+section.mywork .display-text {   
     background-color: white;
     position: absolute;
-    top: 7em;
-    left: 33%;
-
-    /*padding: 50px;*/
-    width: 600px;
-    height: 250px;
-    opacity: 0.9;
+    top: 6em;
+    left: 26em;
+    width: 23em;
+    height: 16em;
+    box-shadow: 1px 1px 20px black;
 }
 
 .display-one {
@@ -430,7 +460,7 @@ section.mywork .display-text {
 .source-viewer {
     position: absolute;
     top: -5em;
-    left: -5em;
+    left: -10em;
     width: 100%;
     font-family: Futura-pt,Arial;
     z-index: -1;
