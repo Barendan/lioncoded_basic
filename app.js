@@ -2,8 +2,8 @@ $(document).ready(function() {
 	const controller = new ScrollMagic.Controller,
 		welcome = $("section.welcome"),
 		about = $("section.whowhatwhy"),
-		myWork = $("section.myWork");
-	
+		myWork_section = $("section.mywork");
+
 	function init() {
 
 		// bring in welcome page
@@ -59,13 +59,9 @@ $(document).ready(function() {
 			.fromTo(background_1, 10, {y: '-100%',opacity: 0}, {y: '0%',opacity: 0.5,ease: Sine.easeInOut}, 0)
 			.fromTo(container_2, 10, {x: "-100%"}, {x: "0%",ease: Sine.easeInOut}, 0)
 			.fromTo(background_2, 10, {x: "100%",opacity: 0}, {x: "0%",opacity: 1,ease: Sine.easeInOut}, 0)
-			.to(welcome, 10, {
-				opacity: 0, 
-				onComplete: function() {
-					// TweenMax.set(welcome, {className: '+=hide'})
-				}
-			}, 0);
+			.to(welcome, 10, { opacity: 0 }, 0);
 
+			
 		let enterWho = new ScrollMagic.Scene({
 			triggerElement: '.whowhatwhy',
 			triggerHook: 1,
@@ -88,19 +84,19 @@ $(document).ready(function() {
 	    	.fromTo(background_5, 5, {y: "-95%",opacity: .5}, {y: "0%",opacity: 1,ease: Sine.easeInOut}, 5)
 	    	.to(container_6, 1, {opacity: 1,ease: Sine.easeInOut}, 5)
 	    	.fromTo(container_6, 5, {x: "-100%"}, {x: "0%",ease: Sine.easeInOut}, 5)
-	    	.fromTo(background_6, 5, {x: "95%",opacity: .5}, {x: "0%",opacity: 1,ease: Sine.easeInOut}, 5);
+			.fromTo(background_6, 5, {x: "95%",opacity: .5}, {
+				x: "0%",
+				opacity: 1,
+				ease: Sine.easeInOut,
+				onComplete: function() {
+					myWork()
+				}
+			}, 5)
 
 		let pinWho = new ScrollMagic.Scene({
 			triggerElement: '.whowhatwhy',
 			triggerHook: 0,
 			duration: '100%'
-			// offset: -200 page floating away effect
-		})
-		.addIndicators({
-			name: 'DoctorWho!',
-			colorTrigger: 'black',
-			colorStart: 'green',
-			colorEnd: 'red'
 		})
 		.setPin('.whowhatwhy')
 		.setTween(aboutEnd)
@@ -108,20 +104,32 @@ $(document).ready(function() {
 
 	}
 
-	// function myWork() {
-	// 	let paraCodeTween = new TimelineMax();
-	// 	paraCodeTween
-	// 		// .from('.language-markup', 0.6, { autoAlpha: 0, ease:Power0.easeNone },0.6)
-	// 		.to('.language-markup', 1, { y: '-10%', ease: Power0.easeNone },0);
+	function myWork() {
+		const paraCodeTween = new TimelineMax();
+		paraCodeTween
+			// .from('.language-markup', 0.6, { autoAlpha: 0, ease:Power0.easeNone },0.6)
+			.to(myWork_section, 0.3, {autoAlpha: 1})
+			.to('.language-markup', 1, { y: '-30%', ease: Power0.easeNone },0);
 
-	// 	let paraCodeSlide = new ScrollMagic.Scene({
-	// 		triggerElement: '.mywork',
-	// 		triggerHook: 1,
-	// 		duration: '400%'
-	// 	})
-	// 	.setTween(paraCodeTween)
-	// 	.addTo(controller)		
-	// }
+		let paraCodeSlide = new ScrollMagic.Scene({
+			triggerElement: '.mywork',
+			triggerHook: 1,
+			duration: '400%'
+		})
+		.setTween(paraCodeTween)
+		.addTo(controller)	
+
+		let typed = new Typed('.work-title', {
+			strings:  ['', '$:/^700Projects/^300atrchive', '$:/Projects/archive'],
+			// startDelay: 2000,
+			typeSpeed: 50,
+			backSpeed: 30,
+			backDelay: 200,
+			smartBackspace: true
+		  });
+		
+	}
+	
 
 	init();
 
