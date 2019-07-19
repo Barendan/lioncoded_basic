@@ -502,7 +502,7 @@ section.mywork .display-text {
 
 .general_info {
     width: 45vw;
-    height: 70vh;
+    height: 65vh;
     margin: 7em 2em;
     margin-left: 5em;
     border: 1px dotted;
@@ -510,11 +510,11 @@ section.mywork .display-text {
 
 .form_container {
     width: 50vw;
-    height: 70vh;
+    height: 65vh;
     margin: 7em 2em;
     margin-right: 5em;
     background-color: #1B1B1B;
-    box-shadow: 2px 2px 10px black;
+    box-shadow: -5px 5px 15px black;
 }
 
 .form_title {
@@ -523,6 +523,16 @@ section.mywork .display-text {
     font-size: 46px;
     letter-spacing: 0.1em;
     text-align: center;
+}
+
+.glow {
+    position: absolute;
+    background-color: #1b1b1b;
+    opacity: 0.2;
+    top: -5vh;
+    left: 38vw;
+    border-radius: 50%;
+    box-shadow: 0 0 260px 320px #fff /* inner white */
 }
 
 
