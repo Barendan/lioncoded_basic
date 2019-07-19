@@ -108,7 +108,7 @@ $(document).ready(function() {
 		const paraCodeTween = new TimelineMax();
 		paraCodeTween
 			// .from('.language-markup', 0.6, { autoAlpha: 0, ease:Power0.easeNone },0.6)
-			.to(myWork_section, 0.3, {autoAlpha: 1})
+			.to(myWork_section, 0.3, {autoAlpha: 1, onComplete: function() { typed() }})
 			.to('.language-markup', 1, { y: '-30%', ease: Power0.easeNone },0);
 
 		let paraCodeSlide = new ScrollMagic.Scene({
@@ -119,18 +119,25 @@ $(document).ready(function() {
 		.setTween(paraCodeTween)
 		.addTo(controller)	
 
-		let typed = new Typed('.work-title', {
-			strings:  ['', '$:/^700Projects/^300atrchive', '$:/Projects/archive'],
-			// startDelay: 2000,
-			typeSpeed: 50,
-			backSpeed: 30,
-			backDelay: 200,
-			smartBackspace: true
-		  });
-		
+		function typed() {
+			let typed_text = new Typed('.work-title', {
+				strings:  ['', '$:/^700Projects/^300atrchive', '$:/Projects/archive'],
+				// startDelay: 2000,
+				typeSpeed: 50,
+				backSpeed: 30,
+				backDelay: 200,
+				smartBackspace: true
+			})
+		}
 	}
 	
 
+
+
+
+
+
+	
 	init();
 
 })
