@@ -417,8 +417,19 @@ section.mywork .display-text {
     opacity: 0.9;
     z-index: -1;
 }
+.text_three {
+    background-color: rgb(49, 30, 13) !important;
+}
+.text_three p {
+    margin-top: 2em;
+}
 .sample_3 {
-
+    position: absolute;
+    color: antiquewhite !important;
+    font-size: 64px;
+    height: 20%;
+    padding-left: .1em;
+    overflow: hidden;
 }
 
 
