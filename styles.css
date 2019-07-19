@@ -385,11 +385,21 @@ section.mywork .display-text {
 }
 
 
-
 .display-two {
     background-image: url(images/3mywork/FireWater.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
+}
+.backdrop_two {
+    background-color: transparent;
+    position: absolute;
+    width: 26.5em;
+    height: 17em;
+    /* margin: -16em 2em; */
+    margin: -16em -2em;
+    border: 5px solid goldenrod;
+    opacity: 0.9;
+    z-index: -1;
 }
 .sample_2 {
     position: absolute;
@@ -399,6 +409,7 @@ section.mywork .display-text {
     padding-left: .1em;
     overflow: hidden;
 }
+
 
 .display-three {
     background-image: url(images/3mywork/PrevPortfolio.png);
