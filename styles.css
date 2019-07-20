@@ -8,6 +8,19 @@ body {
     vertical-align: middle;
 }
 
+@font-face {
+    font-family: ceraBlack;
+    src: url(./fonts/CeraPro/CeraPro-Black.ttf);
+}
+@font-face {
+    font-family: ceraLight;
+    src: url(./fonts/CeraPro/CeraPro-Light.ttf);
+}
+@font-face {
+    font-family: ceraRegular;
+    src: url(./fonts/CeraPro/CeraPro-Regular.ttf);
+}
+
 .app {
     overflow: hidden;
     background-color: black;
@@ -495,34 +508,57 @@ section.mywork .display-text {
 /*===================================================*/
 /*===================================================*/
 
-.contact {
-    display: inline-flex;
+.contact_section {
     background-color: #1B1B1B;
+    width: 100%;
+    color: darkgrey;
+    /* font-weight: 900; */
+    font-family: 'ceraLight', sans-serif;
 }
 
-.general_info {
-    width: 45vw;
-    height: 65vh;
-    margin: 7em 2em;
-    margin-left: 5em;
-    border: 1px dotted;
+.contact_container {
+    display: inline-flex;
+    margin: 8rem 4.5rem 5rem;
+    font-size: .7rem;
+}
+
+.info_container {
+    width: 39vw;
+    margin-right: 3rem;
+    text-align: center;
 }
 
 .form_container {
-    width: 50vw;
+    width: 41vw;
     height: 65vh;
-    margin: 7em 2em;
-    margin-right: 5em;
-    background-color: #1B1B1B;
     box-shadow: -5px 5px 15px black;
 }
 
-.form_title {
-    margin-top: 0.5em;
-    color: darkgrey;
-    font-size: 46px;
-    letter-spacing: 0.1em;
+.contact_container h2 {
+    color: oldlace;
     text-align: center;
+    padding: .5rem;
+    font-size: 2.2rem;
+    line-height: 2em;
+    letter-spacing: -0.3rem;
+    font-family: 'ceraBlack', sans-serif;
+}
+
+.contact_container h3 {
+    color: oldlace;
+    margin-bottom:.5rem;
+    font-family: 'ceraRegular', sans-serif;
+}
+
+.contact_container p {
+    line-height: 1.4rem;
+    margin: 1em 2em 5em 2em;
+}
+
+.info_container li {
+    display: block;
+    padding-bottom: 2rem;
+    line-height: 1.2rem;
 }
 
 .glow {
@@ -533,6 +569,38 @@ section.mywork .display-text {
     left: 38vw;
     border-radius: 50%;
     box-shadow: 0 0 260px 320px #fff /* inner white */
+}
+
+.contact_form {
+    margin: 0em 3em;
+    overflow: hidden;
+}
+
+input[type=text], select, textarea {
+    font-family: 'ceraRegular', sans-serif;
+    background-color: #1b1b1b;
+    width: 100%;
+    padding: 12px;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    border: 0;
+    border-bottom: 1px solid #aaa;
+}
+
+#subject {
+    line-height: 0.7em;
+}
+  
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
 }
 
 
