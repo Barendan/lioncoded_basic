@@ -612,7 +612,62 @@ input[type=submit]:hover {
     box-shadow: 1px 1px 3px #000;
 }
 
+.logo {
+    position: absolute;
+    top: 2rem;
+    left: 1.5rem;
+}
+.logo img {
+    width: 35%;
+    transform: scaleX(-1);
+}
 
+.top-nav {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+}
+.top-nav ul {
+    display: inline-flex;
+}
+.top-nav li {
+    display: block;
+    padding-right: 3rem;
+    cursor: pointer;
+    font-size: .85rem;
+    font-family: 'ceraRegular';
+    letter-spacing: 0.2rem;
+    text-shadow: 2px 2px 2px black;
+}
+.top-nav li:hover, .top-nav .active {
+    color: #555;
+    text-decoration: line-through;
+}
+
+.social {
+    position: absolute;
+    bottom: 2rem;
+    left: 2rem;
+}
+
+.social li {
+    display: block;
+    padding-bottom: .3rem;
+}
+.social #icons {
+    fill: darkgrey;
+}
+.social li:hover #icons {
+    fill: #555;
+}
+
+.copyright {
+    position: absolute;
+    bottom: 1.5rem;
+    right: 5rem;
+    font-size: .5rem;
+    letter-spacing: 0.1rem;
+}
 
 /*===================================================*/
 /*===================================================*/
