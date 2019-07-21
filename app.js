@@ -129,8 +129,29 @@ $(document).ready(function() {
 				smartBackspace: true
 			})
 		}
-	}
+
+
+
+		const contactIntro = new TimelineMax();
+		contactIntro
+			.to('.contact_section', 5, {opacity: 1, ease: Sine.easeInOut}, 0)
+			.to('.finish', 2, {opacity: 0, y: '30%'}, 0)
+			.to('.mywork', 5, {opacity: 0, ease: Sine.easeInOut}, 0);
 	
+		let placehold2 = new ScrollMagic.Scene({
+			triggerElement: '.contact_section',
+			triggerHook: 1,
+			duration: '100%'
+		})
+		// .addIndicators({
+		// 	name: 'fade-in scene',
+		// 	colorTrigger: 'red',
+		// 	colorStart: '#75C695',
+		// 	colorEnd: '#75C695'
+		// })
+		.setTween(contactIntro)
+		.addTo(controller)
+	}
 
 
 
