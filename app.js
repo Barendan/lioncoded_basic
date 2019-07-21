@@ -11,7 +11,7 @@ $(document).ready(function() {
 			opacity: 1,
 			ease: Cubic.easeOut,
 			onStart: function() {
-					welcomeEnter()
+					// welcomeEnter()
 				},
 			onComplete: function() {
 					aboutEnter()
