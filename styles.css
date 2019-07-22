@@ -133,7 +133,7 @@ section {
 /*===================================================*/
 
 .whowhatwhy {
-
+    opacity: 0;
 }
 
 .whowhatwhy p {
@@ -307,7 +307,6 @@ section.whowhatwhy .background .cover-text .container .title {
     background: #0d0d0d;
     opacity: 0;
     z-index: 1;
-    /* overflow: initial; */
 }
 
 .typed_container {

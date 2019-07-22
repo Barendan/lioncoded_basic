@@ -35,7 +35,6 @@ $(document).ready(function() {
 		cloudTL
 			.to(layer_2, 20, {x: '+=50', ease: Power0.easeNone })
 			.to(layer_2, 20, {x: '-=50', ease: Power0.easeNone });
-
 	}
 
 	function aboutEnter() {
@@ -59,7 +58,8 @@ $(document).ready(function() {
 			.fromTo(background_1, 10, {y: '-100%',opacity: 0}, {y: '0%',opacity: 0.5,ease: Sine.easeInOut}, 0)
 			.fromTo(container_2, 10, {x: "-100%"}, {x: "0%",ease: Sine.easeInOut}, 0)
 			.fromTo(background_2, 10, {x: "100%",opacity: 0}, {x: "0%",opacity: 1,ease: Sine.easeInOut}, 0)
-			.to(welcome, 10, { opacity: 0 }, 0);
+			.to(welcome, 10, { opacity: 0 }, 0)
+			.to(about, 10, {opacity: 1, ease: Circ.easeIn}, 0);
 
 			
 		let enterWho = new ScrollMagic.Scene({
