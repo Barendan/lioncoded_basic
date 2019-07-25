@@ -106,7 +106,7 @@ $(document).ready(function() {
 		const paraCodeTween = new TimelineMax();
 		paraCodeTween
 			// .from('.language-markup', 0.6, { autoAlpha: 0, ease:Power0.easeNone },0.6)
-			.to(myWork_section, 0.3, {autoAlpha: 1, ease: Circ.easeOut, onStart: function() { typed() }})
+			.to(myWork_section, 0.2, {autoAlpha: 1, ease: Power2.easeIn, onStart: function() { typed() }})
 			.to(about, 0.3, {autoAlpha: 0, ease: Circ.easeOut}, 0)
 			.to('.language-markup', 1, { y: '-30%', ease: Power0.easeNone}, 0);
 
