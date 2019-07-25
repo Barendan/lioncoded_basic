@@ -1,14 +1,11 @@
 possible fonts:
 	ceraPro Black
-	
 	work-sans
 	gordita-400
 	trade-gothic-lt-bold
 
 
-
 1. Welcome:
-
 	"Turning boring old newspaper type websites 
 	into interactive displays of how awesome you're product really is."
 
@@ -18,7 +15,6 @@ possible fonts:
 
 
 2. WhoWhatWhy:
-
 	Section 1: Full-Stack Developer
 		Front-end
 		Back-end
@@ -35,27 +31,38 @@ possible fonts:
 		fully responsive designs
 
 
-
-
-
-
-
 3. Projects:
+	DigitalDesign
+		Eye-candy for designers.
+		Too often I would stumble upon some new captivating design and save it to my bookmarks.
+		After doing this for quite some time, I realized I had hundreds of design ideas bookmarked or saved to my computer but no efficient way to organize them and visualize each without individually going to each one.
+		DigitalDesign is a website I created to solve this problem. It combines a simple UI with a database of the most interesting design ideas that I have seen. With this web app, I am able to easily sort (by tag) and get a quick glimpse at the design idea without having to delve into it.  
+	
+	24HourHealth
+		The elixir for good health. Simple, easy, delicious.
+		Healthy habits are hard and take time to form. With all the vitamins and minerals out there, it's hard to obtain everything while living a rigorous working lifestyle, not to mention if you have kids.
+		24HourHealth was created with all this in mind. Taking all that your body needs daily and serving it to you in a 2oz shot. What really makes this product special is the all natural, non-gmo, vegan ingredients used.
 
 	FireWater
-		Back before the days of Uber Eats and Amazon drone delivery, there was FireWater. An alcohol delivery service that made life easier by keeping you away from the wheel while getting all the finest spirits and liquors. 
-	24HourHealth
-		The elixir for good health. Everyone wants it. 
-		24HourHealth came in to revolutionize an industry that was still using un natural ingredients but promising wholesome value. This product changed the whole game. All natural, non-gmo ingredients, designed by someone who took the journey called health, losing over a hundred pounds in the process. 
+		Long ago, in the times before Uber Eats and Amazon drone delivery, there was FireWater. An alcohol delivery service that made it fast and easy to get inebriated. Whether you were running out of drinks to serve at your luxury gala or simply out of booze at a get-together, FireWater was here to deliver.
+		FireWater, the alcohol delivery service that makes life better by keeping you away from the wheel while getting all the finest spirits and liquors. 
+
+	NBA Mobile App
+		What makes an NBA allstar? Is it their score? How many opportunities they create for teammates?
+		Perhaps it's a delicate combination of both. With this app, you can discover the player who scored the most baskets in one game. Find the player who has been most helpful to their teammates. Or just view the stats from the last game. It's all here.
+
 	SocialSync
 		A way to manage the minor details surrounding your social life. Where was that vacation to that Jenny and Tom took last year? What day is Alexandra's birthday? Who was an expert on wine? 
 		With a direct and simple user interface(UI), searching for any of these answers takes no more than seconds!
 		Franklin mentally reflected upon his day, every night. 
 		SocialSync allows you to do it more efficiently and have a record of it all.
-	Mobile App
 
 
-4. Contact Me
+
+
+
+
+
 
 
 
@@ -76,9 +83,16 @@ Mobile App Development (Apple or Android)
 
 
 Ruby, Rails, and Databases
+
+
+
 	Working on the backend with Ruby on Rails is where I had my beginning. Ruby started me off in the world of object oriented program, rails sped up the build process. 
 
 	I've witnessed the efficiency of businesses increase through the implementation of relational databases using both MySql and PostgreSQL. MongoDB is my current go-to for database architecture as I find it to be more versatile and have significantly improved query performance over SQL. 
+
+
+
+
 
 
 Security and Scalability Oriented
