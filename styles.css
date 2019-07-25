@@ -27,11 +27,22 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+.holdthis {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+}
+
 section {
     position: relative;
+    top: 0px;
+    left: 0px;
     overflow: hidden;
     width: 100vw;
     min-height: 100vh;
+    transform: translate3d(0, 100%, 0);
 
     background-color: black;
     color: #DAA520;
@@ -45,9 +56,9 @@ section {
 /*===================================================*/
 
 .welcome {
-    /* height: 140vh; */
     opacity: 0;
     z-index: 1;
+    transform: translate3d(0, 0%, 0);
 }
 
 .welcome-shadow {
@@ -133,7 +144,9 @@ section {
 /*===================================================*/
 
 .whowhatwhy {
+    position: absolute;
     opacity: 0;
+    transform: translate3d(0, 100%, 0);
 }
 
 .whowhatwhy p {
@@ -162,13 +175,15 @@ section {
     padding-top: 20px;
 }
 
-section.whowhatwhy .background {
+/* section.whowhatwhy .background {
     position: absolute;
     top: 0px;
     left: 0px;
+    opacity: 0;
     width: 100%;
     height: 100%;
-}
+    transform: translate3d(0, 100%, 0);
+} */
 
 section.whowhatwhy .background .cover-image .container .background {
     /* position: relative; */
@@ -321,6 +336,7 @@ section.whowhatwhy .background .cover-text .container .title {
     opacity: 0;
     z-index: 1;
     overflow: visible;
+    display: none;
 }
 
 .typed_container {
@@ -522,6 +538,7 @@ section.mywork .display-text {
     font-family: 'ceraLight', sans-serif;
     opacity: 0;
     z-index: 1;
+    display: none;
 }
 
 .contact_container {

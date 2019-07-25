@@ -48,7 +48,8 @@ $(document).ready(function() {
 		    container_5 = $(".background .cover-image .container-5"),
 		    background_5 = $(".background .cover-image .container-5 .background-5"),
 		    container_6 = $(".background .cover-image .container-6"),
-		    background_6 = $(".background .cover-image .container-6 .background-6");
+			background_6 = $(".background .cover-image .container-6 .background-6"),
+			main_background = $('.whowhatwhy .background');
 		
 		const aboutStart = new TimelineMax();
 		aboutStart
@@ -56,8 +57,9 @@ $(document).ready(function() {
 			.fromTo(background_1, 10, {y: '-100%',opacity: 0}, {y: '0%',opacity: 0.5,ease: Sine.easeInOut}, 0)
 			.fromTo(container_2, 10, {x: "-100%"}, {x: "0%",ease: Sine.easeInOut}, 0)
 			.fromTo(background_2, 10, {x: "100%",opacity: 0}, {x: "0%",opacity: 1,ease: Sine.easeInOut}, 0)
-			.to(welcome, 10, { opacity: 0 }, 0)
-			.to(about, 10, {opacity: 1, ease: Circ.easeIn}, 0);
+			.to(welcome, 10, { opacity: 0, y: '-100%', ease: Sine.easeInOut }, 0)
+			// .to(about, 10, {opacity: 1, ease: Circ.easeIn}, 0);
+			.to(about, 10, {opacity: 1, y: '0%', ease: Sine.easeInOut}, 0);
 
 			
 		let enterWho = new ScrollMagic.Scene({
@@ -90,13 +92,14 @@ $(document).ready(function() {
 					myWork()
 				}
 			}, 5)
+			// .to(background_5, 5)
 
 		let pinWho = new ScrollMagic.Scene({
 			triggerElement: '.whowhatwhy',
 			triggerHook: 0,
 			duration: '100%'
 		})
-		.setPin('.whowhatwhy')
+		.setPin(main_background)
 		.setTween(aboutEnd)
 		.addTo(controller);
 
