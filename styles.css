@@ -311,12 +311,11 @@ section.whowhatwhy .background .cover-text .container .title {
 
 .typed_container {
     display: inline-flex;
-    padding-top:50px;
-    padding-left: 18px;
-
+    padding: 1rem;
     font-weight: 300;
-    font-size: 66px;
+    font-size: 60px;
     font-family: 'Montserrat', sans-serif;
+    font-family: 'consolas';
 }
 .typed-cursor {
     line-height: 1em;
@@ -362,9 +361,6 @@ section.mywork .display-text {
     line-height: 1.5;
     font-weight: 300;
 }
-
-
-
 
 
 
@@ -444,11 +440,6 @@ section.mywork .display-text {
     padding-left: 0.8rem;
     text-shadow: 2px 2px 5px goldenrod;
 }
-
-
-
-
-
 
 
 
@@ -679,8 +670,7 @@ input[type=submit]:hover {
 }
 
 code[class*=language-] {
-    /* color: wheat; */
-    color: darkorange;
+    color: darkgrey;
     direction: ltr;
     font-family: 'consolas';
     text-align: left;

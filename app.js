@@ -5,8 +5,6 @@ $(document).ready(function() {
 		myWork_section = $("section.mywork");
 
 	function init() {
-
-		// bring in welcome page
 		TweenMax.to(welcome, .6, {
 			opacity: 1,
 			ease: Cubic.easeOut,
@@ -108,8 +106,9 @@ $(document).ready(function() {
 		const paraCodeTween = new TimelineMax();
 		paraCodeTween
 			// .from('.language-markup', 0.6, { autoAlpha: 0, ease:Power0.easeNone },0.6)
-			.to(myWork_section, 0.3, {autoAlpha: 1, onComplete: function() { typed() }})
-			.to('.language-markup', 1, { y: '-30%', ease: Power0.easeNone },0);
+			.to(myWork_section, 0.3, {autoAlpha: 1, ease: Circ.easeOut, onStart: function() { typed() }})
+			.to(about, 0.3, {autoAlpha: 0, ease: Circ.easeOut}, 0)
+			.to('.language-markup', 1, { y: '-30%', ease: Power0.easeNone}, 0);
 
 		let paraCodeSlide = new ScrollMagic.Scene({
 			triggerElement: '.mywork',
@@ -134,9 +133,9 @@ $(document).ready(function() {
 
 		const contactIntro = new TimelineMax();
 		contactIntro
-			.to('.contact_section', 5, {opacity: 1, ease: Sine.easeInOut}, 0)
-			.to('.finish', 2, {opacity: 0, y: '30%'}, 0)
-			.to('.mywork', 5, {opacity: 0, ease: Sine.easeInOut}, 0);
+			.to('.contact_section', 5, {opacity: 1, ease: Power2.easeIn}, 0)
+			.to('.mywork', 5, {opacity: 0.3, ease: Power3.easeOut}, 0)
+			.to('.finish', 2, {opacity: 0, y: '0%'}, 0);
 	
 		let placehold2 = new ScrollMagic.Scene({
 			triggerElement: '.contact_section',
