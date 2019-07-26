@@ -65,126 +65,109 @@ $(document).ready(function() {
 		
 		const aboutStart = new TimelineMax();
 		aboutStart
-			// .fromTo(container_1, 10, {y: '100%'}, {y: '0%', ease: Sine.easeInOut}, 0)
-			.fromTo(background_1, 10, {y: '-100%',opacity: 0}, {y: '0%',opacity: 0.5,ease: Sine.easeIn}, 0)
-			.fromTo(container_2, 10, {x: "-100%"}, {x: "0%",ease: Sine.easeInOut}, 0)
-			.fromTo(background_2, 10, {x: "100%",opacity: 0}, {
-				x: "0%",
-				opacity: 1,
-				ease: Sine.easeInOut,
-				onComplete: function() {
-					aboutStart.to(text_1, 1, {opacity: 1, ease: Sine.easeIn}, 5)
-				}
-			}, 0)
-			
-			.to(welcome, 5, { opacity: 0, ease: Power1.easeIn }, 0)
-			// .to(welcome, 5, {y: "-100%", ease: Power0.easeIn}, 0)
-			// .to(safari_container, 5, {y: "-100%", ease: Power0.easeIn}, 0)
-			// .to(safari_scene, 5, {y: "-50%", ease: Power0.easeIn}, 0)
+			// .to(welcome, 10, { opacity: 0, y: '-100%', ease: Power0.easeIn }, 0)
+			// .to(about, 10, {opacity: 1, y: '0%', ease: Power0.easeIn}, 0)
+
 			.to(welcome_title, 5, {y: "-300%", ease: Power0.easeIn}, 0)
-			.to(clouds, 10, {y: "-300%", ease: Power0.easeIn}, 0)
-			.to(about, 10, {opacity: 1, ease: Power0.easeIn}, 0)
-			// .to(about, 10, {y:"0%", ease: Power0.easeIn}, 0);
-			// .to(main_background, 10, {y:"0%", ease: Power0.easeIn}, 0)
-			// .to(sky, 5, {y: "-50%", ease: Power0.easeIn}, 0);
+			.to(clouds, 10, {y: "-300%", ease: Power0.easeIn}, 0);
 
 			
 		let enterWho = new ScrollMagic.Scene({
-			triggerElement: '.whowhatwhy',
-			triggerHook: 1,
+			triggerElement: '.welcome',
+			triggerHook: 0,
 			duration: '100%'
 		})
 		.setTween(aboutStart)
 		.addTo(controller);
 
-		let aboutEnd = new TimelineMax();
-	    aboutEnd
-	    	.to(container_3, 1, {opacity: 1,ease: Sine.easeInOut}, 1)
-	    	.fromTo(container_3, 4, {y: "100%"}, {y: "0%",ease: Sine.easeInOut}, 1)
-	    	.fromTo(background_3, 4, {y: "-95%",opacity: .5}, {y: "0%",opacity: .5,ease: Sine.easeInOut, onComplete:function(){
-				aboutEnd.to(text_1, 1, {opacity: 0, ease: Power1.easeIn},0)
-				aboutEnd.to(text_2, 1, {opacity: 1, ease: Power1.easeIn},0)
-			}}, 1)
-	    	.to(container_4, 1, {opacity: 1,ease: Sine.easeInOut}, 1)
-	    	.fromTo(container_4, 4, {x: "-100%"}, {x: "0%",ease: Sine.easeInOut}, 1)
-	    	.fromTo(background_4, 4, {x: "95%",opacity: .5}, {x: "0%",opacity: 1,ease: Sine.easeInOut}, 1)
+	// 	let aboutEnd = new TimelineMax();
+	//     aboutEnd
+	//     	.to(container_3, 1, {opacity: 1,ease: Sine.easeInOut}, 1)
+	//     	.fromTo(container_3, 4, {y: "100%"}, {y: "0%",ease: Sine.easeInOut}, 1)
+	//     	.fromTo(background_3, 4, {y: "-95%",opacity: .5}, {y: "0%",opacity: .5,ease: Sine.easeInOut, onComplete:function(){
+	// 			aboutEnd.to(text_1, 1, {opacity: 0, ease: Power1.easeIn},0)
+	// 			aboutEnd.to(text_2, 1, {opacity: 1, ease: Power1.easeIn},0)
+	// 		}}, 1)
+	//     	.to(container_4, 1, {opacity: 1,ease: Sine.easeInOut}, 1)
+	//     	.fromTo(container_4, 4, {x: "-100%"}, {x: "0%",ease: Sine.easeInOut}, 1)
+	//     	.fromTo(background_4, 4, {x: "95%",opacity: .5}, {x: "0%",opacity: 1,ease: Sine.easeInOut}, 1)
 
-			.to(container_5, 1, {opacity: 1,ease: Sine.easeInOut}, 5)
-	    	.fromTo(container_5, 5, {y: "100%"}, {y: "0%",ease: Sine.easeInOut}, 5)
-	    	.fromTo(background_5, 5, {y: "-95%",opacity: .0}, {y: "0%",opacity: 0.5,ease: Sine.easeInOut, onComplete:function(){
-				aboutEnd.to(text_2, 1, {opacity: 0, ease: Power1.easeIn},0)
-				aboutEnd.to(text_3, 1, {opacity: 1, ease: Power1.easeIn},0)
-			}}, 5)
-	    	.to(container_6, 1, {opacity: 1,ease: Sine.easeInOut}, 5)
-	    	.fromTo(container_6, 5, {x: "-100%"}, {x: "0%",ease: Sine.easeInOut}, 5)
-			.fromTo(background_6, 5, {x: "95%",opacity: .5}, {
-				x: "0%",
-				opacity: 1,
-				ease: Sine.easeInOut,
-				onComplete: function() {
-					myWork()
-				}
-			}, 5)
+	// 		.to(container_5, 1, {opacity: 1,ease: Sine.easeInOut}, 5)
+	//     	.fromTo(container_5, 5, {y: "100%"}, {y: "0%",ease: Sine.easeInOut}, 5)
+	//     	.fromTo(background_5, 5, {y: "-95%",opacity: .0}, {y: "0%",opacity: 0.5,ease: Sine.easeInOut, onComplete:function(){
+	// 			aboutEnd.to(text_2, 1, {opacity: 0, ease: Power1.easeIn},0)
+	// 			aboutEnd.to(text_3, 1, {opacity: 1, ease: Power1.easeIn},0)
+	// 		}}, 5)
+	//     	.to(container_6, 1, {opacity: 1,ease: Sine.easeInOut}, 5)
+	//     	.fromTo(container_6, 5, {x: "-100%"}, {x: "0%",ease: Sine.easeInOut}, 5)
+	// 		.fromTo(background_6, 5, {x: "95%",opacity: .5}, {
+	// 			x: "0%",
+	// 			opacity: 1,
+	// 			ease: Sine.easeInOut,
+	// 			onComplete: function() {
+	// 				myWork()
+	// 			}
+	// 		}, 5)
 
-		let pinWho = new ScrollMagic.Scene({
-			triggerElement: '.whowhatwhy',
-			triggerHook: 0,
-			duration: '100%'
-		})
-		.setPin('.whowhatwhy')
-		.setTween(aboutEnd)
-		.addTo(controller);
+	// 	let pinWho = new ScrollMagic.Scene({
+	// 		triggerElement: '.whowhatwhy',
+	// 		triggerHook: 0,
+	// 		duration: '100%'
+	// 	})
+	// 	.setPin('.whowhatwhy')
+	// 	.setTween(aboutEnd)
+	// 	.addTo(controller);
 
-	}
+	// }
 
-	function myWork() {
-		const paraCodeTween = new TimelineMax();
-		paraCodeTween
-			// .from('.language-markup', 0.6, { autoAlpha: 0, ease:Power0.easeNone },0.6)
-			.to(myWork_section, 0.2, {autoAlpha: 1, ease: Power2.easeIn, onStart: function() { typed() }})
-			.to(about, 0.3, {autoAlpha: 0, ease: Circ.easeOut}, 0)
-			.to('.language-markup', 1, { y: '-30%', ease: Power0.easeNone}, 0);
+	// function myWork() {
+	// 	const paraCodeTween = new TimelineMax();
+	// 	paraCodeTween
+	// 		// .from('.language-markup', 0.6, { autoAlpha: 0, ease:Power0.easeNone },0.6)
+	// 		.to(myWork_section, 0.2, {autoAlpha: 1, ease: Power2.easeIn, onStart: function() { typed() }})
+	// 		.to(about, 0.3, {autoAlpha: 0, ease: Circ.easeOut}, 0)
+	// 		.to('.language-markup', 1, { y: '-30%', ease: Power0.easeNone}, 0);
 
-		let paraCodeSlide = new ScrollMagic.Scene({
-			triggerElement: '.mywork',
-			triggerHook: 1,
-			duration: '400%'
-		})
-		.setTween(paraCodeTween)
-		.addTo(controller)	
+	// 	let paraCodeSlide = new ScrollMagic.Scene({
+	// 		triggerElement: '.mywork',
+	// 		triggerHook: 1,
+	// 		duration: '400%'
+	// 	})
+	// 	.setTween(paraCodeTween)
+	// 	.addTo(controller)	
 
-		function typed() {
-			let typed_text = new Typed('.work-title', {
-				strings:  ['', '$:/^700Projects/^300atrchive', '$:/Projects/archive'],
-				// startDelay: 2000,
-				typeSpeed: 50,
-				backSpeed: 30,
-				backDelay: 200,
-				smartBackspace: true
-			})
-		}
+		// function typed() {
+		// 	let typed_text = new Typed('.work-title', {
+		// 		strings:  ['', '$:/^700Projects/^300atrchive', '$:/Projects/archive'],
+		// 		// startDelay: 2000,
+		// 		typeSpeed: 50,
+		// 		backSpeed: 30,
+		// 		backDelay: 200,
+		// 		smartBackspace: true
+		// 	})
+		// }
 
 
 
-		const contactIntro = new TimelineMax();
-		contactIntro
-			.to('.contact_section', 5, {opacity: 1, ease: Power2.easeIn}, 0)
-			.to('.mywork', 5, {opacity: 0.3, ease: Power3.easeOut}, 0)
-			.to('.finish', 2, {opacity: 0, y: '0%'}, 0);
+		// const contactIntro = new TimelineMax();
+		// contactIntro
+		// 	.to('.contact_section', 5, {opacity: 1, ease: Power2.easeIn}, 0)
+		// 	.to('.mywork', 5, {opacity: 0.3, ease: Power3.easeOut}, 0)
+		// 	.to('.finish', 2, {opacity: 0, y: '0%'}, 0);
 	
-		let placehold2 = new ScrollMagic.Scene({
-			triggerElement: '.contact_section',
-			triggerHook: 1,
-			duration: '100%'
-		})
-		// .addIndicators({
-		// 	name: 'fade-in scene',
-		// 	colorTrigger: 'red',
-		// 	colorStart: '#75C695',
-		// 	colorEnd: '#75C695'
+		// let placehold2 = new ScrollMagic.Scene({
+		// 	triggerElement: '.contact_section',
+		// 	triggerHook: 1,
+		// 	duration: '100%'
 		// })
-		.setTween(contactIntro)
-		.addTo(controller)
+		// // .addIndicators({
+		// // 	name: 'fade-in scene',
+		// // 	colorTrigger: 'red',
+		// // 	colorStart: '#75C695',
+		// // 	colorEnd: '#75C695'
+		// // })
+		// .setTween(contactIntro)
+		// .addTo(controller)
 	}
 
 
