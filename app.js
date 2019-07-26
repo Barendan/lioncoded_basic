@@ -101,14 +101,20 @@ $(document).ready(function() {
 	    aboutEnd
 	    	.to(container_3, 1, {opacity: 1,ease: Sine.easeInOut}, 1)
 	    	.fromTo(container_3, 4, {y: "100%"}, {y: "0%",ease: Sine.easeInOut}, 1)
-	    	.fromTo(background_3, 4, {y: "-95%",opacity: .5}, {y: "0%",opacity: .5,ease: Sine.easeInOut}, 1)
+	    	.fromTo(background_3, 4, {y: "-95%",opacity: .5}, {y: "0%",opacity: .5,ease: Sine.easeInOut, onComplete:function(){
+				aboutEnd.to(text_1, 1, {opacity: 0, ease: Power1.easeIn},0)
+				aboutEnd.to(text_2, 1, {opacity: 1, ease: Power1.easeIn},0)
+			}}, 1)
 	    	.to(container_4, 1, {opacity: 1,ease: Sine.easeInOut}, 1)
 	    	.fromTo(container_4, 4, {x: "-100%"}, {x: "0%",ease: Sine.easeInOut}, 1)
 	    	.fromTo(background_4, 4, {x: "95%",opacity: .5}, {x: "0%",opacity: 1,ease: Sine.easeInOut}, 1)
 
 			.to(container_5, 1, {opacity: 1,ease: Sine.easeInOut}, 5)
 	    	.fromTo(container_5, 5, {y: "100%"}, {y: "0%",ease: Sine.easeInOut}, 5)
-	    	.fromTo(background_5, 5, {y: "-95%",opacity: .5}, {y: "0%",opacity: 1,ease: Sine.easeInOut}, 5)
+	    	.fromTo(background_5, 5, {y: "-95%",opacity: .0}, {y: "0%",opacity: 0.5,ease: Sine.easeInOut, onComplete:function(){
+				aboutEnd.to(text_2, 1, {opacity: 0, ease: Power1.easeIn},0)
+				aboutEnd.to(text_3, 1, {opacity: 1, ease: Power1.easeIn},0)
+			}}, 5)
 	    	.to(container_6, 1, {opacity: 1,ease: Sine.easeInOut}, 5)
 	    	.fromTo(container_6, 5, {x: "-100%"}, {x: "0%",ease: Sine.easeInOut}, 5)
 			.fromTo(background_6, 5, {x: "95%",opacity: .5}, {
