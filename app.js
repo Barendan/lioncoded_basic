@@ -36,7 +36,7 @@ $(document).ready(function() {
 	}
 
 	function welcomeExit() {
-		const background = $(""),
+		const background = $("section.whowhatwhy .background"),
 			container_1 = $(".background .cover-image .container-1"),
 		    background_1 = $(".background .cover-image .container-1 .background-1"),
 		    container_2 = $(".background .cover-image .container-2"),
@@ -49,41 +49,48 @@ $(document).ready(function() {
 		    background_5 = $(".background .cover-image .container-5 .background-5"),
 		    container_6 = $(".background .cover-image .container-6"),
 			background_6 = $(".background .cover-image .container-6 .background-6"),
-			main_background = $("section.whowhatwhy .background"),
 
 			text_1 = $(".background .cover-text .cont1"),
 			text_2 = $(".background .cover-text .cont2"),
 			text_3 = $(".background .cover-text .cont3"),
 			text_4 = $(".background .cover-text .cont4"),
 			
-			safari_container = $(".safari-container"),
-			safari_scene = $(".scene"),
-			sky = $(".sky"),
-			clouds = $(".clouds"),
+			safari = $(".safari-container"),
+			sky = $("#layer1"),
+			clouds = $("#layer2"),
+			landscape = $("#layer3"),
+			upclose = $("#layer4"),
 			welcome_title = $(".welcome h1");
 			
 		
 		const aboutStart = new TimelineMax();
 		aboutStart
-			// .fromTo(container_1, 10, {y: '100%'}, {y: '0%', ease: Sine.easeInOut}, 0)
-			.fromTo(background_1, 10, {y: '-100%',opacity: 0}, {y: '0%',opacity: 0.5,ease: Sine.easeIn}, 0)
-			.fromTo(container_2, 10, {x: "-100%"}, {x: "0%",ease: Sine.easeInOut}, 0)
+			.to(clouds, 10, {y: "-300%", ease: Power0.easeIn}, 0)
+			.to(welcome_title, 5, {y: "-300%", ease: Power0.easeIn}, 0)
+			// .to(landscape, 5, {y: "-100%", ease: Power0.easeIn}, 5)
+			// .to(upclose, 5, {y: "-100%", ease: Power0.easeIn}, 5)
+			.to(safari, 10, {y: "-50%", ease: Circ.easeIn}, 5)
+
+			.to(welcome, 10, { opacity: 0, ease: Power0.easeIn }, 0)
+			.to(about, 10, {opacity: 1, ease: Power0.easeIn}, 0)
+			
+			.fromTo(container_1, 10, {y: '100%'}, {y: '0%', ease: Sine.easeIn}, 3)
+			.fromTo(background_1, 10, {y: '-100%',opacity: 0}, {y: '0%',opacity: 0.5,ease: Sine.easeIn}, 3)
+			.fromTo(background_1, 10, {y: '-100%',opacity: 0}, {y: '0%',opacity: 0.5,ease: Sine.easeIn}, 3)
+			.fromTo(container_2, 10, {x: "-100%"}, {x: "0%",ease: Sine.easeInOut}, 3)
 			.fromTo(background_2, 10, {x: "100%",opacity: 0}, {
 				x: "0%",
 				opacity: 1,
 				ease: Sine.easeInOut,
 				onComplete: function() {
-					aboutStart.to(text_1, 1, {opacity: 1, ease: Sine.easeIn}, 5)
+					aboutStart.to(text_1, 1, {opacity: 1, ease: Sine.easeIn}, 0)
 				}
-			}, 0)
+			}, 3)
 			
-			.to(welcome, 5, { opacity: 0, ease: Power1.easeIn }, 0)
+
+
 			// .to(welcome, 5, {y: "-100%", ease: Power0.easeIn}, 0)
-			// .to(safari_container, 5, {y: "-100%", ease: Power0.easeIn}, 0)
 			// .to(safari_scene, 5, {y: "-50%", ease: Power0.easeIn}, 0)
-			.to(welcome_title, 5, {y: "-300%", ease: Power0.easeIn}, 0)
-			.to(clouds, 10, {y: "-300%", ease: Power0.easeIn}, 0)
-			.to(about, 10, {opacity: 1, ease: Power0.easeIn}, 0)
 			// .to(about, 10, {y:"0%", ease: Power0.easeIn}, 0);
 			// .to(main_background, 10, {y:"0%", ease: Power0.easeIn}, 0)
 			// .to(sky, 5, {y: "-50%", ease: Power0.easeIn}, 0);
