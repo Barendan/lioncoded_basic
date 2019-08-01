@@ -22,11 +22,13 @@ possible fonts:
 			My objective is to change that by designing an immersive experience that people not only enjoy, but are eager to share with others. 
 			Through an elegant combination of CSS and Javascript, I break away from simple newspaper-like pages and create something more akin to a short movie or virtual reality experience. Although this was once difficult to do, by keeping up with the newest technologies and tools, which improve year after year, I am able to deliver something truly unique.
 
-		Back-end
-			
+		Backend
+			Many people ask me, why do we need a backend? What actually goes on behind that curtain?
 
-
-		Databases
+			Behind the curtain, is the code needed for the user to interact with the page.
+			Whether this is a contact form, online store, or event-signup, a well-built database is essential.
+			With Ruby, an object-oriented programming language, and the many tools it offers, I am able to design a truly brilliant backend architecture.
+			Why stop at functionality? Using relational databases such as MySql, and PostgresQL, we can better organize, sort, and display all incoming information, saving you and your company a great deal of time. As of late, MongoDB seems to be all the rage, offering a more versatile architecture significant improvement in query performance over SQL.
 
 	Section 2: Mobile Applications
 		Mobile App Store (no websites allowed)
@@ -74,10 +76,6 @@ possible fonts:
 
 
 
-
-
-
-
 JavaScript Profiency
 	Sure, HTML and CSS help construct the webpages but JavaScript breathes the life into them. With JS, we turn a dull book-like page into an experience that will leave a lasting impression.
 
@@ -90,14 +88,6 @@ Mobile App Development (Apple or Android)
 	No more settling for "mobile web apps", "HTML5 apps", or a "hybrid app".
 
 	React Native lets us build mobile apps indistinguishable from an app built using Objective-C/Swift (for Apple) or Java (for Android). It uses the same design as React, which allows for code to be moved from web to mobile efficiently while retaining the same rich user interface.
-
-
-Ruby, Rails, and Databases
-
-	Working on the backend with Ruby on Rails is where I had my beginning. Ruby started me off in the world of object oriented program, rails sped up the build process. 
-
-	I've witnessed the efficiency of businesses increase through the implementation of relational databases using both MySql and PostgreSQL. MongoDB is my current go-to for database architecture as I find it to be more versatile and have significantly improved query performance over SQL. 
-
 
 
 

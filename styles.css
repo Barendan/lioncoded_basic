@@ -67,7 +67,7 @@ section {
     filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);
 }
 
-.safari-container {
+.scene-container {
     display: block;
     min-height: 800px;
 
@@ -95,12 +95,12 @@ section {
     z-index: -2;
 }
 
-.safari-container .img-wrapper {
+.scene-container .img-wrapper {
     position: absolute;
     width: 100%;
     bottom: 0;
 }
-.safari-container .img-wrapper>img {
+.scene-container .img-wrapper>img {
     width: 100%;
     height: auto;
 }
@@ -130,11 +130,11 @@ section {
 /*===================================================*/
 /*===================================================*/
 
-.whowhatwhy {
+.doWhat {
     opacity: 0;
 }
 
-.whowhatwhy p {
+.doWhat p {
     color: bisque;
     padding: 5rem 3rem;
     font-size: 12px;
@@ -143,7 +143,7 @@ section {
     font-weight: 300;
 }
 
-.whowhatwhy h1 {
+.doWhat h1 {
     position: absolute;
     color: antiquewhite !important;
     font-size: 74px;
@@ -154,13 +154,13 @@ section {
     font-family: ceraRegular;
 }
 
-.whowhatwhy h2 {
+.doWhat h2 {
     font-size: 46px;
     text-align: center;
     padding-top: 20px;
 }
 
-section.whowhatwhy .background .cover-image .container .background {
+section.doWhat .background .cover-image .container .background {
     /* position: relative; */
     top: 0px;
     left: 0px;
@@ -168,15 +168,15 @@ section.whowhatwhy .background .cover-image .container .background {
     height: 100%;
 }
 
-section.whowhatwhy .background .cover-image .container {
+section.doWhat .background .cover-image .container {
     background-color: #000000;
     overflow: hidden;
 }
 
-section.whowhatwhy .background .cover-image .container-2, 
-    section.whowhatwhy .background .cover-image .container-4, 
-    section.whowhatwhy .background .cover-image .container-6, 
-    section.whowhatwhy .background .cover-image .container-8 {
+section.doWhat .background .cover-image .container-2, 
+    section.doWhat .background .cover-image .container-4, 
+    section.doWhat .background .cover-image .container-6, 
+    section.doWhat .background .cover-image .container-8 {
     position: absolute;
     top: 0%;
     left: 50%;
@@ -184,10 +184,10 @@ section.whowhatwhy .background .cover-image .container-2,
     height: 50%;
 }
 
-section.whowhatwhy .background .cover-image .container-1, 
-    section.whowhatwhy .background .cover-image .container-3, 
-    section.whowhatwhy .background .cover-image .container-5, 
-    section.whowhatwhy .background .cover-image .container-7 {
+section.doWhat .background .cover-image .container-1, 
+    section.doWhat .background .cover-image .container-3, 
+    section.doWhat .background .cover-image .container-5, 
+    section.doWhat .background .cover-image .container-7 {
     position: absolute;
     top: 0px;
     left: 0px;
@@ -199,7 +199,7 @@ section.whowhatwhy .background .cover-image .container-1,
     position: relative;
 } */
 
-section.whowhatwhy .background .cover-image .container .background-1 {
+section.doWhat .background .cover-image .container .background-1 {
     background-image: url(./images/2whowhatwhy/fullstackInfo.jpg);
     background-color: #fff;
     background-size: 70%;
@@ -207,7 +207,7 @@ section.whowhatwhy .background .cover-image .container .background-1 {
     background-position: 50% 20%;
 }
 
-section.whowhatwhy .background .cover-image .container .background-2 {
+section.doWhat .background .cover-image .container .background-2 {
     /* background-image: url(images/background_2.jpg);
     background-color: #fff;
     background-size: cover;
@@ -218,21 +218,21 @@ section.whowhatwhy .background .cover-image .container .background-2 {
     left:0px;
 }
 
-section.whowhatwhy .background .cover-image .container .background-3 {
+section.doWhat .background .cover-image .container .background-3 {
     background-image: url(./images/2whowhatwhy/mobileUI.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 20% 20%;
 }
 /* 
-section.whowhatwhy .background .cover-image .container .background-4 {
+section.doWhat .background .cover-image .container .background-4 {
     background-image: url(images/background_4.jpg);
     background-color: #7E1A1A;
     background-size: cover;
     background-position: center center;
 } */
 
-section.whowhatwhy .background .cover-image .container .background-5 {
+section.doWhat .background .cover-image .container .background-5 {
     background-image: url(images/2whowhatwhy/security3.jpg);
     background-size: 213% 122%;
     border: 20px solid black;
@@ -240,38 +240,38 @@ section.whowhatwhy .background .cover-image .container .background-5 {
     box-sizing: border-box;
 }
 /* 
-section.whowhatwhy .background .cover-image .container .background-6 {
+section.doWhat .background .cover-image .container .background-6 {
     background-image: url(images/background_6.jpg);
     background-color: #2A7EE7;
     background-size: cover;
     background-position: center center;
 } */
 
-section.whowhatwhy .background .cover-image .container-4, 
-    section.whowhatwhy .background .cover-image .container-6, 
-    section.whowhatwhy .background .cover-image .container-8 {
+section.doWhat .background .cover-image .container-4, 
+    section.doWhat .background .cover-image .container-6, 
+    section.doWhat .background .cover-image .container-8 {
     -webkit-transform: translate3d(-100%, 0%, 0);
     transform: translate3d(-100%, 0%, 0);
     opacity: 0;
 }
 /* 
-section.whowhatwhy .background .cover-image .container-4, 
-    section.whowhatwhy .background .cover-image .container-6, 
-    section.whowhatwhy .background .cover-image .container-8 {
+section.doWhat .background .cover-image .container-4, 
+    section.doWhat .background .cover-image .container-6, 
+    section.doWhat .background .cover-image .container-8 {
     background-color: #000000;
 } */
 
-section.whowhatwhy .background .cover-image .container-3, 
-    section.whowhatwhy .background .cover-image .container-5, 
-    section.whowhatwhy .background .cover-image .container-7 {
+section.doWhat .background .cover-image .container-3, 
+    section.doWhat .background .cover-image .container-5, 
+    section.doWhat .background .cover-image .container-7 {
     -webkit-transform: translate3d(0%, 100%, 0);
     transform: translate3d(0%, 100%, 0);
     opacity: 0;
 }
 
-section.whowhatwhy .background .cover-image .container-3, 
-    section.whowhatwhy .background .cover-image .container-5, 
-    section.whowhatwhy .background .cover-image .container-7 {
+section.doWhat .background .cover-image .container-3, 
+    section.doWhat .background .cover-image .container-5, 
+    section.doWhat .background .cover-image .container-7 {
     background-color: #000000;
 }
 
@@ -281,7 +281,7 @@ section.whowhatwhy .background .cover-image .container-3,
 
 
 
-section.whowhatwhy .background .cover-text {
+section.doWhat .background .cover-text {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -289,7 +289,7 @@ section.whowhatwhy .background .cover-text {
     height: 50%;
 }
 
-section.whowhatwhy .background .cover-text .container {
+section.doWhat .background .cover-text .container {
     position: absolute;
     top: 50%;
     width: 100%;
@@ -298,13 +298,13 @@ section.whowhatwhy .background .cover-text .container {
     transform: translate3d(0px, -50%, 0px);
 }
 
-section.whowhatwhy .cover-text .cont1,
-section.whowhatwhy .cover-text .cont2,
-section.whowhatwhy .cover-text .cont3 {
+section.doWhat .cover-text .cont1,
+section.doWhat .cover-text .cont2,
+section.doWhat .cover-text .cont3 {
     opacity: 0;
 }
 
-section.whowhatwhy .background .cover-text .container .title {
+section.doWhat .background .cover-text .container .title {
     position: absolute;
     display: block;
     height: 22px;
