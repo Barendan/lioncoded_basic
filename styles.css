@@ -234,8 +234,10 @@ section.whowhatwhy .background .cover-image .container .background-4 {
 
 section.whowhatwhy .background .cover-image .container .background-5 {
     background-image: url(images/2whowhatwhy/security3.jpg);
-    background-size: 213%;
+    background-size: 213% 122%;
+    border: 20px solid black;
     background-position: 15% 7%;
+    box-sizing: border-box;
 }
 /* 
 section.whowhatwhy .background .cover-image .container .background-6 {
