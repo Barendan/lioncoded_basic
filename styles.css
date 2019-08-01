@@ -134,6 +134,13 @@ section {
     opacity: 0;
 }
 
+.doWhat .background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /* background-color: #111; */
+}
+
 .doWhat p {
     color: bisque;
     padding: 5rem 3rem;
@@ -161,7 +168,7 @@ section {
 }
 
 section.doWhat .background .cover-image .container .background {
-    /* position: relative; */
+    position: relative;
     top: 0px;
     left: 0px;
     width: 100%;
@@ -200,11 +207,11 @@ section.doWhat .background .cover-image .container-1,
 } */
 
 section.doWhat .background .cover-image .container .background-1 {
-    background-image: url(./images/2whowhatwhy/fullstackInfo.jpg);
-    background-color: #fff;
-    background-size: 70%;
+    background-image: url(./images/2whowhatwhy/fullstackInfo2.png);
+    /* background-color: #222; */
+    background-size: 80%;
     background-repeat: no-repeat;
-    background-position: 50% 20%;
+    background-position: 50% 40%;
 }
 
 section.doWhat .background .cover-image .container .background-2 {

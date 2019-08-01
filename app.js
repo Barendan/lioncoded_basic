@@ -10,7 +10,7 @@ $(document).ready(function() {
 		welcome_title = $(".welcome h1"),
 		
 		doWhat = $("section.doWhat"),
-		background = $("section.doWhat .background"),
+		doWhat_background = $("section.doWhat .background"),
 		container_1 = $(".background .cover-image .container-1"),
 		background_1 = $(".background .cover-image .container-1 .background-1"),
 		container_2 = $(".background .cover-image .container-2"),
@@ -46,6 +46,7 @@ $(document).ready(function() {
 					welcomeExit()
 				}
 		})
+		TweenMax.to(doWhat_background, .1, { opacity: 0, ease: Power0.easeIn }, 0)
 	}
 
 	function welcomeEnter() { 
@@ -64,27 +65,35 @@ $(document).ready(function() {
 	function welcomeExit() {
 		const aboutStart = new TimelineMax();
 		aboutStart
-			.to(welcome, 10, { opacity: 0, ease: Power0.easeInOut }, 0)
-			.to(doWhat, 10, { opacity: 1, ease: Power0.easeInOut }, 0)
-			
-			.to(scene_2, 10, {y: "-300%", ease: Power0.easeIn}, 0)
-			.to(welcome_title, 5, {y: "-300%", ease: Power0.easeIn}, 0)
-			.to(scene_container, 10, {y: "-50%", ease: Circ.easeIn}, 5)
+		.to(scene_2, 10, {y: "-300%", ease: Power0.easeIn}, 0)
+		.to(welcome_title, 5, {y: "-300%", ease: Power0.easeIn}, 0)
+		.to(scene_container, 5, {y: "-50%", scale:0.2, ease: Circ.easeIn}, 3)
+		.to(scene_container, 5, { scale: 0.5, ease: Power1.easeIn }, 3)
+		
+		.to(welcome, 10, { opacity: 0, ease: Power2.easeOut }, 0)
+		.to(doWhat, 10, { opacity: 1, ease: Power0.easeIn }, 0)
 
-			
-			.fromTo(container_1, 10, {y: '100%'}, {y: '0%', ease: Sine.easeIn}, 3)
-			.fromTo(background_1, 10, {y: '-100%',opacity: 0}, {y: '0%',opacity: 0.5,ease: Sine.easeIn}, 3)
-			.fromTo(background_1, 10, {y: '-100%',opacity: 0}, {y: '0%',opacity: 0.5,ease: Sine.easeIn}, 3)
-			.fromTo(container_2, 10, {x: "-100%"}, {x: "0%",ease: Sine.easeInOut}, 3)
-			.fromTo(background_2, 10, {x: "100%",opacity: 0}, {
-				x: "0%",
-				opacity: 1,
-				ease: Sine.easeInOut,
-				onComplete: function() {
-					aboutStart.to(text_1, 1, {opacity: 1, ease: Sine.easeIn}, 0)
-				}
-			}, 3)
-			
+		.to(doWhat_background, 1, { opacity: 1, ease: Power0.easeIn }, 0)
+		.fromTo(doWhat_background, 5, { scale: 0.5 }, { scale: 1 }, 0)
+
+		// .to(container_1, 0.1, {opacity: 0}, 0)
+		// .to(container_2, 0.1, {opacity: 0}, 0)
+		// .to(container_1, 0.1, {opacity: 0}, 0)
+		// .to(container_1, 0.1, {opacity: 0}, 0)
+		
+		.fromTo(container_1, 10, {y: '100%'}, {y: '0%', ease: Sine.easeIn}, 5)
+		.fromTo(background_1, 10, {y: '-100%',opacity: 0}, {y: '0%',opacity: 0.5,ease: Sine.easeIn}, 5)
+		.fromTo(container_2, 10, {x: "-100%"}, {x: "0%",ease: Sine.easeInOut}, 5)
+		.fromTo(background_2, 10, {x: "100%",opacity: 0}, {
+			x: "0%",
+			opacity: 1,
+			ease: Sine.easeInOut,
+			onComplete: function() {
+				aboutStart.to(text_1, 1, {opacity: 1, ease: Sine.easeIn}, 0)
+			}
+		}, 5)
+		
+		;
 			
 		let enterWho = new ScrollMagic.Scene({
 			triggerElement: '.doWhat',
