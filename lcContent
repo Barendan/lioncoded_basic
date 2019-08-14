@@ -19,19 +19,13 @@ possible fonts:
 		Front-end
 			Designing a website that people will remember takes finesse.
 			There are millions of websites out there but few really stand out in our minds.
-			Through an elegant combination of CSS and Javascript, I break away from simple newspaper-like pages and create something more akin to a short movie or virtual reality experience. Although this was once difficult to do, by keeping up with the latest technologies and tools, which drastically improve year after year, I am able to deliver something truly incredulous.
-
-			My objective is to change that by designing an immersive experience that people not only enjoy, but are eager to share with others. 
-
+			Through an elegant combination of CSS and Javascript, I break away from simple newspaper-like pages and create an immersive experience that people can enjoy. By keeping up with the latest technologies and tools, which drastically improve year after year, I am able to deliver a truly unique website that entices people to come back.
 
 		Backend
-
-			Behind the curtain, is the code needed for the user to interact with the page.
-			Whether this is a contact form, online store, or event-signup, a well-built database is essential.
-			With Ruby, an object-oriented programming language, and the many tools it offers, I am able to design a truly brilliant backend architecture.
-			Why stop at functionality? Using relational databases such as MySql, and PostgresQL, we can better organize, sort, and display all incoming information, saving you and your company a great deal of time. As of late, MongoDB seems to be all the rage, offering a more versatile architecture significant improvement in query performance over SQL.
-
-			Many people ask me, why do we need a backend? What actually goes on behind that curtain?
+			An enigma to many, it is typically reserved for websites that require information from the user. 
+			With Ruby, an object-oriented programming language, I am able to design a truly brilliant backend architecture.
+			A place where organization and ease-of-use join hand in hand.
+			My experience with both relational databases(Mysql,PostgresQL), and non-relational databases like MongoDB opens the door to infinite possibilities. After I acquire an understanding of what your website needs, I can select the option that will use up the fewest resources while affording the largest benefit. 
 
 
 	Section 2: Mobile Applications

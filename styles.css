@@ -175,6 +175,7 @@ section {
     font-size: 6rem;
     letter-spacing: -0.5rem;
     line-height: 0.8;
+    z-index:10;
 }
 
 section.doWhat .background .cover-image .container .background {
@@ -190,6 +191,10 @@ section.doWhat .background .cover-image .container {
     overflow: hidden;
 }
 
+section.doWhat .background .cover-image .container-2 {
+    z-index: 10;
+}
+
 section.doWhat .background .cover-image .container-2, 
     section.doWhat .background .cover-image .container-4, 
     section.doWhat .background .cover-image .container-6, 
@@ -201,7 +206,6 @@ section.doWhat .background .cover-image .container-2,
     height: 49.5%;
     border: 1px solid;
     background-color: transparent;
-    z-index: 5;
 }
 
 section.doWhat .background .cover-image .container-1, 
@@ -213,6 +217,7 @@ section.doWhat .background .cover-image .container-1,
     left: 0px;
     width: 50%;
     height: 100%;
+    z-index:5;
 }
 
 /* .wrap_background {
@@ -232,7 +237,6 @@ section.doWhat .background .cover-image .container .background-2 {
     background-color: #fff;
     background-size: cover;
     background-position: center center; */
-
     position:absolute;
     top:0px;
     left:0px;
@@ -274,12 +278,13 @@ section.doWhat .background .cover-image .container-4,
     transform: translate3d(-100%, 0%, 0);
     opacity: 0;
 }
-/* 
+
 section.doWhat .background .cover-image .container-4, 
     section.doWhat .background .cover-image .container-6, 
     section.doWhat .background .cover-image .container-8 {
     background-color: #000000;
-} */
+    /* z-index: 5; */
+}
 
 section.doWhat .background .cover-image .container-3, 
     section.doWhat .background .cover-image .container-5, 
@@ -301,7 +306,7 @@ section.doWhat .background .cover-image .container-3,
 
 
 
-section.doWhat .background .cover-text {
+section.doWhat .background .bottom_right {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -309,23 +314,20 @@ section.doWhat .background .cover-text {
     height: 50%;
 }
 
-section.doWhat .background .cover-text .container {
+section.doWhat .background .bottom_right .container {
     position: absolute;
     width: 96.8%;
     height: 99.5%;
-    border: 1px solid;
-    /* top: 50%; */
-    /* -webkit-transform: translate3d(0px, -50%, 0px); */
-    /* transform: translate3d(0px, -50%, 0px); */
 }
 
-section.doWhat .cover-text .cont1,
-section.doWhat .cover-text .cont2,
-section.doWhat .cover-text .cont3 {
+section.doWhat .bottom_right .cont1,
+section.doWhat .bottom_right .cont2,
+section.doWhat .bottom_right .cont3 {
+    /* border: 1px solid; */
     opacity: 0;
 }
 
-section.doWhat .background .cover-text .container .title {
+section.doWhat .background .bottom_right .container .title {
     position: absolute;
     display: block;
     height: 22px;
@@ -338,8 +340,18 @@ section.doWhat .background .cover-text .container .title {
     text-rendering: geometricPrecision;
 }
 
-
-
+.mini-nav {
+    position: absolute;
+    top: 36rem;
+    left: 6rem;
+    letter-spacing: 0.2rem;
+    line-height: 2rem;
+    z-index: 20;
+}
+.mini-nav li:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
 
 
 

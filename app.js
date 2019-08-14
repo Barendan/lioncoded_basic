@@ -24,10 +24,10 @@ $(document).ready(function() {
 		container_6 = $(".background .cover-image .container-6"),
 		background_6 = $(".background .cover-image .container-6 .background-6"),
 
-		text_1 = $(".background .cover-text .cont1"),
-		text_2 = $(".background .cover-text .cont2"),
-		text_3 = $(".background .cover-text .cont3"),
-		text_4 = $(".background .cover-text .cont4"),
+		text_1 = $(".background .bottom_right .cont1"),
+		text_2 = $(".background .bottom_right .cont2"),
+		text_3 = $(".background .bottom_right .cont3"),
+		text_4 = $(".background .bottom_right .cont4"),
 
 
 		myWork_section = $("section.mywork")
@@ -45,8 +45,9 @@ $(document).ready(function() {
 			onComplete: function() {
 					welcomeExit()
 				}
-		})
+		}, 0)
 		TweenMax.to(doWhat_background, .1, { opacity: 0, ease: Power0.easeIn }, 0)
+		
 	}
 
 	function welcomeEnter() { 
@@ -64,6 +65,7 @@ $(document).ready(function() {
 
 	function welcomeExit() {
 		const aboutStart = new TimelineMax();
+
 		aboutStart
 		.to(scene_2, 10, {y: "-300%", ease: Power0.easeIn}, 0)
 		.to(welcome_title, 5, {y: "-300%", ease: Power0.easeIn}, 0)
@@ -75,11 +77,6 @@ $(document).ready(function() {
 
 		.to(doWhat_background, 1, { opacity: 1, ease: Power0.easeIn }, 0)
 		.fromTo(doWhat_background, 5, { scale: 0.5 }, { scale: 1 }, 0)
-
-		// .to(container_1, 0.1, {opacity: 0}, 0)
-		// .to(container_2, 0.1, {opacity: 0}, 0)
-		// .to(container_1, 0.1, {opacity: 0}, 0)
-		// .to(container_1, 0.1, {opacity: 0}, 0)
 		
 		.fromTo(container_1, 10, {y: '100%'}, {y: '0%', ease: Sine.easeIn}, 5)
 		.fromTo(background_1, 10, {y: '-100%',opacity: 0}, {y: '0%',opacity: 0.5,ease: Sine.easeIn}, 5)
@@ -89,9 +86,10 @@ $(document).ready(function() {
 			opacity: 1,
 			ease: Sine.easeInOut,
 			onComplete: function() {
-				aboutStart.to(text_1, 1, {opacity: 1, ease: Sine.easeIn}, 0)
+				// TweenMax.to(text_1, 1, {opacity: 1, ease: Power2.easeIn})
 			}
 		}, 5)
+		.to(text_1, 5, {opacity: 1, ease: Sine.easeIn}, 10)
 		
 		;
 			
@@ -103,24 +101,45 @@ $(document).ready(function() {
 		.setTween(aboutStart)
 		.addTo(controller);
 
+
+
 		let aboutEnd = new TimelineMax();
-	    aboutEnd
+		aboutEnd
+			// .to(text_1, 10, {borderWidth:0, ease:Power3.easeInOut}, 0)
+
+			.to(container_2, 4, {opacity: 0}, 1)
+			.to(container_2, 4, {x: "100%"}, 1)
+
+			.to(container_4, 1, {opacity: 1}, 1)
+			.fromTo(container_4, 4, {x: "-100%"}, {x: "0%"}, 1)
+			.fromTo(background_4, 4, {x: "95%",opacity: .5}, {x: "0%",opacity: 1}, 1)
+
+
+			.to(text_1, 2, {opacity: 0}, 1.5)
+			.to(text_1, 2, {y: "50%"}, 1.5)
+
 	    	.to(container_3, 1, {opacity: 1,ease: Sine.easeInOut}, 1)
 	    	.fromTo(container_3, 4, {y: "100%"}, {y: "0%",ease: Sine.easeInOut}, 1)
 	    	.fromTo(background_3, 4, {y: "-95%",opacity: .5}, {y: "0%",opacity: .5,ease: Sine.easeInOut, onComplete:function(){
-				aboutEnd.to(text_1, 1, {opacity: 0, ease: Power1.easeIn},0)
-				aboutEnd.to(text_2, 1, {opacity: 1, ease: Power1.easeIn},0)
+				// aboutEnd.to(text_1, 1, {opacity: 0, ease: Power1.easeIn},0)
+				// aboutEnd.to(text_2, 1, {opacity: 1, ease: Power1.easeIn},0)
 			}}, 1)
-	    	.to(container_4, 1, {opacity: 1,ease: Sine.easeInOut}, 1)
-	    	.fromTo(container_4, 4, {x: "-100%"}, {x: "0%",ease: Sine.easeInOut}, 1)
-	    	.fromTo(background_4, 4, {x: "95%",opacity: .5}, {x: "0%",opacity: 1,ease: Sine.easeInOut}, 1)
 
+
+
+
+			
 			.to(container_5, 1, {opacity: 1,ease: Sine.easeInOut}, 5)
-	    	.fromTo(container_5, 5, {y: "100%"}, {y: "0%",ease: Sine.easeInOut}, 5)
+			.fromTo(container_5, 5, {y: "100%"}, {y: "0%",ease: Sine.easeInOut}, 5)
+			
+
 	    	.fromTo(background_5, 5, {y: "-95%",opacity: .0}, {y: "0%",opacity: 0.5,ease: Sine.easeInOut, onComplete:function(){
 				aboutEnd.to(text_2, 1, {opacity: 0, ease: Power1.easeIn},0)
 				aboutEnd.to(text_3, 1, {opacity: 1, ease: Power1.easeIn},0)
 			}}, 5)
+
+
+
 	    	.to(container_6, 1, {opacity: 1,ease: Sine.easeInOut}, 5)
 	    	.fromTo(container_6, 5, {x: "-100%"}, {x: "0%",ease: Sine.easeInOut}, 5)
 			.fromTo(background_6, 5, {x: "95%",opacity: .5}, {
