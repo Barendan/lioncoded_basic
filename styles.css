@@ -144,10 +144,11 @@ section {
 .doWhat p {
     color: bisque;
     padding: 8rem 4rem 0rem 2rem;
-    font-size: 12px;
+    font-size: 0.6rem;
     letter-spacing: 1.3px;
-    line-height: 1.5rem;
+    line-height: 1.4rem;
     font-weight: 300;
+    text-align: justify;
 }
 
 .doWhat h1 {
@@ -305,8 +306,7 @@ section.doWhat .background .cover-image .container-3,
 
 
 
-
-section.doWhat .background .bottom_right {
+.bottom_right {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -314,20 +314,20 @@ section.doWhat .background .bottom_right {
     height: 50%;
 }
 
-section.doWhat .background .bottom_right .container {
+.bottom_right .container {
     position: absolute;
     width: 96.8%;
     height: 99.5%;
 }
 
-section.doWhat .bottom_right .cont1,
-section.doWhat .bottom_right .cont2,
-section.doWhat .bottom_right .cont3 {
+.bottom_right .cont1,
+.bottom_right .cont2,
+.bottom_right .cont3 {
     /* border: 1px solid; */
     opacity: 0;
 }
 
-section.doWhat .background .bottom_right .container .title {
+.bottom_right .container .title {
     position: absolute;
     display: block;
     height: 22px;

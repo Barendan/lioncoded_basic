@@ -24,10 +24,10 @@ $(document).ready(function() {
 		container_6 = $(".background .cover-image .container-6"),
 		background_6 = $(".background .cover-image .container-6 .background-6"),
 
-		text_1 = $(".background .bottom_right .cont1"),
-		text_2 = $(".background .bottom_right .cont2"),
-		text_3 = $(".background .bottom_right .cont3"),
-		text_4 = $(".background .bottom_right .cont4"),
+		br_text_1 = $(".bottom_right .cont1"),
+		br_text_2 = $(".bottom_right .cont2"),
+		br_text_3 = $(".bottom_right .cont3"),
+		text_4 = $(".bottom_right .cont4"),
 
 
 		myWork_section = $("section.mywork")
@@ -86,10 +86,10 @@ $(document).ready(function() {
 			opacity: 1,
 			ease: Sine.easeInOut,
 			onComplete: function() {
-				// TweenMax.to(text_1, 1, {opacity: 1, ease: Power2.easeIn})
+				// TweenMax.to(br_text_1, 1, {opacity: 1, ease: Power2.easeIn})
 			}
 		}, 5)
-		.to(text_1, 5, {opacity: 1, ease: Sine.easeIn}, 10)
+		.to(br_text_1, 5, {opacity: 1, ease: Sine.easeIn}, 10)
 		
 		;
 			
@@ -101,11 +101,11 @@ $(document).ready(function() {
 		.setTween(aboutStart)
 		.addTo(controller);
 
-
+		
 
 		let aboutEnd = new TimelineMax();
 		aboutEnd
-			// .to(text_1, 10, {borderWidth:0, ease:Power3.easeInOut}, 0)
+			// .to(br_text_1, 10, {borderWidth:0, ease:Power3.easeInOut}, 0)
 
 			.to(container_2, 4, {opacity: 0}, 1)
 			.to(container_2, 4, {x: "100%"}, 1)
@@ -115,15 +115,15 @@ $(document).ready(function() {
 			.fromTo(background_4, 4, {x: "95%",opacity: .5}, {x: "0%",opacity: 1}, 1)
 
 
-			.to(text_1, 2, {opacity: 0}, 1.5)
-			.to(text_1, 2, {y: "50%"}, 1.5)
+			.to(br_text_1, 2, {opacity: 0}, 1.5)
+			.to(br_text_1, 2, {y: "50%"}, 1.5)
 
 	    	.to(container_3, 1, {opacity: 1,ease: Sine.easeInOut}, 1)
 	    	.fromTo(container_3, 4, {y: "100%"}, {y: "0%",ease: Sine.easeInOut}, 1)
 	    	.fromTo(background_3, 4, {y: "-95%",opacity: .5}, {y: "0%",opacity: .5,ease: Sine.easeInOut, onComplete:function(){
-				// aboutEnd.to(text_1, 1, {opacity: 0, ease: Power1.easeIn},0)
-				// aboutEnd.to(text_2, 1, {opacity: 1, ease: Power1.easeIn},0)
-			}}, 1)
+				// aboutEnd.to(br_text_1, 1, {opacity: 0, ease: Power1.easeIn},0)
+				// aboutEnd.to(br_text_2, 1, {opacity: 1, ease: Power1.easeIn},0)
+			}},br_ 1)
 
 
 
@@ -134,8 +134,8 @@ $(document).ready(function() {
 			
 
 	    	.fromTo(background_5, 5, {y: "-95%",opacity: .0}, {y: "0%",opacity: 0.5,ease: Sine.easeInOut, onComplete:function(){
-				aboutEnd.to(text_2, 1, {opacity: 0, ease: Power1.easeIn},0)
-				aboutEnd.to(text_3, 1, {opacity: 1, ease: Power1.easeIn},0)
+				aboutEnd.to(br_text_2, 1, {opacity: 0, ease: Power1.easeIn},0)
+				aboutEnd.to(br_text_3, 1, {opacity: 1, ease: Power1.easeIn},0)
 			}}, 5)
 
 
