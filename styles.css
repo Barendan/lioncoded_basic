@@ -69,7 +69,7 @@ section {
 
 .scene-container {
     display: block;
-    min-height: 800px;
+    /* min-height: 800px; */
 
     position: absolute;
     width: 100%;
@@ -119,10 +119,8 @@ section {
 
 .welcome h1 {
     position: absolute;
-    top: 35%;
-    left: 26%;
-    transform: translate(-50%, -50%);
-    font-size: 130px;
+    top: 16rem;
+    font-size: 9rem;
     font-family: 'ceraBlack', sans-serif;
     z-index: -1;
 }
@@ -796,9 +794,41 @@ code[class*=language-] ::selection,code[class*=language-]::selection {
 
 @media (min-width: 481px) and (max-width:768px) {
     html {
-        font-size:18px
+        font-size:14px
     }
+
+    .welcome h1 {
+        top: 16rem;
+        font-size: 6rem;
+    }
+
+    section.doWhat .background .cover-image .container-1, section.doWhat .background .cover-image .container-3, section.doWhat .background .cover-image .container-5, section.doWhat .background .cover-image .container-7 {
+        top: 7rem;
+        left: 3rem;
+        width: 80%;
+        height: 80%;
+    }
+
+    section.doWhat .background .cover-image .container-2, section.doWhat .background .cover-image .container-4, section.doWhat .background .cover-image .container-6, section.doWhat .background .cover-image .container-8 {
+        top: 50%;
+        left: 0%;
+        width: 96%;
+        height: 49.5%;
+    }
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media (min-width: 769px) and (max-width:1024px) {
     html {
@@ -814,58 +844,6 @@ code[class*=language-] ::selection,code[class*=language-]::selection {
 
 
 
-
-/*====================================================*/
-/*BORDER*/
-.app-border {
-    position: fixed;
-    z-index: 10010;
-    -webkit-transition: all .1s ease;
-    transition: all .1s ease;
-    background-color: black;
-}
-.border-bottom, .border-top {
-    left: 0;
-    width: 0;
-    height: 6px;
-}
-.border-bottom {
-    left: 100%;
-    right: 0;
-    bottom: 0;
-    box-shadow: -8px 0 4px 0 rgba(0,0,0,.2);
-}
-.border-top {
-    top: 0;
-    box-shadow: 0 0 4px 0 rgba(0,0,0,.2);
-}
-.border-left, .border-right {
-    width: 6px;
-    height: 0;
-}
-.border-right {
-    top: 0;
-    right: 0;
-    box-shadow: 0 8px 4px 0 rgba(0,0,0,.2);
-}
-.border-left {
-    top: 100%;
-}
-.border-left {
-    bottom: 0;
-    left: 0;
-    box-shadow: 0 8px 4px 0 rgba(0,0,0,.2);
-}
-.border-left.fix-border:after {
-    content: " ";
-    position: absolute;
-    bottom: 0;
-    left: 4px;
-    display: block;
-    width: 6px;
-    height: 6px;
-    background-color: #fff
-}
 
 
 
