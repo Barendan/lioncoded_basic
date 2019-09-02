@@ -325,8 +325,13 @@ section.doWhat .background .cover-image .container-3,
 .bottom_right .cont2,
 .bottom_right .cont3 {
     /* border: 1px solid; */
+    /* opacity: 0; */
+    /* z-index: -1; */
+}
+
+.bottom_right .cont2,
+.bottom_right .cont3 {
     opacity: 0;
-    z-index: -1;
 }
 
 .bottom_right .container .title {

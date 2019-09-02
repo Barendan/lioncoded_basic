@@ -29,12 +29,12 @@ $(document).ready(function() {
 		br_cont1_text = $(".bottom_right .cont1 p"),
 
 		br_cont2 = $(".bottom_right .cont2"),
-		br_cont2_title = $(".bottom_right .cont2 p"),
-		br_cont2_text = $(".bottom_right .cont2 h1"),
+		br_cont2_title = $(".bottom_right .cont2 h1"),
+		br_cont2_text = $(".bottom_right .cont2 p"),
 
 		br_cont3 = $(".bottom_right .cont3"),
-		br_cont3_title = $(".bottom_right .cont3 p"),
-		br_cont3_text = $(".bottom_right .cont3 h1"),
+		br_cont3_title = $(".bottom_right .cont3 h1"),
+		br_cont3_text = $(".bottom_right .cont3 p"),
 
 		myWork_section = $("section.mywork")
 		;
@@ -59,7 +59,7 @@ $(document).ready(function() {
 			ease: Cubic.easeInOut,
 			onStart: function() { sceneStart() },
 			onComplete: function() { aboutStart() }
-			}, 0)
+		}, 0)
 		
 		// Intro Scene
 		function sceneStart() {
@@ -68,109 +68,101 @@ $(document).ready(function() {
 				repeat: -1,
 				repeatDelay: 1
 			});
-			
 			cloudTL
 				.fromTo(scene_2, 15, {opacity: 0}, {opacity: 1},0)
 				.to(scene_2, 20, {x: '+=50', ease: Power0.easeNone },0)
 				.to(scene_2, 20, {x: '-=50', ease: Power0.easeNone },0);
 		}
+
 		// Exit Intro ; Start About
 		function aboutStart() {
 			const aboutStart = new TimelineMax();
 			aboutStart
-			.to(scene_2, 10, {y: "-300%", ease: Power0.easeIn}, 0)
-			.to(welcome_title, 5, {y: "-300%", ease: Power0.easeIn}, 0)
-			.to(scene_container, 5, {y: "-50%", scale:0.2, ease: Circ.easeIn}, 3)
-			.to(scene_container, 5, { scale: 0.5, ease: Power1.easeIn }, 3)
-			.to(welcome, 10, { opacity: 0, ease: Power2.easeOut }, 0)
+				.to(scene_2, 10, {y: "-300%", ease: Power0.easeIn}, 0)
+				.to(welcome_title, 5, {y: "-300%", ease: Power0.easeIn}, 0)
+				.to(scene_container, 5, {y: "-50%", scale:0.2, ease: Circ.easeIn}, 5)
+				.to(scene_container, 5, { scale: 0.5, ease: Power1.easeIn }, 5)
+				.to(welcome, 10, { opacity: 0, ease: Power2.easeOut }, 0)
 
-			.to(doWhat, 10, { opacity: 1, ease: Power0.easeIn }, 0)
-			.to(doWhat_background, 1, { opacity: 1, ease: Power0.easeIn }, 0)
-			.fromTo(doWhat_background, 5, { scale: 0.5 }, { scale: 1 }, 0)
-			
-			.fromTo(container_1, 10, {y: '100%'}, {y: '0%', ease: Sine.easeIn}, 5)
-			.fromTo(background_1, 10, {y: '-100%',opacity: 0}, {y: '0%',opacity: 0.5,ease: Sine.easeIn}, 5)
-			.fromTo(container_2, 10, {x: "-100%"}, {x: "0%",ease: Sine.easeInOut}, 5)
-			.fromTo(background_2, 10, {x: "100%",opacity: 0}, {
-				x: "0%",
-				opacity: 1,
-				ease: Sine.easeInOut,
-				onComplete: function() {
-					// TweenMax.to(br_cont1, 1, {opacity: 1, ease: Power2.easeIn})
-				}
-			}, 5)
-			
-			.to(br_cont1, 5, {opacity: 1, ease: Sine.easeIn}, 10)
+				.to(doWhat, 10, { opacity: 1, ease: Power0.easeIn }, 0)
+				.to(doWhat_background, 1, { opacity: 1, ease: Power0.easeIn }, 0)
+				// .fromTo(doWhat_background, 5, { scale: 0.5 }, { scale: 1 }, 0)
+				
+				// ENTER
+				.fromTo(container_1, 10, {y: '100%'}, {y: '0%', ease: Sine.easeIn}, 5)
+				.fromTo(background_1, 10, {y: '-100%',opacity: 0}, {y: '0%',opacity: 0.5,ease: Sine.easeIn}, 5)
+				.fromTo(container_2, 10, {x: "-103%"}, {x: "0%", ease: Sine.easeInOut}, 5)
+				.fromTo(background_2, 10, {x: "103%",opacity: 0}, {
+					x: "0%",
+					opacity: 1,
+					ease: Sine.easeInOut
+				}, 5)
+				
+				.fromTo(br_cont1, 3, {opacity: 0 }, {opacity: 1, ease: Power3.easeInOut}, 12)
+				.fromTo(br_cont1, 5, {y: '-100%' }, {y: '0%', ease: Sine.easeInOut}, 10)
 			;
 				
 
 
 
-
-
-
-			let aboutEnd = new TimelineMax();
+			const aboutEnd = new TimelineMax();
 			aboutEnd
-				// exit
-				.to(container_2, 2, {opacity: 0}, 1)
-				.to(container_2, 4, {x: "100%"}, 1)
+				// EXIT SLIDESHOW #1
+				.to(container_2, 4, {opacity: 0, ease: Power2.easeInOut}, 2)
+				.to(container_2, 5, {x: "100%", ease: Power2.easeInOut}, 2)
 
-				// enter
-				.to(container_4, 1, {opacity: 1}, 1)
-				.fromTo(container_4, 4, {x: "-100%"}, {x: "0%"}, 1)
-				.fromTo(background_4, 4, {x: "95%",opacity: .5}, {x: "0%",opacity: 1}, 1)
+				.to(br_cont1, 4, {opacity: 0, ease: Power2.easeInOut}, 2)
+				.to(br_cont1_title, 5, {y: "200%", ease: Power2.easeInOut}, 2)
+				.to(br_cont1_text, 5, {y: "100%", ease: Power2.easeInOut}, 2)
+			
+				// ENTER SLIDESHOW #2
+				.to(container_3, 5, {opacity: 1,ease: Sine.easeInOut}, 2)
+				.fromTo(container_3, 5, {y: "100%"}, {y: "0%",ease: Sine.easeInOut}, 2)
+				.fromTo(background_3, 5, {y: "-95%",opacity: .5}, {y: "0%",opacity: .5,ease: Sine.easeInOut}, 2)
+
+				.to(container_4, 4, {opacity: 1, ease: Power2.easeInOut}, 3)
+				.fromTo(container_4, 4, {x: "-50%"}, {x: "0%", ease: Power2.easeInOut}, 3)
+				// .fromTo(background_4, 5, {x: "95%",opacity: .5}, {x: "0%",opacity: 1}, 2)
+
+				.to(br_cont2, 3, {opacity: 1, ease: Power2.easeInOut}, 4)
+				.fromTo(br_cont2_title, 4, {y: "-150%"}, {y: "0%"}, 3)
+				.fromTo(br_cont2_text, 4, {y: "-300%"}, {y: "0%"}, 3)
 				
-				// exit
-				.to(br_cont1, 1, {opacity: 0}, 1)
-				.to(br_cont1_title, 1, {y: "200%", ease: Sine.easeInOut}, 1)
-				.to(br_cont1_text, 2, {y: "100%", ease: Sine.easeInOut}, 1)
-	
 
-				// enter
-				.to(br_cont2, 2, {opacity: 1, ease: Sine.easeIn}, 1.5)
-				.fromTo(br_cont2_title, 1, {y: "-200%"}, {y: "0%"}, 1.5)
-				.fromTo(br_cont2_text, 2, {y: "-100%"}, {y: "0%"}, 1.5)
 
-				// exit
-				.to(br_cont2, 1, {opacity: 0}, 1)
-				.to(br_cont2_title, 1, {y: "200%", ease: Sine.easeInOut}, 1)
-				.to(br_cont2_text, 2, {y: "100%", ease: Sine.easeInOut}, 1)
+				// EXIT SLIDESHOW #2
+				.to(container_4, 4, {opacity: 0, ease: Power2.easeInOut}, 9)
+				.to(container_4, 5, {x: "100%", ease: Power2.easeInOut}, 9)
 
-				// enter
-				.to(br_cont3, 2, {opacity: 1, ease: Sine.easeIn}, 2)
-				.fromTo(br_cont3_title, 1, {y: "-200%"}, {y: "0%"}, 2)
-				.fromTo(br_cont3_text, 2, {y: "-100%"}, {y: "0%"}, 2)
-		
-		
-				.to(container_3, 1, {opacity: 1,ease: Sine.easeInOut}, 1)
-				.fromTo(container_3, 4, {y: "100%"}, {y: "0%",ease: Sine.easeInOut}, 1)
-				.fromTo(background_3, 4, {y: "-95%",opacity: .5}, {y: "0%",opacity: .5,ease: Sine.easeInOut, onComplete:function(){
-					// aboutEnd.to(br_cont1, 1, {opacity: 0, ease: Power1.easeIn},0)
-					// aboutEnd.to(br_cont2, 1, {opacity: 1, ease: Power1.easeIn},0)
-				}},1)
-				.to(container_5, 1, {opacity: 1,ease: Sine.easeInOut}, 5)
-				.fromTo(container_5, 5, {y: "100%"}, {y: "0%",ease: Sine.easeInOut}, 5)
+				.to(br_cont2, 4, {opacity: 0, ease: Power2.easeInOut}, 9)
+				.to(br_cont2_title, 5, {y: "300%", ease: Power2.easeInOut}, 9)
+				.to(br_cont2_text, 5, {y: "200%", ease: Power2.easeInOut}, 9)
+
+				// ENTER SLIDESHOW #3
+				.to(container_5, 5, {opacity: 1,ease: Sine.easeInOut}, 9)
+				.fromTo(container_5, 5, {y: "100%"}, {y: "0%",ease: Sine.easeInOut}, 9)
+				.fromTo(background_5, 5, {y: "-95%",opacity: .0}, {y: "0%",opacity: 0.5,ease: Sine.easeInOut}, 9)
 				
-	
-				.fromTo(background_5, 5, {y: "-95%",opacity: .0}, {y: "0%",opacity: 0.5,ease: Sine.easeInOut, onComplete:function(){
-					// aboutEnd.to(br_cont2, 1, {opacity: 0, ease: Power1.easeIn},0)
-					// aboutEnd.to(br_text_3, 1, {opacity: 1, ease: Power1.easeIn},0)
-				}}, 5)
-	
-	
-				.to(container_6, 1, {opacity: 1,ease: Sine.easeInOut}, 5)
-				.fromTo(container_6, 5, {x: "-100%"}, {x: "0%",ease: Sine.easeInOut}, 5)
-				.fromTo(background_6, 5, {x: "95%",opacity: .5}, {
+				.to(container_6, 4, {opacity: 1,ease: Power2.easeInOut}, 10)
+				.fromTo(container_6, 4, {x: "-50%"}, {x: "0%",ease: Power2.easeInOut}, 10)
+				.fromTo(background_6, 4, {x: "95%",opacity: .5}, {
 					x: "0%",
 					opacity: 1,
-					ease: Sine.easeInOut,
+					ease: Power2.easeInOut,
 					onComplete: function() {
 						myWork()
 					}
-				}, 5)
-	
-		
+				}, 10)
 
+				.to(br_cont3, 3, {opacity: 1, ease: Power2.easeInOut}, 11)
+				.fromTo(br_cont3_title, 4, {y: "-200%"}, {y: "0%"}, 10)
+				.fromTo(br_cont3_text, 4, {y: "-100%"}, {y: "0%"}, 10)
+				.to(doWhat, 2, {opacity: 0.8}, 14)
+				// .to(doWhat_background, 2, {y: "-50%"}, 12)
+
+			;
+
+	
 			let enterWho = new ScrollMagic.Scene({
 				triggerElement: '.doWhat',
 				triggerHook: 1,
@@ -191,18 +183,12 @@ $(document).ready(function() {
 		}
 	}
 
-
-
-
-
-
-			
-
 		
 
 
 	function myWork() {
 		const paraCodeTween = new TimelineMax();
+		
 		paraCodeTween
 			// .from('.language-markup', 0.6, { autoAlpha: 0, ease:Power0.easeNone },0.6)
 			.to(myWork_section, 0.2, {autoAlpha: 1, ease: Power2.easeIn, onStart: function() { typed() }})
@@ -215,7 +201,7 @@ $(document).ready(function() {
 			duration: '400%'
 		})
 		.setTween(paraCodeTween)
-		.addTo(controller)	
+		.addTo(controller)
 
 		function typed() {
 			let typed_text = new Typed('.work-title', {
@@ -249,9 +235,6 @@ $(document).ready(function() {
 		.setTween(contactIntro)
 		.addTo(controller)
 	}
-
-
-
 
 
 	// window.mobilecheck = function() {
