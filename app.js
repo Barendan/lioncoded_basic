@@ -195,7 +195,6 @@ $(document).ready(function() {
 					$('.bottom_right').removeClass('overflow_allow');
 				}
 			}, 0)
-
 			.to(doWhat_background, 0.3, {y: '-100%', ease: Power2.easeIn}, 0)
 			.fromTo(br_cont3_title, 0.2, {y: '0%'}, {y: '-150%', ease: Power2.easeIn}, 0)
 			.fromTo(br_cont3_text, 0.2, {y: '0%'}, {y: '-150%', ease: Power2.easeIn}, 0)
@@ -205,9 +204,15 @@ $(document).ready(function() {
 				onStart: function() { typed() }
 			},0)
 			.to('.language-markup', 1, { y: '-30%', ease: Power0.easeNone}, 0);
-		
-			// .from('.language-markup', 0.6, { autoAlpha: 0, ease:Power0.easeNone },0.6)
 		;
+
+		const contactIntro = new TimelineMax();
+		contactIntro
+			.to('.contact_section', 5, {opacity: 1, ease: Power2.easeIn}, 0)
+			.to('.mywork', 5, {opacity: 0.3, ease: Power3.easeOut}, 0)
+			.to('.finish', 2, {opacity: 0, y: '0%'}, 0);
+		;
+		
 
 		function typed() {
 			let typed_text = new Typed('.work-title', {
@@ -229,30 +234,19 @@ $(document).ready(function() {
 		.setTween(paraCodeTween)
 		.addTo(controller)
 
-
-
-
-
-
-		const contactIntro = new TimelineMax();
-		contactIntro
-			.to('.contact_section', 5, {opacity: 1, ease: Power2.easeIn}, 0)
-			.to('.mywork', 5, {opacity: 0.3, ease: Power3.easeOut}, 0)
-			.to('.finish', 2, {opacity: 0, y: '0%'}, 0);
-	
 		let placehold2 = new ScrollMagic.Scene({
 			triggerElement: '.contact_section',
 			triggerHook: 1,
 			duration: '100%'
 		})
+		.setTween(contactIntro)
+		.addTo(controller)
 		// .addIndicators({
 		// 	name: 'fade-in scene',
 		// 	colorTrigger: 'red',
 		// 	colorStart: '#75C695',
 		// 	colorEnd: '#75C695'
 		// })
-		.setTween(contactIntro)
-		.addTo(controller)
 	}
 
 
