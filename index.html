@@ -15,7 +15,7 @@
 
 <div class="app">
 
-    <section class="welcome">
+    <section class="welcome" id="welcome">
         <div class="welcome-shadow"></div>
         
         <div class="scene-container">
@@ -53,7 +53,7 @@
         <div class="background">
 
             <div class="cover-image top">
-                <div class="container container-2 top">
+                <div class="container container-2 top" id="doWhat">
 
                     <div class="wrap_background">
                         <div class="background background-2">
@@ -148,7 +148,7 @@
         </div>
     </section>
 
-    <section class="mywork">
+    <section class="mywork" id="projects">
         <pre class="source-viewer">    
             <code class="language-markup" content="
                 <!doctype html>
@@ -436,7 +436,7 @@
 
     </section>
 
-    <section class="contact_section">
+    <section class="contact_section" id="contact">
         
         <div class="contact_container">
             
@@ -478,9 +478,10 @@
         
         <div class="top-nav">
             <ul>
-                <li>WHAT I DO</li>
-                <li>PROJECTS</li>
-                <li class="active">CONTACT</li>
+                <li><a href="#welcome">WELCOME</a></li>
+                <li><a href="#doWhat">WHAT I DO</a></li>
+                <li><a href="#projects">PROJECTS</a></li>
+                <li class="active"><a href="#contact">CONTACT</a></li>
             </ul>
         </div>
 

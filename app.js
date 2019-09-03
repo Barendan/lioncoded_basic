@@ -86,18 +86,18 @@ $(document).ready(function() {
 
 				.to(doWhat, 10, { opacity: 1, ease: Power0.easeIn }, 0)
 				.to(doWhat_background, 1, { opacity: 1, ease: Power0.easeIn }, 0)
-				// .fromTo(doWhat_background, 5, { scale: 0.5 }, { scale: 1 }, 0)
 				
-				// ENTER
+				// ENTER SLIDESHOW #1
 				.fromTo(container_1, 10, {y: '100%'}, {y: '0%', ease: Sine.easeIn}, 5)
 				.fromTo(background_1, 10, {y: '-100%',opacity: 0}, {y: '0%',opacity: 0.5,ease: Sine.easeIn}, 5)
+
 				.fromTo(container_2, 10, {x: "-103%"}, {x: "0%", ease: Sine.easeInOut}, 5)
 				.fromTo(background_2, 10, {x: "103%",opacity: 0}, {
 					x: "0%",
 					opacity: 1,
 					ease: Sine.easeInOut
 				}, 5)
-				
+
 				.fromTo(br_cont1, 3, {opacity: 0 }, {opacity: 1, ease: Power3.easeInOut}, 12)
 				.fromTo(br_cont1, 5, {y: '-100%' }, {y: '0%', ease: Sine.easeInOut}, 10)
 			;
@@ -108,6 +108,8 @@ $(document).ready(function() {
 			const aboutEnd = new TimelineMax();
 			aboutEnd
 				// EXIT SLIDESHOW #1
+				.to(container_1, 5, {opacity: 0, ease: Power2.easeInOut}, 2)
+
 				.to(container_2, 4, {opacity: 0, ease: Power2.easeInOut}, 2)
 				.to(container_2, 5, {x: "100%", ease: Power2.easeInOut}, 2)
 
@@ -122,7 +124,6 @@ $(document).ready(function() {
 
 				.to(container_4, 4, {opacity: 1, ease: Power2.easeInOut}, 3)
 				.fromTo(container_4, 4, {x: "-50%"}, {x: "0%", ease: Power2.easeInOut}, 3)
-				// .fromTo(background_4, 5, {x: "95%",opacity: .5}, {x: "0%",opacity: 1}, 2)
 
 				.to(br_cont2, 3, {opacity: 1, ease: Power2.easeInOut}, 4)
 				.fromTo(br_cont2_title, 4, {y: "-150%"}, {y: "0%"}, 3)
@@ -150,7 +151,6 @@ $(document).ready(function() {
 					opacity: 1,
 					ease: Power2.easeInOut,
 					onComplete: function() {
-						// $('.bottom_right').removeClass('overflow_allow');
 						myWork()
 					}
 				}, 10)
@@ -210,7 +210,14 @@ $(document).ready(function() {
 		contactIntro
 			.to('.contact_section', 5, {opacity: 1, ease: Power2.easeIn}, 0)
 			.to('.mywork', 5, {opacity: 0.3, ease: Power3.easeOut}, 0)
-			.to('.finish', 2, {opacity: 0, y: '0%'}, 0);
+			.to('.contact_section', 1, {
+				onStart: function() {
+					$('.mywork').addClass('no_overflow');
+				},
+				onReverseComplete: function() {
+					$('.mywork').removeClass('no_overflow');
+				} 
+			}, 3)
 		;
 		
 

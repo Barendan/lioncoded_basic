@@ -368,6 +368,10 @@ section.doWhat .background .cover-image .container-3,
     overflow: visible;
 }
 
+.no_overflow {
+    overflow: hidden;
+}
+
 .typed_container {
     display: inline-flex;
     padding: 1rem;
@@ -685,7 +689,6 @@ input[type=submit]:hover {
 .top-nav li {
     display: block;
     padding-right: 3rem;
-    cursor: pointer;
     font-size: .85rem;
     font-family: 'ceraRegular';
     letter-spacing: 0.2rem;
@@ -693,8 +696,9 @@ input[type=submit]:hover {
 }
 .top-nav li:hover, .top-nav .active {
     color: #555;
-    text-decoration: line-through;
 }
+
+a { color: inherit; }
 
 .social {
     position: absolute;
