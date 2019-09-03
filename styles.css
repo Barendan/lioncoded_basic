@@ -312,7 +312,11 @@ section.doWhat .background .cover-image .container-3,
     left: 50%;
     width: 50%;
     height: 50%;
-    overflow:hidden;
+    overflow: hidden;
+}
+
+.overflow_allow {
+    overflow: initial !important;
 }
 
 .bottom_right .container {
@@ -329,6 +333,7 @@ section.doWhat .background .cover-image .container-3,
     /* z-index: -1; */
 }
 
+.bottom_right .cont1,
 .bottom_right .cont2,
 .bottom_right .cont3 {
     opacity: 0;

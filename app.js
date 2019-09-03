@@ -150,6 +150,7 @@ $(document).ready(function() {
 					opacity: 1,
 					ease: Power2.easeInOut,
 					onComplete: function() {
+						// $('.bottom_right').removeClass('overflow_allow');
 						myWork()
 					}
 				}, 10)
@@ -158,8 +159,6 @@ $(document).ready(function() {
 				.fromTo(br_cont3_title, 4, {y: "-200%"}, {y: "0%"}, 10)
 				.fromTo(br_cont3_text, 4, {y: "-100%"}, {y: "0%"}, 10)
 				.to(doWhat, 2, {opacity: 0.8}, 14)
-				// .to(doWhat_background, 2, {y: "-50%"}, 12)
-
 			;
 
 	
@@ -170,7 +169,6 @@ $(document).ready(function() {
 			})
 			.setTween(aboutStart)
 			.addTo(controller);
-			
 			
 			let pinWho = new ScrollMagic.Scene({
 				triggerElement: '.doWhat',
@@ -183,25 +181,33 @@ $(document).ready(function() {
 		}
 	}
 
-		
 
 
 	function myWork() {
 		const paraCodeTween = new TimelineMax();
-		
 		paraCodeTween
-			// .from('.language-markup', 0.6, { autoAlpha: 0, ease:Power0.easeNone },0.6)
-			.to(myWork_section, 0.2, {autoAlpha: 1, ease: Power2.easeIn, onStart: function() { typed() }})
-			.to(doWhat, 0.3, {autoAlpha: 0, ease: Circ.easeOut}, 0)
-			.to('.language-markup', 1, { y: '-30%', ease: Power0.easeNone}, 0);
+			// EXIT SLIDESHOW #3
+			.to(doWhat, 0.3, {autoAlpha: 0, ease: Power3.easeOut, 
+				onStart: function() {
+					$('.bottom_right').addClass('overflow_allow');
+				},
+				onReverseComplete: function() {
+					$('.bottom_right').removeClass('overflow_allow');
+				}
+			}, 0)
 
-		let paraCodeSlide = new ScrollMagic.Scene({
-			triggerElement: '.mywork',
-			triggerHook: 1,
-			duration: '400%'
-		})
-		.setTween(paraCodeTween)
-		.addTo(controller)
+			.to(doWhat_background, 0.3, {y: '-100%', ease: Power2.easeIn}, 0)
+			.fromTo(br_cont3_title, 0.2, {y: '0%'}, {y: '-150%', ease: Power2.easeIn}, 0)
+			.fromTo(br_cont3_text, 0.2, {y: '0%'}, {y: '-150%', ease: Power2.easeIn}, 0)
+
+			// ENTER MYWORK SECTION
+			.to(myWork_section, 0.2, {autoAlpha: 1, ease: Power2.easeIn,
+				onStart: function() { typed() }
+			},0)
+			.to('.language-markup', 1, { y: '-30%', ease: Power0.easeNone}, 0);
+		
+			// .from('.language-markup', 0.6, { autoAlpha: 0, ease:Power0.easeNone },0.6)
+		;
 
 		function typed() {
 			let typed_text = new Typed('.work-title', {
@@ -213,6 +219,19 @@ $(document).ready(function() {
 				smartBackspace: true
 			})
 		}
+
+
+		let paraCodeSlide = new ScrollMagic.Scene({
+			triggerElement: '.mywork',
+			triggerHook: 1,
+			duration: '400%'
+		})
+		.setTween(paraCodeTween)
+		.addTo(controller)
+
+
+
+
 
 
 		const contactIntro = new TimelineMax();
