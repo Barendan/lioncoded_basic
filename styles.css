@@ -8,6 +8,8 @@ body {
     vertical-align: middle;
 }
 
+a { color: inherit; }
+
 @font-face {
     font-family: ceraBlack;
     src: url(./fonts/CeraPro/CeraPro-Black.ttf);
@@ -152,7 +154,7 @@ section {
 .doWhat h1 {
     position: absolute;
     color: white !important;
-    font-size: 5rem;
+    font-size: 4rem;
     padding-left: 1.8rem;
     letter-spacing: -0.5rem;
     text-shadow: 2px 2px 5px black;
@@ -171,8 +173,8 @@ section {
     position: absolute;
     top: 2rem;
     left: 2rem;
-    font-size: 6rem;
-    letter-spacing: -0.5rem;
+    font-size: 5rem;
+    /* letter-spacing: -0.5rem; */
     line-height: 0.8;
     z-index:10;
 }
@@ -249,13 +251,13 @@ section.doWhat .background .cover-image .container .background-3 {
     background-size: cover;
     background-position: 20% 20%;
 }
-/* 
+
 section.doWhat .background .cover-image .container .background-4 {
-    background-image: url(images/background_4.jpg);
-    background-color: #7E1A1A;
-    background-size: cover;
-    background-position: center center;
-} */
+    background-image: url(images/2doWhat/mobileUI3.png);
+    background-position: 50% 100%;
+    background-size: 95% 95%;
+    background-repeat: no-repeat;
+}
 
 section.doWhat .background .cover-image .container .background-5 {
     background-image: url(images/2doWhat/security3.jpg);
@@ -263,13 +265,13 @@ section.doWhat .background .cover-image .container .background-5 {
     background-position: 15% 7%;
     box-sizing: border-box;
 }
-/* 
+
 section.doWhat .background .cover-image .container .background-6 {
-    background-image: url(images/background_6.jpg);
-    background-color: #2A7EE7;
-    background-size: cover;
+    background-size: 170% 131%;
+    background-repeat: no-repeat;
     background-position: center center;
-} */
+    opacity: 0.5;
+}
 
 section.doWhat .background .cover-image .container-4, 
     section.doWhat .background .cover-image .container-6, 
@@ -697,8 +699,6 @@ input[type=submit]:hover {
 .top-nav li:hover, .top-nav .active {
     color: #555;
 }
-
-a { color: inherit; }
 
 .social {
     position: absolute;
