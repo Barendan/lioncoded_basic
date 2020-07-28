@@ -38,7 +38,7 @@ a { color: inherit; }
 section {
     position: relative;
     overflow: hidden;
-    width: 95vw;
+    width: 96vw;
     min-height: 100vh;
 
     background-color: black;
@@ -135,7 +135,6 @@ section {
 
 /*===================================================*/
 /*===================================================*/
-
 .doWhat {
     opacity: 0;
 }
@@ -146,63 +145,46 @@ section {
     height: 100%;
 }
 
-.doWhat p {
-    padding: 13vh 3vw 2vw 3vw;
-    font-size: 0.6rem;
-    letter-spacing: 0.5px;
-    line-height: 2.5vw;
-    font-weight: 700;
-    text-align: justify;
-    background: -webkit-linear-gradient(48deg, #b3ffff,#00e6e6 89%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.doWhat .cont2 p {
-    padding: 13vh 3vw 1vw 2.5vw;
-    font-size: 0.7rem;
-    letter-spacing: 1px;
-    line-height: 2.5vw;
-    font-weight: 700;
-    text-align: justify;
-    background: -webkit-linear-gradient(-55deg, #ffdb29,#fc2db7 89%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.doWhat .cont3 p {
-    padding: 13vh 6vw 1vw 5vw;
-    font-size: 0.7rem;
-    letter-spacing: 0.5px;
-    line-height: 3.5vw;
-    font-weight: 700;
-}
-
 .doWhat h1 {
-    position: absolute;
-    color: white;
-    font-size: 4rem;
-    padding-left: 2vw;
-    letter-spacing: -0.2rem;
     font-family: ceraRegular;
-    opacity: 0.9;
-    text-decoration: underline;
     background: -webkit-linear-gradient(45deg, #00d2fc,#ff0aef 110%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
-.doWhat .cont3 h1 {
-    top: -35%;
-    color: white;
-    font-size: 8vw;
-    padding-left: 4vw;
-    padding-top: 4vw;
-    letter-spacing: 0;
-    text-align: inherit;
-    height: 20vw;
-    line-height: 4rem;
+.doWhat p {
+    padding: 0.5rem 2rem;
+    line-height: 6vw;
+    font-weight: 700;
+    text-align: justify;
+
+    background: -webkit-linear-gradient(48deg, #b3ffff,#00e6e6 89%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
+
+.br-text1 h1 {
+    font-size: 19vw;
+    width: fit-content;
+    margin: 0rem auto;
+}
+
+.br-text2 h1 {
+    font-size: 15vw;
+    width: 90%;
+    margin: 0rem auto;
+}
+
+.br-text3 h1 {
+    font-size: 15vw;
+    width: 76%;
+    line-height: 16vw;
+    margin: 0rem auto;
+}
+
+
+
+
 
 .cover-image .container .background {
     position: relative;
@@ -222,35 +204,39 @@ section {
     z-index: 10;
 }
 
+
+
+
+
+
+
+
 section.doWhat .background .cover-image .container-2, 
     section.doWhat .background .cover-image .container-4, 
     section.doWhat .background .cover-image .container-6, 
     section.doWhat .background .cover-image .container-8 {
+    display: none;
     position: absolute;
-    top: 3%;
-    left: 50%;
-    width: 46vw;
-    height: 45vh;
+    top: 50%;
+    left: 0%;
+    width: 100%;
+    height: 50%;
     background-color: rgba(0, 0, 0, 0.5);
 }
 
-section.doWhat .background .cover-image .container-1, 
-    section.doWhat .background .cover-image .container-3, 
-    section.doWhat .background .cover-image .container-5, 
-    section.doWhat .background .cover-image .container-7 {
+section.doWhat .background .cover-image .container-1, section.doWhat .background .cover-image .container-3, section.doWhat .background .cover-image .container-5, section.doWhat .background .cover-image .container-7 {
     position: absolute;
-    top: 0px;
-    left: 0px;
+    top: 0rem;
+    left: 0rem;
     width: 100%;
-    height: 100%;
+    height: 50%;
     z-index:5;
 }
-
 section.doWhat .background .cover-image .container .background-1 {
     background-image: url(./images/2doWhat/fullstack2.jpg);
-    background-size: 135vw 110vh;
+    background-size: 165% 51vh;
+    background-position: 17% 50%;
     background-repeat: no-repeat;
-    background-position: 100% 50%;
 }
 
 section.doWhat .background .cover-image .container .background-2 {
@@ -261,22 +247,22 @@ section.doWhat .background .cover-image .container .background-2 {
 
 section.doWhat .background .cover-image .container .background-3 {
     background-image: url(./images/2doWhat/mobile1.jpg);
+    background-size: 170% 85vh;
+    background-position: 60% 50%;
     background-repeat: no-repeat;
-    background-size: 135% 140%;
-    background-position: 104% 52%;
 }
 
 section.doWhat .background .cover-image .container .background-4 {
     background-image: url(images/2doWhat/mobileUI3.png);
-    background-position: 50% 100%;
     background-size: 95% 95%;
+    background-position: 50% 100%;
     background-repeat: no-repeat;
 }
 
 section.doWhat .background .cover-image .container .background-5 {
     background-image: url(images/2doWhat/security1.jpg);
-    background-size: 120% 100%;
-    background-position: 235% -5%;
+    background-size: 135vw 50vh;
+    background-position: 110% 50%;
     background-repeat: no-repeat;
     box-sizing: border-box;
 }
@@ -324,28 +310,12 @@ section.doWhat .background .cover-image .container-3,
 
 .bottom_right {
     position: absolute;
-}
-
-.br_one {
     top: 50%;
-    left: 50%;
-    width: 46vw;
-    height: 45vh;
-}
-
-.br_two {
-    top: 25%;
-    left: 49%;
-    width: 46%;
-    height: 45%;
-}
-
-.br_three {
-    top: 15%;
-    left: 52%;
-    width: 50%;
+    left: 0%;
+    width: 100%;
     height: 50%;
 }
+
 
 .overflow_allow {
     overflow: initial !important;
@@ -764,7 +734,26 @@ li svg {
 
 /*// X-Small devices (Galaxy S8 phones, 360px and up)*/
 @media (min-width: 360px) {
-
+    .doWhat p {
+        max-width: 26rem;
+        margin: 0 auto;
+        padding: 0.5rem 2rem;
+        line-height: 2rem;
+    }
+    .br-text1 h1 {
+        font-size: 5.5rem;
+    }
+    .br-text2 h1 {
+        width: 26rem;
+        font-size: 5rem;
+        letter-spacing: -3px;
+    }
+    .br-text3 h1 {
+        width: 22rem;
+        font-size: 5rem;
+        letter-spacing: -3px;
+        line-height: 5.5rem;
+    }
 }
 
 /*// Small devices (landscape phones, 576px and up)*/
