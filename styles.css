@@ -7,7 +7,6 @@ body {
   width: 100%;
 }
 
-
 * {
     margin: 0;
     padding: 0;
@@ -38,7 +37,7 @@ a { color: inherit; }
 section {
     position: relative;
     overflow: hidden;
-    width: 96vw;
+    width: 100%;
     min-height: 100vh;
 
     background-color: black;
@@ -176,9 +175,8 @@ section {
 }
 
 .br-text3 h1 {
-    font-size: 15vw;
-    width: 76%;
-    line-height: 16vw;
+    font-size: 18vw;
+    width: fit-content;
     margin: 0rem auto;
 }
 
@@ -383,10 +381,15 @@ section.doWhat .background .cover-image .container-3,
     position: absolute;
     font-family: monospace;
     opacity: .35;
-    font-size: .6rem;
     left: 0;
     top: -5rem;
     box-sizing: border-box;
+    padding: 0;
+    margin-left: -20vw;
+    white-space: pre;
+    overflow-x: hidden;
+    overflow-y: visible;
+    font-size: 2vw;
 }
 
 .source-viewer code:after {
@@ -395,9 +398,9 @@ section.doWhat .background .cover-image .container-3,
 
 code[class*=language-] {
     color: darkgrey;
-    direction: rtl;
+    direction: ltr;
     font-family: 'consolas';
-    text-align: center;
+    text-align: left;
     text-shadow: 0 -.1em .2em #000;
     white-space: pre-wrap;
     word-spacing: normal;
@@ -439,8 +442,8 @@ section.mywork .project-row {
 
 section.mywork .project-box {
     position: relative;
-    width: 20rem;
-    height: 12rem;
+    width: 21rem;
+    height: 13rem;
     margin: 0 auto;
     transition: all .5s;
     cursor: pointer;
@@ -492,8 +495,8 @@ section.mywork .project-box {
 .project-border {
     background-color: transparent;
     position: absolute;
-    width: 20rem;
-    height: 12rem;
+    width: 21rem;
+    height: 13rem;
     margin: -1.5rem 0.5rem;
     border: 2px solid goldenrod;
     opacity: 0.9;
@@ -553,7 +556,7 @@ section.mywork .project-text {
 }
 
 .contact_container {
-    display: inline-block;
+    /*display: inline-block;*/
     margin: 0rem;
 }
 
@@ -568,13 +571,12 @@ section.mywork .project-text {
 }
 
 .info_container {
-    width: auto;
-    margin-right: 0;
+    margin: 0 auto;
     text-align: center;
 }
 
 .info_container h2 {
-    font-size: 17vw;
+    font-size: 16vw;
     letter-spacing: 0.2rem;
 }
 
@@ -599,14 +601,14 @@ section.mywork .project-text {
 
 .form_container {
     width: 85vw;
+    max-width: 400px;
     margin: 0 auto;
-    /*box-shadow: 1px 2px 8px 6px black;*/
 }
 
 .form_container h2 {
     font-size: 14vw;
     padding-top: 3rem;
-    line-height: 4.5rem;
+    line-height: 13vw;
     letter-spacing: 0.2rem;
 }
 
@@ -735,7 +737,7 @@ li svg {
 /*// X-Small devices (Galaxy S8 phones, 360px and up)*/
 @media (min-width: 360px) {
     .doWhat p {
-        max-width: 26rem;
+        max-width: 35rem;
         margin: 0 auto;
         padding: 0.5rem 2rem;
         line-height: 2rem;
@@ -749,21 +751,108 @@ li svg {
         letter-spacing: -3px;
     }
     .br-text3 h1 {
-        width: 22rem;
-        font-size: 5rem;
-        letter-spacing: -3px;
-        line-height: 5.5rem;
+        width: 23.5rem;
+        font-size: 6rem;
+    }
+
+    section.mywork .project-box {
+        width: 69vw;
+        height: 41vw;
+        min-width: 21rem;
+        min-height: 13rem;
+    }
+    .project-border {
+        width: 69vw;
+        height: 41vw;
+        min-width: 21rem;
+        min-height: 13rem;
+    }
+    section.mywork .project-text {
+        max-width: 300px;
+        width: 67vw;
+        margin: 1rem auto;
+    }
+    .project-header {
+        font-size: 7vw;
+    }
+    .less-space {
+        letter-spacing: -2px;
+    }
+    .project-text p {
+        font-size: 0.9rem;
+        padding-left: 2px;
+    }
+    .info_container p {
+        font-size: 1.2rem;
+        max-width: 350px;
     }
 }
 
 /*// Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) {
+    html {
+        font-size: 14px;
+    }
+    .br-text3 h1 {
+        width: fit-content;
+    }
+    .doWhat p {
+        max-width: 40rem;
+    }
+    .typed_container {
+        font-size: 8vw;
+        letter-spacing: initial;
+    }
+    section.mywork .project-box {
+        width: 69vw;
+        height: 41vw;
+        max-width: 450px;
+        max-height: 260px;
+    }
+    .project-border {
+        width: 69vw;
+        height: 41vw;
+        max-width: 450px;
+        max-height: 260px;
+    }
+    section.mywork .project-text {
+        max-width: 380px;
+        width: 55vw;
+    }
+    .project-header {
+        font-size: 6vw;
+    }
+    .project-text p {
+        font-size: 0.9rem;
+        padding-left: 1rem;
+    }
+    .info_container h2 {
+        font-size: 7rem;
+    }
+    .info_container p {
+        max-width: 450px;
+    }
+    .form_container {
+        width: 85vw;
+        max-width: 500px;
+        margin: 3rem auto 5rem;
+        box-shadow: 1px 2px 8px 6px black; 
+    }
+    .form_container h2 {
+        font-size: 5.5rem;
+        padding: 2rem 0;
+        line-height: 5rem;
+    }
+    .contact_form {
+        margin: 2rem 4rem;
+    }
+
 
 }
 
 /*// Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) {
-
+    
 }
 
 /*// Large devices (desktops, 992px and up)*/
