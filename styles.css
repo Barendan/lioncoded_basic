@@ -389,7 +389,6 @@ section.doWhat .background .cover-image .container-3,
     white-space: pre;
     overflow-x: hidden;
     overflow-y: visible;
-    font-size: 2vw;
 }
 
 .source-viewer code:after {
@@ -691,11 +690,6 @@ li svg {
     letter-spacing: 0.1rem;
 }
 
-
-
-
-
-
 .glow {
     position: absolute;
     background-color: #1b1b1b;
@@ -793,6 +787,15 @@ li svg {
     html {
         font-size: 14px;
     }
+    section.doWhat .background .cover-image .container .background-1 {
+        background-size: 145vw 60vh;
+        background-position: 10% 33%;
+    }
+    section.doWhat .background .cover-image .container .background-3 {
+        background-size: 130vw 80vh;
+        background-position: 90% 50%;
+    }
+
     .br-text3 h1 {
         width: fit-content;
     }
@@ -846,13 +849,88 @@ li svg {
     .contact_form {
         margin: 2rem 4rem;
     }
-
-
 }
 
 /*// Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) {
-    
+    section.doWhat .background .cover-image .container .background-1 {
+        background-size: 140vw 71vh;
+        background-position: 0% 60%;
+    }
+    section.doWhat .background .cover-image .container .background-3 {
+        background-size: 101vw 80vh;
+        background-position: 5% 50%;
+    }
+    section.doWhat .background .cover-image .container .background-5 {
+        background-size: 110vw 50vh;
+        background-position: 110% 50%;
+    }
+    .br-text1 .container,
+    .br-text2 .container {
+        top: -20px;
+        background-color: transparent;
+    }
+    .br-text3 .container {
+        top: -90px;
+        background-color: transparent; 
+    }
+    .br-text1 h1,
+    .br-text2 h1,
+    .br-text3 h1 {
+        width: fit-content;
+        text-shadow: 0px 4px 4px rgb(0 0 0 / 50%);
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        background-clip: text;
+    }
+    .br-text1 h1,
+    .br-text2 h1 {
+        font-size: 10rem;
+        letter-spacing: -4px;
+    }
+    .br-text3 h1 {
+        font-size: 14rem;
+        letter-spacing: -4px;
+    }
+    .doWhat p {
+        max-width: 620px;
+        padding-top: 0;
+        font-size: 1.1rem;
+    }
+    section.mywork .project-text {
+        max-width: 480px;
+        width: 50vw;
+    }
+    .project-header {
+        font-size: 6.3vw;
+    }
+    .project-text p {
+        font-size: 1rem;
+        padding-left: 1rem;
+    }
+
+    .info_container h2 {
+        font-size: 9rem;
+    }
+    .info_container p {
+        max-width: 520px;
+        font-size: 1.3rem;
+    }
+    .form_container {
+        max-width: 540px;
+        margin: 5rem auto;
+    }
+    .social li {
+        padding-right: 1rem;
+        padding-bottom: 1rem;
+    }
+    li svg {
+        width: 75px;
+        height: 75px;
+    }
+    .copyright {
+        font-size: 0.8rem;
+    }
 }
 
 /*// Large devices (desktops, 992px and up)*/
