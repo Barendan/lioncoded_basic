@@ -918,11 +918,11 @@ li svg {
 
 /*// Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) {
-    .mobile-only {
-        display: none;
-    }
     .desktop-only {
         display: block;
+    }
+    .mobile-only {
+        display: none;
     }
     section.doWhat .background .cover-image .container-1, section.doWhat .background .cover-image .container-3, section.doWhat .background .cover-image .container-5, section.doWhat .background .cover-image .container-7 {
         top: 0px;
@@ -947,10 +947,6 @@ li svg {
         z-index: 9;
     }
 
-/*    section.doWhat .background .cover-image .container .background-1 {
-        background-size: 135vw 110vh;
-        background-position: 99% 50%;
-    }*/
     section.doWhat .background .cover-image .container .background-1 {
         background-size: 135vw 110vh;
         background-position: 26% 66%;
@@ -1023,6 +1019,10 @@ li svg {
         font-size: 1.1rem;
         line-height: 2.5rem;
     }
+
+
+
+
 
     .typed_container {
         font-size: 7vw;
