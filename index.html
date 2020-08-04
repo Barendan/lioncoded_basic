@@ -163,148 +163,64 @@
                     <link href=https://fonts.googleapis.com/css?family=Lato|Montserrat:300,400,600|Open+Sans:400,600|Roboto:300,400&display=swap rel=stylesheet>
                     <link href=https://fonts.googleapis.com/css?family=Archivo+Black|Chivo:400|Kanit:400|Work+Sans:400&display=swap rel=stylesheet>
 
-
                     <link rel=stylesheet type=text/css href=styles.css />
                 </head>
                 <body>
+                <section class=doWhat>
+                    <div class=background>
+                    const aboutStart = new TimelineMax();
+                    aboutStart
+                        .to(scene_2, 10, {y: -300%, ease: Power0.easeIn}, 0)
+                        .to(welcome_title, 5, {y: -300%, ease: Power0.easeIn}, 0)
+                        .to(scene_container, 5, {y: -50%, scale:0.2, ease: Circ.easeIn}, 5)
+                        .to(scene_container, 5, { scale: 0.5, ease: Power1.easeIn }, 5)
+                        .to(welcome, 10, { opacity: 0, ease: Power2.easeOut }, 0)
 
-                <div class=app-border border-top style=width: 100%;></div>
-                <div class=app-border border-right style=height: 100%;></div>
-                <div class=app-border border-bottom style=width: 100%; left: 0%;></div>
-                <div class=app-border border-left fix-border style=height: 100%; top: 0%;></div>
-
-                <div class=app>
-                    <section class=welcome>
-                        <div class=welcome-shadow></div>
+                        .to(doWhat, 10, { opacity: 1, ease: Power0.easeIn }, 0)
+                        .to(doWhat_background, 1, { opacity: 1, ease: Power0.easeIn }, 0)
                         
-                        <div class=safari-container>
-                            <div class=sky scene id=layer1></div>
-                            
-                            <div class=clouds scene id=layer2>
-                                <div class=img-wrapper>
-                                    <img src=./images/1welcome/clouds-01.png alt=light cloud formations>
-                                </div>
-                            </div>
+                        // ENTER SLIDESHOW #1
+                        .fromTo(container_1, 10, {y: '100%'}, {y: '0%', ease: Sine.easeIn}, 5)
+                        .fromTo(background_1, 10, {y: '-100%',opacity: 0}, {y: '0%',opacity: 0.7,ease: Sine.easeIn}, 5)
 
-                            <!-- <div class=clouds2 scene id=layer5>
-                                <div class=img-wrapper>
-                                    <img src=./images/1welcome/clouds-02.png alt=light cloud formations>
-                                </div>
-                            </div> -->
-                            
-                            <div class=landscape scene id=layer3>
-                                <div class=img-wrapper>
-                                    <img src=./images/1welcome/mountvalley.png alt=valley surrounded by mountains>
-                                </div>
-                            </div>
+                        .fromTo(container_2, 10, {x: -103%}, {x: 0%, ease: Sine.easeInOut}, 5)
+                        .fromTo(background_2, 10, {x: 103%,opacity: 0}, {
+                            x: 0%,
+                            opacity: 1,
+                            ease: Sine.easeInOut
+                        }, 5)
 
-                            <div class=upclose id=layer4>
-                                <div class=img-wrapper>
-                                    <img src=./images/1welcome/montcloseup.png alt=rocks close up>
-                                </div>
-                            </div>
+                        .fromTo(br_cont1, 3, {opacity: 0 }, {opacity: 1, ease: Power3.easeInOut}, 12)
+                        .fromTo(br_cont1, 5, {y: '-100%' }, {y: '0%', ease: Sine.easeInOut}, 10)
+                    ;
+                    </div>
+                    <div class=background>
+                    const aboutStart = new TimelineMax();
+                    aboutStart
+                        .to(scene_2, 10, {y: -300%, ease: Power0.easeIn}, 0)
+                        .to(welcome_title, 5, {y: -300%, ease: Power0.easeIn}, 0)
+                        .to(scene_container, 5, {y: -50%, scale:0.2, ease: Circ.easeIn}, 5)
+                        .to(scene_container, 5, { scale: 0.5, ease: Power1.easeIn }, 5)
+                        .to(welcome, 10, { opacity: 0, ease: Power2.easeOut }, 0)
 
-                            <h1>LionCoded</h1>
-                        </div>
-                    </section>
+                        .to(doWhat, 10, { opacity: 1, ease: Power0.easeIn }, 0)
+                        .to(doWhat_background, 1, { opacity: 1, ease: Power0.easeIn }, 0)
+                        
+                        // ENTER SLIDESHOW #1
+                        .fromTo(container_1, 10, {y: '100%'}, {y: '0%', ease: Sine.easeIn}, 5)
+                        .fromTo(background_1, 10, {y: '-100%',opacity: 0}, {y: '0%',opacity: 0.7,ease: Sine.easeIn}, 5)
 
-                    <section class=whowhatwhy>
-                        <div class=background>
-                            <div class=cover-image>
-                                <div class=container container-2>
-                                    <!-- <div class=background background-2></div> -->
-                                    <h1>Front-end</h1>
-                                </div>
-                                <div class=container container-4>
-                                    <!-- <div class=background background-4></div> -->
+                        .fromTo(container_2, 10, {x: -103%}, {x: 0%, ease: Sine.easeInOut}, 5)
+                        .fromTo(background_2, 10, {x: 103%,opacity: 0}, {
+                            x: 0%,
+                            opacity: 1,
+                            ease: Sine.easeInOut
+                        }, 5)
 
-                                </div>
-                                <div class=container container-6>
-                                    <!-- <div class=background background-6></div> -->
-
-                                </div>
-                            </div>
-
-                            <div class=cover-image>
-                                <div class=container container-1>
-                                    <div class=background background-1></div>
-                                    <h2><u>Full-Stack Developer</u></h2>
-                                    <div class=mini-nav>
-                                        <ul>
-                                            <li>
-
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-
-                                <div class=container container-3>
-                                    <div class=background background-3></div>
-                                    <h2><u>Mobile App Developer</u></h2>
-
-                                </div>
-
-                                <div class=container container-5>
-                                    <div class=background background-5></div>
-                                    <h2><u>Scalability & Security</u></h2>
-
-                                </div>
-                            </div>
-
-                            <div class=cover-text>
-                                <div class=container cont1>
-                                    <h1>Back-end</h1>
-                                </div>
-
-                                <div class=container cont2>
-                                </div>
-
-                                <div class=container cont3>
-                                </div>
-                            
-                            </div>
-
-                        </div>
-                    </section>
-
-                    <section class=mywork>
-
-
-                        <div class=typed_container> 
-                            <div class=work-title> </div>
-                        </div>
-
-                        <div class=display-row start>
-
-                            <div class=display-box display-one>
-                                <div class=shadow shadow-right>
-                                </div>
-                            </div>
-                            <div class=backdrop></div>
-                            <div class=display-text>
-                                <h2>24 Hour Health : Elixir of Youth</h2>
-                            </div>
-                        </div>
-
-                        <div class=display-row>
-                            <div class=display-box display-two>
-                            </div>
-                            <div class=backdrop_two></div>
-                            <div class=display-text text_two>
-                                <h2 class=sample_2>SocialSync:</h2>
-                            </div>
-                        </div>
-
-                        <div class=display-row finish>
-                            <div class=display-box display-three>
-                            </div>
-                            <div class=backdrop_three></div>
-                            <div class=display-text project-border text>
-                                <h2 class=sample_3>FireWater: Alcohol Delivery</h2>
-                            </div>
-                        </div>
-
-                    </section>
+                        .fromTo(br_cont1, 3, {opacity: 0 }, {opacity: 1, ease: Power3.easeInOut}, 12)
+                        .fromTo(br_cont1, 5, {y: '-100%' }, {y: '0%', ease: Sine.easeInOut}, 10)
+                    ;
+                    </div>
                 </div>
 
                 <!-- jQuery -->
@@ -335,7 +251,7 @@
                 <div class="project-border"></div>
             </div>
 
-            <div class="project-text mobile-only">
+            <div class="project-text">
                 <h2 class="project-header">Digital Design</h2>
                 <p>
                     The search for new and innovative designs/technologies is one that never ends.<br>
@@ -352,7 +268,7 @@
                 <div class="project-border"></div>
             </div>
 
-            <div class="project-text mobile-only">
+            <div class="project-text">
                 <h2 class="project-header less-space">24 Hour Health</h2>
                 <p>
                     The elixir for perfect health.<br>
@@ -369,7 +285,7 @@
                 <div class="project-border"></div>
             </div>
 
-            <div class="project-text mobile-only">
+            <div class="project-text">
                 <h2 class="project-header">FireWater</h2>
                 <p>
                     In the days before Uber Eats and Amazon drone delivery, a young man created a website for an alcohol delivery service. One of my first websites, using Ruby. It's good to remember where we came from and how far we've come.

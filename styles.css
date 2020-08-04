@@ -925,14 +925,12 @@ li svg {
     .desktop-only {
         display: block;
     }
-
     section.doWhat .background .cover-image .container-1, section.doWhat .background .cover-image .container-3, section.doWhat .background .cover-image .container-5, section.doWhat .background .cover-image .container-7 {
         top: 0px;
         left: 0px;
         width: 100%;
         height: 100%;
     }
-
     section.doWhat .background .cover-image .container-2, section.doWhat .background .cover-image .container-4, section.doWhat .background .cover-image .container-6, section.doWhat .background .cover-image .container-8 {
         background-color: #000000a1;
         display: block;
@@ -943,7 +941,6 @@ li svg {
         height: 50%;
         z-index: 6;
     }
-    
     section.doWhat .background .cover-image .container-3 {
         z-index: 7;
     }
@@ -1000,7 +997,6 @@ li svg {
         -moz-background-clip: text;
         background-clip: text;
     }
-
     .br-text1 .container {
         background-color: #000000a1;
         top: 0px;
@@ -1016,7 +1012,6 @@ li svg {
         width: 100%;
         height: 100%;
     }
-
     .doWhat p {
         max-width: 540px;
         font-size: 1rem;
@@ -1030,7 +1025,54 @@ li svg {
         line-height: 2.5rem;
     }
 
-
+    .typed_container {
+        font-size: 7vw;
+    }
+    .source-viewer code {
+        color: inherit;
+        max-width: 1050px;
+        margin-left: -10vw;
+    }
+    section.mywork .project-row {
+        width: fit-content;
+        max-width: 870px;
+        margin: 0 auto;
+        padding-top: 10rem;
+    }
+    section.mywork .project-row:nth-last-of-type(1) {
+        padding-bottom: 15rem;
+    }
+    section.mywork .project-box {
+        display: inline-block;
+        width: 400px;
+        height: 250px;
+        /*max-width: 450px;*/
+        /*max-height: 260px;*/
+        margin: 0.5rem;
+    }
+    .project-border {
+        width: 400px;
+        height: 250px;
+        max-width: 450px;
+        max-height: 260px;
+    }
+    section.mywork .project-text {
+        display: inline-block;
+        width: 400px;
+        max-width: 480px;
+        padding: 0rem 2vw;
+        margin: 0;
+    }
+    .project-header {
+        font-size: 4rem;
+        letter-spacing: -2px;
+    }
+    .less-space {
+        letter-spacing: -4px;
+    }
+    .project-text p {
+        line-height: 1.75rem;
+    }
 
 }
 
