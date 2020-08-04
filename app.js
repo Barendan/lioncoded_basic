@@ -10,31 +10,31 @@ $(window).on("load", function() {
 		welcome_title = $(".welcome h1"),
 		
 		doWhat = $("section.doWhat"),
-		doWhat_background = $("section.doWhat .background"),
-		container_1 = $(".background .cover-image .container-1"),
-		background_1 = $(".background .cover-image .container-1 .background-1"),
-		container_2 = $(".background .cover-image .container-2"),
-		background_2 = $(".background .cover-image .container-2 .wrap_background"),
-		container_3 = $(".background .cover-image .container-3"),
-		background_3 = $(".background .cover-image .container-3 .background-3"),
-		container_4 = $(".background .cover-image .container-4"),
-		background_4 = $(".background .cover-image .container-4 .background-4"),
-		container_5 = $(".background .cover-image .container-5"),
-		background_5 = $(".background .cover-image .container-5 .background-5"),
-		container_6 = $(".background .cover-image .container-6"),
-		background_6 = $(".background .cover-image .container-6 .background-6"),
+		doWhat_backdrop = $("section.doWhat .backdrop"),
+		container_1 = $(".container-1"),
+		background_1 = $(".container-1 .background-1"),
+		container_2 = $(".top_right"),
+		background_2 = $(".top_right"),
+		container_3 = $(".container-3"),
+		background_3 = $(".container-3 .background-3"),
+		container_4 = $(".container-4"),
+		background_4 = $(".container-4 .background-4"),
+		container_5 = $(".container-5"),
+		background_5 = $(".container-5 .background-5"),
+		container_6 = $(".container-6"),
+		background_6 = $(".container-6 .background-6"),
 
-		br_cont1 = $(".bottom_right .cont1"),
-		br_cont1_title = $(".bottom_right .cont1 h1"),
-		br_cont1_text = $(".bottom_right .cont1 p"),
+		br_cont1 = $(".br-text1"),
+		br_cont1_title = $(".br-text1 h1"),
+		br_cont1_text = $(".br-text1 p"),
 
-		br_cont2 = $(".bottom_right .cont2"),
-		br_cont2_title = $(".bottom_right .cont2 h1"),
-		br_cont2_text = $(".bottom_right .cont2 p"),
+		br_cont2 = $(".br-text2"),
+		br_cont2_title = $(".br-text2 h1"),
+		br_cont2_text = $(".br-text2 p"),
 
-		br_cont3 = $(".bottom_right .cont3"),
-		br_cont3_title = $(".bottom_right .cont3 h1"),
-		br_cont3_text = $(".bottom_right .cont3 p"),
+		br_cont3 = $(".br-text3"),
+		br_cont3_title = $(".br-text3 h1"),
+		br_cont3_text = $(".br-text3 p"),
 
 		myWork_section = $("section.mywork")
 		;
@@ -42,7 +42,7 @@ $(window).on("load", function() {
 
 
 	function init() {
-		console.log("hello buddy")
+		// console.log("hello buddy")
 		console.log(window.innerWidth);
 		window.innerWidth < 768 ? mobileAnimation() : desktopAnimation();
 	}
@@ -50,7 +50,7 @@ $(window).on("load", function() {
 
 	function desktopAnimation() {
 		// Pre-rendering
-		TweenMax.to(doWhat_background, .1, { opacity: 0, ease: Power0.easeIn }, 0)
+		TweenMax.to(doWhat_backdrop, .1, { opacity: 0, ease: Power0.easeIn }, 0)
 		
 		// Start animation
 		TweenMax.to(welcome, 1.5, {
@@ -86,7 +86,7 @@ $(window).on("load", function() {
 				.to(welcome, 10, { opacity: 0, ease: Power2.easeOut }, 0)
 
 				.to(doWhat, 10, { opacity: 1, ease: Power0.easeIn }, 0)
-				.to(doWhat_background, 1, { opacity: 1, ease: Power0.easeIn }, 0)
+				.to(doWhat_backdrop, 1, { opacity: 1, ease: Power0.easeIn }, 0)
 				
 				// ENTER SLIDESHOW #1
 				.fromTo(container_1, 10, {y: '100%'}, {y: '0%', ease: Sine.easeIn}, 5)
@@ -197,7 +197,7 @@ $(window).on("load", function() {
 						$('.bottom_right').removeClass('overflow_allow');
 					}
 				}, 0)
-				.to(doWhat_background, 0.3, {y: '-100%', ease: Power2.easeIn}, 0)
+				.to(doWhat_backdrop, 0.3, {y: '-100%', ease: Power2.easeIn}, 0)
 				.fromTo(br_cont3_title, 0.2, {y: '0%'}, {y: '-150%', ease: Power2.easeIn}, 0)
 				.fromTo(br_cont3_text, 0.2, {y: '0%'}, {y: '-150%', ease: Power2.easeIn}, 0)
 	
@@ -262,7 +262,7 @@ $(window).on("load", function() {
 
 	function mobileAnimation() {
 		// Pre-rendering
-		TweenMax.to(doWhat_background, .1, { opacity: 0, ease: Power0.easeIn }, 0)
+		TweenMax.to(doWhat_backdrop, .1, { opacity: 0, ease: Power0.easeIn }, 0)
 		
 		// Start animation
 		TweenMax.to(welcome, 1.5, {
@@ -297,7 +297,7 @@ $(window).on("load", function() {
 				.to(welcome, 10, { opacity: 0, ease: Power2.easeOut }, 0)
 
 				.to(doWhat, 10, { opacity: 1, ease: Power0.easeIn }, 0)
-				.to(doWhat_background, 1, { opacity: 1, ease: Power0.easeIn }, 0)
+				.to(doWhat_backdrop, 1, { opacity: 1, ease: Power0.easeIn }, 0)
 				
 				// ENTER SLIDESHOW #1
 				.fromTo(container_1, 10, {y: '100%'}, {y: '0%', ease: Sine.easeIn}, 5)
@@ -408,7 +408,7 @@ $(window).on("load", function() {
 						$('.bottom_right').removeClass('overflow_allow');
 					}
 				}, 0)
-				.to(doWhat_background, 0.3, {y: '-100%', ease: Power2.easeIn}, 0)
+				.to(doWhat_backdrop, 0.3, {y: '-100%', ease: Power2.easeIn}, 0)
 				.fromTo(br_cont3_title, 0.2, {y: '0%'}, {y: '-150%', ease: Power2.easeIn}, 0)
 				.fromTo(br_cont3_text, 0.2, {y: '0%'}, {y: '-150%', ease: Power2.easeIn}, 0)
 	

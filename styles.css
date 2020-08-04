@@ -2,11 +2,6 @@ html {
     font-size: 12px;
 }
 
-body {
-  height: 100%;
-  width: 100%;
-}
-
 * {
     margin: 0;
     padding: 0;
@@ -145,7 +140,7 @@ section {
     display: none;
 }
 
-.doWhat .background {
+.doWhat .backdrop {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -154,17 +149,6 @@ section {
 .doWhat h1 {
     font-family: ceraRegular;
     background: -webkit-linear-gradient(45deg, #00d2fc,#ff0aef 110%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.doWhat p {
-    padding: 0.5rem 2rem;
-    line-height: 6vw;
-    font-weight: 700;
-    text-align: justify;
-
-    background: -webkit-linear-gradient(48deg, #b3ffff,#00e6e6 89%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -187,7 +171,7 @@ section {
     margin: 0rem auto;
 }
 
-.cover-image .container .background {
+.background {
     position: relative;
     top: 0px;
     left: 0px;
@@ -195,28 +179,7 @@ section {
     height: 100%;
 }
 
-/*.cover-image .container {
-    background-color: #000000;
-    overflow: hidden;
-}*/
-
-.cover-image .container-2 {
-    z-index: 10;
-}
-
-section.doWhat .background .cover-image .container-2, 
-    section.doWhat .background .cover-image .container-4, 
-    section.doWhat .background .cover-image .container-6, 
-    section.doWhat .background .cover-image .container-8 {
-    display: none;
-    position: absolute;
-    top: 50%;
-    left: 0%;
-    width: 100%;
-    height: 50%;
-}
-
-section.doWhat .background .cover-image .container-1, section.doWhat .background .cover-image .container-3, section.doWhat .background .cover-image .container-5, section.doWhat .background .cover-image .container-7 {
+.container-1, .container-3, .container-5 {
     position: absolute;
     top: 0rem;
     left: 0rem;
@@ -225,34 +188,26 @@ section.doWhat .background .cover-image .container-1, section.doWhat .background
     z-index:5;
 }
 
-section.doWhat .background .cover-image .container .background-1 {
+.container-3, .container-5 {
+    background-color: #000000;
+    -webkit-transform: translate3d(0%, 100%, 0);
+    transform: translate3d(0%, 100%, 0);
+    opacity: 0;
+}
+
+.background-1 {
     background-image: url(./images/2doWhat/fullstack2.jpg);
     background-size: 165% 51vh;
     background-position: 17% 50%;
     background-repeat: no-repeat;
 }
-
-section.doWhat .background .cover-image .container .background-2 {
-    position:absolute;
-    top:0px;
-    left:0px;
-}
-
-section.doWhat .background .cover-image .container .background-3 {
+.background-3 {
     background-image: url(./images/2doWhat/mobile1.jpg);
     background-size: 170% 85vh;
     background-position: 60% 50%;
     background-repeat: no-repeat;
 }
-
-section.doWhat .background .cover-image .container .background-4 {
-    background-image: url(images/2doWhat/mobileUI3.png);
-    background-size: 95% 95%;
-    background-position: 50% 100%;
-    background-repeat: no-repeat;
-}
-
-section.doWhat .background .cover-image .container .background-5 {
+.background-5 {
     background-image: url(images/2doWhat/security1.jpg);
     background-size: 135vw 50vh;
     background-position: 110% 50%;
@@ -260,87 +215,39 @@ section.doWhat .background .cover-image .container .background-5 {
     box-sizing: border-box;
 }
 
-section.doWhat .background .cover-image .container .background-6 {
-    background-size: 170% 131%;
-    background-repeat: no-repeat;
-    background-position: center center;
-    opacity: 0.5;
-}
-
-section.doWhat .background .cover-image .container-4, 
-    section.doWhat .background .cover-image .container-6, 
-    section.doWhat .background .cover-image .container-8 {
-    -webkit-transform: translate3d(-100%, 0%, 0);
-    transform: translate3d(-100%, 0%, 0);
-    opacity: 0;
-}
-
-section.doWhat .background .cover-image .container-4, 
-    section.doWhat .background .cover-image .container-6, 
-    section.doWhat .background .cover-image .container-8 {
-    background-color: #000000;
-    /* z-index: 5; */
-}
-
-section.doWhat .background .cover-image .container-3, 
-    section.doWhat .background .cover-image .container-5, 
-    section.doWhat .background .cover-image .container-7 {
-    -webkit-transform: translate3d(0%, 100%, 0);
-    transform: translate3d(0%, 100%, 0);
-    opacity: 0;
-}
-
-section.doWhat .background .cover-image .container-3, 
-    section.doWhat .background .cover-image .container-5, 
-    section.doWhat .background .cover-image .container-7 {
-    background-color: #000000;
-}
-
-.bottom_right {
+.top_right {
+    display: none;
     position: absolute;
     top: 50%;
     left: 0%;
     width: 100%;
     height: 50%;
+    z-index: 10;
 }
 
-.bottom_right .container {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    z-index: 5;
+.bottom_right {
     background-color: rgba(0, 0, 0, 0.5);
-}
-
-.bottom_right_two .container {
     position: absolute;
-    background-color: rgba(0, 0, 0, 0.6);
-    width: 96.8%;
-    height: 99.5%;
+    top: 50%;
+    right: 0%;
+    width: 100%;
+    height: 50%;
     z-index: 5;
 }
 
-.bottom_right .cont1,
-.bottom_right .cont2,
-.bottom_right .cont3 {
+.br-text1, .br-text2, .br-text3 {
     opacity: 0;
 }
 
-.cont2 {
-    background-color: rgba(0,0,0,0.5);
-}
+.doWhat p {
+    padding: 0.5rem 2rem;
+    line-height: 6vw;
+    font-weight: 700;
+    text-align: justify;
 
-.bottom_right .container .title {
-    position: absolute;
-    display: block;
-    height: 22px;
-    margin: 0 auto;
-    margin-bottom: 42px;
-    left: 50%;
-    overflow: hidden;
-    -webkit-transform: translate3d(-50%, 0, 0);
-    transform: translate3d(-50%, 0, 0);
-    text-rendering: geometricPrecision;
+    background: -webkit-linear-gradient(48deg, #b3ffff,#00e6e6 89%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 /*===================================================*/
@@ -770,11 +677,11 @@ li svg {
     html {
         font-size: 14px;
     }
-    section.doWhat .background .cover-image .container .background-1 {
+    .background-1 {
         background-size: 145vw 60vh;
         background-position: 10% 33%;
     }
-    section.doWhat .background .cover-image .container .background-3 {
+    .background-3 {
         background-size: 130vw 80vh;
         background-position: 90% 50%;
     }
@@ -836,24 +743,23 @@ li svg {
 
 /*// Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) {
-    section.doWhat .background .cover-image .container .background-1 {
+    .background-1 {
         background-size: 140vw 71vh;
         background-position: 0% 60%;
     }
-    section.doWhat .background .cover-image .container .background-3 {
+    .background-3 {
         background-size: 101vw 80vh;
         background-position: 5% 50%;
     }
-    section.doWhat .background .cover-image .container .background-5 {
+    .background-5 {
         background-size: 110vw 50vh;
         background-position: 110% 50%;
     }
-    .br-text1 .container,
-    .br-text2 .container {
+    .br-text2 {
         top: -20px;
         background-color: transparent;
     }
-    .br-text3 .container {
+    .br-text3 {
         top: -90px;
         background-color: transparent; 
     }
@@ -918,19 +824,35 @@ li svg {
 
 /*// Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) {
-    .desktop-only {
-        display: block;
-    }
     .mobile-only {
         display: none;
     }
-    section.doWhat .background .cover-image .container-1, section.doWhat .background .cover-image .container-3, section.doWhat .background .cover-image .container-5, section.doWhat .background .cover-image .container-7 {
-        top: 0px;
-        left: 0px;
-        width: 100%;
+    .desktop-only {
+        display: block;
+    }
+    .container-1, .container-3, .container-5 {
         height: 100%;
     }
-    section.doWhat .background .cover-image .container-2, section.doWhat .background .cover-image .container-4, section.doWhat .background .cover-image .container-6, section.doWhat .background .cover-image .container-8 {
+    .container-3 {
+        z-index: 7;
+    }
+    .container-5 {
+        z-index: 9;
+    }
+    .background-1 {
+        background-size: 135vw 110vh;
+        background-position: 26% 66%;
+    }
+    .background-3 {
+        background-size: 130% 130%;
+        background-position: 101% 22%;
+    }
+    .background-5 {
+        background-size: 120% 100%;
+        background-position: 235% -5%;
+    }
+
+    .top_right {
         background-color: #000000a1;
         display: block;
         top: 0%;
@@ -940,49 +862,40 @@ li svg {
         height: 50%;
         z-index: 6;
     }
-    section.doWhat .background .cover-image .container-3 {
-        z-index: 7;
-    }
-    section.doWhat .background .cover-image .container-5 {
-        z-index: 9;
-    }
-
-    section.doWhat .background .cover-image .container .background-1 {
-        background-size: 135vw 110vh;
-        background-position: 26% 66%;
-    }
-    section.doWhat .background .cover-image .container .background-3 {
-        background-size: 135% 140%;
-        background-position: 100% 52%;
-    }
-    section.doWhat .background .cover-image .container .background-5 {
-        background-size: 120% 100%;
-        background-position: 235% -5%;
-    }
-
     .bottom_right {
-        top: 50%;
-        right: 0%;
-        left: inherit;
         width: 50%;
-        height: 50%;
         z-index: 10;
     }
-
+    .container-1 h1, .container-3 h1, .container-5 h1 {
+        text-shadow: 0px 4px 4px rgb(0 0 0 / 50%);
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        background-clip: text;
+    }
     .br-text1 h1 {
         font-size: 7rem;
         letter-spacing: -2px;
     }
-    .br-text2 h1 {
-        font-size: 6rem;
-        letter-spacing: -4px;
+    .container-3 h1 {
+        position: relative;
+        top: -102%;
+        width: fit-content;
+        margin: 0 auto;
+        font-size: 11rem;
+        letter-spacing: -0px;
+        white-space: nowrap;
     }
-    .br-text3 h1 {
-        font-size: 9rem;
-        letter-spacing: -2px;
+    .container-5 h1 {
+        position: relative;
+        top: -106%;
+        width: fit-content;
+        margin: 0 auto;
+        padding-left: 10%;
+        font-size: 15rem;
+        letter-spacing: 0px;
     }
 
-    .background-2 h1 {
+    .top_right h1 {
         width: fit-content;
         margin: 0rem auto;
         font-size: 7rem;
@@ -992,32 +905,43 @@ li svg {
         -moz-background-clip: text;
         background-clip: text;
     }
-    .br-text1 .container {
+    .br-text1 {
         background-color: #000000a1;
-        top: 0px;
     }
-    .br-text2 .container {
+    .br-text2 {
         background-color: #000000a1;
-        top: -55%;
-        width: 95%;
-        height: 85%;
+        top: 40%;
+        left: 50vw;
+        width: 40%;
+        max-width: 400px;
+        height: fit-content;
+        padding: 1.5rem 1rem;
     }
-    .br-text3 .container {
-        top: -100%;
-        width: 100%;
+    .br-text3 {
+        top: 25%;
+        width: 50%;
         height: 100%;
     }
-    .doWhat p {
-        max-width: 540px;
-        font-size: 1rem;
-        line-height: 2rem;
+    .top_right p, .doWhat .br-text1 p {
+        font-size: 0.9rem;
+        background: -webkit-linear-gradient(-55deg, #ffdb29,#fc2db7 89%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
     }
-    .doWhat .cont3 p {
+    .doWhat .br-text2 p {
+        font-size: 0.9rem;
+        padding: 0 1rem;
+        line-height: 2rem;
+        background: #00ffd0;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    .doWhat .br-text3 p {
         max-width: 410px;
-        padding-top: 1rem;
-        padding-left: 4rem;
-        font-size: 1.1rem;
-        line-height: 2.5rem;
+        padding: 3rem;
+        padding-right: 1rem;
+        font-size: 1rem;
+        line-height: 2.3rem;
     }
 
 
