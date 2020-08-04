@@ -704,7 +704,7 @@ li svg {
 }
 
 .top-nav li:hover, .top-nav .active {
-    color: #555;
+    color: white;
 }
 
 /*===================================================*/
@@ -1120,6 +1120,9 @@ li svg {
     .top-nav li {
         font-size: 1.3rem;
         letter-spacing: 0.2rem;
+    }
+    .top-nav a {
+        text-decoration: none;
     }
     .fb, .in, .gh {
         fill: grey;
