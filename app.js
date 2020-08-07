@@ -1,4 +1,5 @@
 $(window).on("load", function() {
+	
 	const controller = new ScrollMagic.Controller,
 		welcome = $("section.welcome"),
 		scene_container = $(".scene-container"),
