@@ -188,7 +188,7 @@ section {
 
 @keyframes bounce-1 {
     0%   { transform: translateY(0); }
-    50%  { transform: translateY(-30px); }
+    50%  { transform: translateY(-40px); }
     100% { transform: translateY(0); }
 }
 
@@ -758,6 +758,9 @@ li svg {
         font-size: 12rem;
         line-height: 10rem;
         max-width: 520px;
+    }
+    .arrow {
+        display: none;
     }
     .letters {
         display: block;
