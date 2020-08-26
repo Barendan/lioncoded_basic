@@ -1,5 +1,5 @@
 $(window).on("load", function() {
-	
+
 	const controller = new ScrollMagic.Controller,
 		welcome = $("section.welcome"),
 		scene_container = $(".scene-container"),
@@ -41,9 +41,8 @@ $(window).on("load", function() {
 		;
 
 
-
 	function init() {
-		// console.log("hello buddy")
+		$('.preload-container').fadeOut();
 		console.log(window.innerWidth);
 		window.innerWidth < 768 ? mobileAnimation() : desktopAnimation();
 	}
@@ -53,6 +52,7 @@ $(window).on("load", function() {
 		// Pre-rendering
 		TweenMax.to(doWhat_backdrop, .1, { opacity: 0, ease: Power0.easeIn }, 0)
 		
+
 		// Start animation
 		TweenMax.to(welcome, 1.5, {
 			opacity: 1,
@@ -62,6 +62,7 @@ $(window).on("load", function() {
 			onComplete: function() { aboutStart() }
 		}, 0)
 		
+
 		// Intro Scene
 		function sceneStart() {
 			let cloudTL = new TimelineMax({
@@ -75,6 +76,7 @@ $(window).on("load", function() {
 				.to(scene_2, 20, {x: '+=50', ease: Power0.easeNone },0)
 				.to(scene_2, 20, {x: '-=50', ease: Power0.easeNone },20);
 		}
+
 
 		// Exit Intro ; Start About
 		function aboutStart() {
@@ -105,8 +107,6 @@ $(window).on("load", function() {
 			;
 				
 
-
-
 			const aboutEnd = new TimelineMax();
 			aboutEnd
 				// EXIT SLIDESHOW #1
@@ -119,6 +119,7 @@ $(window).on("load", function() {
 				.to(br_cont1_title, 5, {y: "200%", ease: Power2.easeInOut}, 2)
 				.to(br_cont1_text, 5, {y: "100%", ease: Power2.easeInOut}, 2)
 			
+
 				// ENTER SLIDESHOW #2
 				.to(container_3, 5, {opacity: 1,ease: Sine.easeInOut}, 2)
 				.fromTo(container_3, 5, {y: "100%"}, {y: "0%",ease: Sine.easeInOut}, 2)
@@ -132,7 +133,6 @@ $(window).on("load", function() {
 				.fromTo(br_cont2_text, 4, {y: "-300%"}, {y: "0%"}, 3)
 				
 
-
 				// EXIT SLIDESHOW #2
 				.to(container_4, 4, {opacity: 0, ease: Power2.easeInOut}, 9)
 				.to(container_4, 5, {x: "100%", ease: Power2.easeInOut}, 9)
@@ -140,6 +140,7 @@ $(window).on("load", function() {
 				.to(br_cont2, 4, {opacity: 0, ease: Power2.easeInOut}, 9)
 				.to(br_cont2_title, 5, {y: "300%", ease: Power2.easeInOut}, 9)
 				.to(br_cont2_text, 5, {y: "200%", ease: Power2.easeInOut}, 9)
+
 
 				// ENTER SLIDESHOW #3
 				.to(container_5, 5, {opacity: 1,ease: Sine.easeInOut}, 9)
@@ -181,9 +182,6 @@ $(window).on("load", function() {
 			.setTween(aboutEnd)
 			.addTo(controller);
 		}
-
-
-
 
 
 		function myWork() {
