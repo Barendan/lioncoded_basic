@@ -64,7 +64,7 @@ $(window).on("load", function() {
 		TweenMax.to(scene_5, .1, {x: "-10%"})
 		TweenMax.to(scene_5, .1, {scaleY: "0.5"})
 		TweenMax.to(scene_6, .1, {y: "50%"})
-
+		TweenMax.to(doWhat, .1, {scale: 0.85})
 
 		// Start animation
 		TweenMax.to(welcome, 1.5, {
@@ -104,43 +104,24 @@ $(window).on("load", function() {
 		function doStart() {
 			const aboutStart = new TimelineMax();
 			aboutStart
-				.to(scene_2, 5, {y: "-50%", ease: Power0.easeIn}, 1)
-				.to(scene_3, 5, {y: "-20%", ease: Power0.easeIn}, 1)
-				.to(scene_4, 5, {scaleY: "0.5", ease: Power0.easeIn}, 3)
-				.to(scene_5, 5, {x: "-10%", scaleY: "0.7"}, 3)
-				.to(scene_container, 5, {y: "-50%", scale: 0.5, ease: Circ.easeIn}, 3)
+				.to(welcome, 14, { opacity: 0, ease: Power2.easeOut }, 1)
+				.to(scene_2, 5, {y: "-50%", ease: Power0.easeIn}, 3)
+				.to(scene_3, 5, {y: "-20%", ease: Power0.easeIn}, 3)
+				.to(scene_4, 7, {scaleY: "0.5", ease: Power0.easeIn}, 4)
+				.to(scene_5, 7, {x: "-10%", scaleY: "0.7"}, 4)
+				.to(scene_container, 8, {y: "-25%", scale: 0.5, ease: Circ.easeIn}, 5)
 
-				.to(welcome, 10, { opacity: 0, ease: Power2.easeOut }, 0)
-
-				
 				// ENTER SLIDESHOW #1
-				.to(doWhat, 10, { opacity: 1, ease: Power0.easeIn }, 0)
+				.to(doWhat, 8, { opacity: 0.7, ease: Power0.easeIn }, 7)
+				.to(doWhat, 9, { scale: .98, ease: Circ.easeIn }, 6)
 
-				.fromTo(container_1, 10, {y: '100%'}, {y: '0%', ease: Sine.easeIn}, 5)
-				.fromTo(background_1, 10, {y: '-100%',opacity: 0}, {y: '0%',opacity: 0.7,ease: Sine.easeIn}, 5)
+				.fromTo(top_right, 5, {x: "50%"}, {x: "0%"}, 10)
+				.fromTo(top_right, 5, {opacity: 0 }, {opacity: 1, ease: Power3.easeInOut}, 10)
 
-				// .fromTo(tr_cont_title, 10, {maxHeight: "0"}, {maxHeight: "123px", ease: Sine.easeInOut}, 5)
-				
-				// .fromTo(tr_cont_text, 10, {maxHeight: "0"}, {maxHeight: "123px", ease: Sine.easeInOut}, 5)
-				
-
-				.fromTo(tr_cont_title, 10, {maxHeight: "0",opacity: 0}, {
-					maxHeight: "100%",
-					opacity: 1,
-					ease: Sine.easeInOut
-				}, 10)
-
-				.fromTo(tr_cont_text, 10, {maxHeight: "0",opacity: 0}, {
-					maxHeight: "100%",
-					opacity: 1,
-					ease: Sine.easeInOut
-				}, 10)
-
+				.fromTo(br_cont1, 3, {x: "50%"}, {x: "0%"}, 12)
 				.fromTo(br_cont1, 3, {opacity: 0 }, {opacity: 1, ease: Power3.easeInOut}, 12)
-				.fromTo(br_cont1, 5, {y: '-100%' }, {y: '0%', ease: Sine.easeInOut}, 10)
 			;
 				
-
 			const aboutEnd = new TimelineMax();
 			aboutEnd
 				// EXIT SLIDESHOW #1
