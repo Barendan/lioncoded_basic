@@ -1463,7 +1463,7 @@ li svg {
         background-clip: text;
     }
     .br-text2 {
-        background-color: #000000a1;
+        background-color: #00000080;
         top: 40%;
         left: 50vw;
         width: 40%;
@@ -1485,9 +1485,9 @@ li svg {
         font-size: 0.9rem;
         padding: 0 1rem;
         line-height: 2rem;
-        background: #00ffd0;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+        /*background: #00ffd0;*/
+        /*-webkit-background-clip: text;*/
+        /*-webkit-text-fill-color: transparent;*/
     }
     .doWhat .br-text3 p {
         max-width: 410px;
