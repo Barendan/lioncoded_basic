@@ -1344,6 +1344,12 @@ li svg {
 
 /*// Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) {
+    .mobile-only {
+        display: none;
+    }
+    .desktop-only {
+        display: block;
+    }
     .clouds {
         background-size: 50% 15%;
         background-position: 100% 15%;
@@ -1371,12 +1377,6 @@ li svg {
     .rocks {
         background-size: 100% 40%;
         background-position: 0% 106%;
-    }
-    .mobile-only {
-        display: none;
-    }
-    .desktop-only {
-        display: block;
     }
     .background-shadow {
         background: black;
@@ -1409,29 +1409,11 @@ li svg {
         background-position: 235% -5%;
     }
 
-    .top_right {
-        display: block;
-        top: 0%;
-        right: 0%;
-        left: inherit;
-        width: 50%;
-        height: 50%;
-        z-index: 6;
-    }
-    .bottom_right {
-        background: transparent;
-        width: 50%;
-        z-index: 10;
-    }
     .container-1 h1, .container-3 h1, .container-5 h1 {
         text-shadow: 0px 4px 4px rgb(0 0 0 / 50%);
         -webkit-background-clip: text;
         -moz-background-clip: text;
         background-clip: text;
-    }
-    .br-text1 h1 {
-        font-size: 7rem;
-        letter-spacing: -2px;
     }
     .container-3 h1 {
         position: relative;
@@ -1452,6 +1434,15 @@ li svg {
         letter-spacing: 0px;
     }
 
+    .top_right {
+        display: block;
+        top: 0%;
+        right: 0%;
+        left: inherit;
+        width: 50%;
+        height: 50%;
+        z-index: 6;
+    }
     .top_right h1 {
         width: fit-content;
         margin: 0rem auto;
@@ -1462,6 +1453,20 @@ li svg {
         -moz-background-clip: text;
         background-clip: text;
     }
+    .bottom_right {
+        background: transparent;
+        width: 50%;
+        z-index: 10;
+    }
+    .br-text1 h1 {
+        font-size: 7rem;
+        letter-spacing: -2px;
+    }
+    .top_right p, .doWhat .br-text1 p {
+        font-size: 0.9rem;
+        color: wheat;
+        overflow:hidden;
+    }
     .br-text2 {
         background-color: #00000080;
         top: 40%;
@@ -1471,15 +1476,6 @@ li svg {
         height: fit-content;
         padding: 1.5rem 1rem;
     }
-    .br-text3 {
-        top: 25%;
-        width: 50%;
-        height: 100%;
-    }
-    .top_right p, .doWhat .br-text1 p {
-        font-size: 0.9rem;
-        color: wheat;
-    }
     .doWhat .br-text2 p {
         color: #f5e7b3;
         font-size: 0.9rem;
@@ -1488,6 +1484,11 @@ li svg {
         /*background: #00ffd0;*/
         /*-webkit-background-clip: text;*/
         /*-webkit-text-fill-color: transparent;*/
+    }
+    .br-text3 {
+        top: 25%;
+        width: 50%;
+        height: 100%;
     }
     .doWhat .br-text3 p {
         max-width: 410px;
