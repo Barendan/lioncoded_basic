@@ -150,7 +150,7 @@ $(window).on("load", function() {
 				.to(br_cont3, 3, {opacity: 1, ease: Power2.easeIn}, 9)
 				.fromTo(br_cont3_text, 3, {y: "-50%"}, { y: "0%" }, 9)
 
-				.to(br_cont3_text, 1, {
+				.to(br_cont3_text, 2, {
 					y: "0%",
 					delay: 2,
 					onComplete: function() {
@@ -177,11 +177,11 @@ $(window).on("load", function() {
 			.addTo(controller);
 		}
 
+		// Exit DoWhat ; Enter MyWork
 		function myWork() {
 			const paraCodeTween = new TimelineMax();
 			paraCodeTween
-
-				// EXIT SLIDESHOW #3
+				// Exit DoWhat: Part3
 				.to(doWhat, 0.3, {autoAlpha: 0, ease: Power3.easeOut, 
 					onStart: function() {
 						$('.bottom_right').addClass('overflow_allow');
@@ -191,32 +191,30 @@ $(window).on("load", function() {
 					}
 				}, 0)
 
-				// .to(doWhat_backdrop, 0.5, {y: '-100%', ease: Power2.easeIn}, 1)
+				.fromTo(br_cont3_title, 0.1, {y: '0%'}, {y: '-150%', ease: Power2.easeIn}, 0)
+				.fromTo(br_cont3_text, 0.2, {y: '0%'}, {y: '-150%', ease: Power2.easeIn}, 0)
+				.fromTo(doWhat, 0.2, {y:'0%', scale: .98},{y: "-35%", scale: 0.75, ease: Power2.easeIn}, 0)
 
-				.fromTo(br_cont3_title, 0.5, {y: '0%'}, {y: '-150%', ease: Power2.easeIn}, 1)
-				
-				.fromTo(br_cont3_text, 0.1, {y: '0%'}, {y: '-150%', ease: Power2.easeIn}, 1)
-	
 				// ENTER MYWORK SECTION
 				.to(myWork_section, 0.2, {autoAlpha: 1, ease: Power2.easeIn,
 					onStart: function() { typed() }
 				}, 0)
-				.to('.language-markup', 1, { y: '-30%', ease: Power0.easeNone}, 0);
+				.to('.language-markup', 1, { y: '-40%'}, 0);
 			;
 	
-			// const contactIntro = new TimelineMax();
-			// contactIntro
-			// 	.to('.contact_section', 5, {opacity: 1, ease: Power2.easeIn}, 0)
-			// 	.to('.mywork', 5, {opacity: 0.3, ease: Power3.easeOut}, 0)
-			// 	.to('.contact_section', 1, {
-			// 		onStart: function() {
-			// 			$('.mywork').addClass('no_overflow');
-			// 		},
-			// 		onReverseComplete: function() {
-			// 			$('.mywork').removeClass('no_overflow');
-			// 		} 
-			// 	}, 3)
-			// ;
+			const contactIntro = new TimelineMax();
+			contactIntro
+				.to('.contact_section', 5, {opacity: 1, ease: Power2.easeIn}, 0)
+				.to('.mywork', 5, {opacity: 0.3, ease: Power3.easeOut}, 0)
+				.to('.contact_section', 1, {
+					onStart: function() {
+						$('.mywork').addClass('no_overflow');
+					},
+					onReverseComplete: function() {
+						$('.mywork').removeClass('no_overflow');
+					} 
+				}, 3)
+			;
 			
 	
 			function typed() {
