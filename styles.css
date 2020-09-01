@@ -758,7 +758,7 @@ section {
 code[class*=language-] {
     color: darkgrey;
     direction: ltr;
-    font-family: 'consolas';
+    font-family: 'Ubuntu Mono', monospace;
     text-align: left;
     text-shadow: 0 -.1em .2em #000;
     white-space: pre-wrap;
@@ -784,15 +784,15 @@ code[class*=language-] ::selection,code[class*=language-]::selection {
 .typed_container {
     display: inline-flex;
     padding: 0.5rem;
-
     font-size: 9vw;
     letter-spacing: -2px;
-    font-weight: 300;
-    font-family: 'Montserrat', sans-serif;
-    font-family: 'consolas';
+    font-family: 'Ubuntu Mono', monospace;
+    animation: text-flicker 3s linear 3;
+    opacity: 0.9;
 }
 .typed-cursor {
     line-height: 1em;
+    opacity: 0 !important;
 }
 
 section.mywork .project-row {
@@ -842,6 +842,11 @@ section.mywork .project-box {
     background: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
     filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);
 }
+
+.project-box, .project-text {
+    opacity: 0;
+}
+
 .project-box:hover .shadow {
     opacity: 0.1;
 }
@@ -920,12 +925,22 @@ section.mywork .project-text {
 
 .contact_container h2 {
     color: oldlace;
+    width: 0%;
     text-align: center;
     padding: .5rem;
     font-size: 17vw;
     letter-spacing: 0.2rem;
     letter-spacing: 0;
     font-family: 'ceraBlack', sans-serif;
+    overflow:hidden;
+}
+
+.contact_container p,
+.contact_container h3, 
+.contact_container li,
+.contact_form input,
+#subject {
+    opacity: 0;
 }
 
 .info_container {
@@ -1240,7 +1255,7 @@ li svg {
         width: 85vw;
         max-width: 500px;
         margin: 3rem auto 5rem;
-        box-shadow: 1px 2px 8px 6px black; 
+        box-shadow: 1px 2px 8px 6px black;
     }
     .form_container h2 {
         font-size: 5.5rem;
@@ -1499,7 +1514,7 @@ li svg {
     }
 
     .typed_container {
-        font-size: 7vw;
+        font-size: 5vw;
     }
     .source-viewer code {
         color: inherit;
@@ -1561,6 +1576,7 @@ li svg {
         margin: 0;
         margin-right: 4rem;
         margin-left: 2rem;
+        box-shadow: none;
     }
     .info_container h2 {
         font-size: 4rem;
@@ -1622,3 +1638,19 @@ li svg {
 
 }
 
+
+
+
+
+
+
+
+@keyframes text-flicker {
+  0% { opacity:  0.5 }
+  10% { opacity: 0.4 }
+  20% { opacity: 0.5 }
+  30% { opacity: 0.4 }
+  50% { opacity: 0.6 }
+  70% { opacity: 0.4 }
+  100% { opacity: 0.7 }
+}

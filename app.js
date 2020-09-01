@@ -197,37 +197,74 @@ $(window).on("load", function() {
 
 				// ENTER MYWORK SECTION
 				.to(myWork_section, 0.2, {autoAlpha: 1, ease: Power2.easeIn,
-					onStart: function() { typed() }
+					onStart: function() { typed() },
+					onComplete: function() { projectPop() }
 				}, 0)
 				.to('.language-markup', 1, { y: '-40%'}, 0);
 			;
+
+			function projectPop() {
+				const staggerEntry = new TimelineMax();
+				staggerEntry
+					.to(".project-box", {
+					  duration: 0.5,
+					  opacity: 1.0,
+					  delay: 7,
+					  stagger: 1.5
+					}, 0)
+					.to(".project-text", {
+					  duration: 1,
+					  opacity: 1.0,
+					  delay: 7,
+					  stagger: 1
+					}, 1)
+				;
+			}
 	
+			function typed() {
+				let typed_text = new Typed('.work-title', {
+					strings:  [
+						'$:Satellite uplink initialized.^700.^700.',
+						'$:Satellite uplink initialized',
+						'$:Satellite uplink initialized.^700.^700.',
+						'$:Satellite uplink initialized',
+						'$:Satellite uplink initialized.^700.^700.',
+						'$:Satellite uplink established.'
+						// '$:Database: Connection Requested.^700.^700.',
+						// '$:Database: Connection Requested',
+						// '$:Database: Connection Requested.^700.^700.',
+						// '$:Database: Connection Requested',
+						// '$:Database: Connection Requested.^700.^700.',
+						// '$:Database: Connection Established.'
+					],
+					// startDelay: 2000,
+					typeSpeed: 50,
+					backSpeed: 0,
+					backDelay: 200,
+					smartBackspace: true
+				})
+			}
+			
 			const contactIntro = new TimelineMax();
 			contactIntro
-				.to('.contact_section', 5, {opacity: 1, ease: Power2.easeIn}, 0)
+				.to('.project-row:last-child', 2, {opacity: 0.1, ease: Power3.easeOut}, 2)
 				.to('.mywork', 5, {opacity: 0.3, ease: Power3.easeOut}, 0)
+				.to('.contact_section', 5, {opacity: 1, ease: Power2.easeIn}, 0)
+				.to('.contact_container h2', 1, {width: "100%", ease: Power2.easeIn}, 2.5)
+				.to('.contact_container p', 1.5, {opacity: 1.0, ease: Power2.easeIn}, 3)
+				.to($('.form_container form').children(), {opacity: 1.0, ease: Power2.easeIn, stagger: 0.4}, 3)
+				.to('.contact_container h3', {opacity: 1.0, ease: Power2.easeIn, stagger: 0.3}, 4)
+				.to('.contact_container li', {opacity: 1.0, ease: Power2.easeIn, stagger: 0.3}, 4)
+				.to('.form_container', 1, {boxShadow: "1px 2px 8px 6px black"}, 4)
 				.to('.contact_section', 1, {
 					onStart: function() {
 						$('.mywork').addClass('no_overflow');
 					},
 					onReverseComplete: function() {
 						$('.mywork').removeClass('no_overflow');
-					} 
-				}, 3)
+					}
+				}, 2)
 			;
-			
-	
-			function typed() {
-				let typed_text = new Typed('.work-title', {
-					strings:  ['', '$:/^700Projects/^300atrchive', '$:/Projects/archive'],
-					// startDelay: 2000,
-					typeSpeed: 50,
-					backSpeed: 30,
-					backDelay: 200,
-					smartBackspace: true
-				})
-			}
-	
 	
 			let paraCodeSlide = new ScrollMagic.Scene({
 				triggerElement: '.mywork',
@@ -244,12 +281,12 @@ $(window).on("load", function() {
 			})
 			.setTween(contactIntro)
 			.addTo(controller)
-			// .addIndicators({
-			// 	name: 'fade-in scene',
-			// 	colorTrigger: 'red',
-			// 	colorStart: '#75C695',
-			// 	colorEnd: '#75C695'
-			// })
+			.addIndicators({
+				name: 'fade-in scene',
+				colorTrigger: 'red',
+				colorStart: '#75C695',
+				colorEnd: '#75C695'
+			})
 		}
 	
 	}
@@ -463,7 +500,6 @@ $(window).on("load", function() {
 			// })
 		}
 	}
-
 
 	init()
 })
