@@ -281,14 +281,7 @@ $(window).on("load", function() {
 			})
 			.setTween(contactIntro)
 			.addTo(controller)
-			.addIndicators({
-				name: 'fade-in scene',
-				colorTrigger: 'red',
-				colorStart: '#75C695',
-				colorEnd: '#75C695'
-			})
 		}
-	
 	}
 
 	function mobileAnimation() {
