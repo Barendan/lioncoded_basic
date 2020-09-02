@@ -99,7 +99,7 @@ $(window).on("load", function() {
 				.to(scene_container, 8, {y: "-25%", scale: 0.5, ease: Circ.easeIn}, 5)
 
 				// Enter DoWhat: Part1
-				.to(doWhat, 8, { opacity: 0.7, ease: Power0.easeIn }, 7)
+				.to(doWhat, 8, { opacity: 1.0, ease: Power0.easeIn }, 7)
 				.to(doWhat, 9, { scale: .98, ease: Circ.easeIn }, 6)
 
 				.fromTo(top_right, 5, {x: "50%"}, {x: "0%"}, 10)

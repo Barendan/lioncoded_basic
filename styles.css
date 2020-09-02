@@ -626,21 +626,21 @@ section {
 }
 
 .br-text1 h1 {
-    font-size: 19vw;
     width: fit-content;
     margin: 0rem auto;
+    font-size: 19vw;
 }
 
 .br-text2 h1 {
-    font-size: 16vw;
     width: 90%;
     margin: 0rem auto;
+    font-size: 17.5vw;
 }
 
 .br-text3 h1 {
-    font-size: 22vw;
     width: fit-content;
     margin: 0rem auto;
+    font-size: 22vw;
 }
 
 .background {
@@ -790,6 +790,7 @@ code[class*=language-] ::selection,code[class*=language-]::selection {
     animation: text-flicker 3s linear 3;
     opacity: 0.9;
 }
+
 .typed-cursor {
     line-height: 1em;
     opacity: 0 !important;
@@ -815,7 +816,6 @@ section.mywork .project-box {
     left: 0;
     top: 0;
     opacity: 1;
-
     -webkit-transition: all 650ms cubic-bezier(0.165, 0.840, 0.440, 1.000);
     -moz-transition: all 650ms cubic-bezier(0.165, 0.840, 0.440, 1.000);
     -ms-transition: all 650ms cubic-bezier(0.165, 0.840, 0.440, 1.000);
@@ -1109,24 +1109,14 @@ li svg {
         background-position: 6rem 25rem;
     }
     .doWhat p {
-        max-width: 35rem;
         margin: 0 auto;
         padding: 0.5rem 2rem;
         line-height: 2rem;
     }
-    .br-text1 h1 {
-        font-size: 5.5rem;
-    }
     .br-text2 h1 {
-        width: 26rem;
-        font-size: 5rem;
-        letter-spacing: -3px;
+        width: fit-content;
+        letter-spacing: -2px;
     }
-    .br-text3 h1 {
-        width: 23.5rem;
-        font-size: 6rem;
-    }
-
     section.mywork .project-box {
         width: 69vw;
         height: 41vw;
@@ -1211,9 +1201,15 @@ li svg {
         background-size: 130vw 80vh;
         background-position: 90% 50%;
     }
-
+    .br-text1 h1 {
+        font-size: 7.5rem;
+    }
+    .br-text2 h1 {
+        font-size: 7.5rem;
+        letter-spacing: -2px;
+    }
     .br-text3 h1 {
-        width: fit-content;
+        font-size: 8rem;
     }
     .doWhat p {
         max-width: 40rem;
@@ -1273,7 +1269,6 @@ li svg {
         background-size: 95% 45%;
         background-position: 25% 35%;
     }
-
     .lion {
         background-size: 380px 330px;
         background-position: 13rem 26rem;
@@ -1291,30 +1286,20 @@ li svg {
         background-position: 110% 50%;
     }
     .br-text2 {
-        top: -20px;
+        top: 48%;
         background-color: transparent;
     }
     .br-text3 {
-        top: -90px;
+        top: 45%;
         background-color: transparent; 
     }
     .br-text1 h1,
-    .br-text2 h1,
-    .br-text3 h1 {
-        width: fit-content;
-        text-shadow: 0px 4px 4px rgb(0 0 0 / 50%);
-        -webkit-background-clip: text;
-        -moz-background-clip: text;
-        background-clip: text;
-    }
-    .br-text1 h1,
     .br-text2 h1 {
-        font-size: 10rem;
-        letter-spacing: -4px;
+        font-size: 8.5rem;
+        letter-spacing: -2px;
     }
     .br-text3 h1 {
-        font-size: 14rem;
-        letter-spacing: -4px;
+        font-size: 9rem;
     }
     .doWhat p {
         max-width: 620px;
@@ -1448,7 +1433,6 @@ li svg {
         font-size: 15rem;
         letter-spacing: 0px;
     }
-
     .top_right {
         display: block;
         top: 0%;
@@ -1599,7 +1583,6 @@ li svg {
     input[type=submit] {
         margin: 3rem auto 2rem;
     }
-
     .glow {
         top: -5vh;
         left: 38vw;
@@ -1630,7 +1613,6 @@ li svg {
     li:hover .gh {
         fill: #F4CBB2;
     }
-
 }
 
 /*// Extra large devices (large desktops, 1200px and up)*/
