@@ -430,7 +430,9 @@ $(window).on("load", function() {
 				.fromTo(doWhat, 0.2, {y:'0%', scale: .98},{y: "-35%", scale: 0.75, ease: Power2.easeIn}, 0)
 
 				// ENTER MYWORK SECTION
-				.to(myWork_section, 0.2, {autoAlpha: 1, ease: Power2.easeIn,
+				.to(myWork_section, 0.2, {
+					autoAlpha: 1, 
+					ease: Power2.easeIn,
 					onStart: function() { typed() },
 					onComplete: function() { projectPop() }
 				}, 0)
@@ -441,7 +443,7 @@ $(window).on("load", function() {
 				const staggerEntry = new TimelineMax();
 				staggerEntry
 					.to(".project-box", {
-					  duration: 0.5,
+					  duration: 1,
 					  opacity: 1.0,
 					  delay: 7,
 					  stagger: 1.5
@@ -450,7 +452,7 @@ $(window).on("load", function() {
 					  duration: 1,
 					  opacity: 1.0,
 					  delay: 7,
-					  stagger: 1
+					  stagger: 1.7
 					}, 1)
 				;
 			}
@@ -458,20 +460,13 @@ $(window).on("load", function() {
 			function typed() {
 				let typed_text = new Typed('.work-title', {
 					strings:  [
-						'$:Satellite uplink initialized.^700.^700.',
-						'$:Satellite uplink initialized',
-						'$:Satellite uplink initialized.^700.^700.',
-						'$:Satellite uplink initialized',
-						'$:Satellite uplink initialized.^700.^700.',
-						'$:Satellite uplink established.'
-						// '$:Database: Connection Requested.^700.^700.',
-						// '$:Database: Connection Requested',
-						// '$:Database: Connection Requested.^700.^700.',
-						// '$:Database: Connection Requested',
-						// '$:Database: Connection Requested.^700.^700.',
-						// '$:Database: Connection Established.'
+						'$:Accessing archive.^700.^700.',
+						'$:Accessing archive',
+						'$:Accessing archive.^700.^700.',
+						'$:Accessing archive',
+						'$:Accessing archive.^700.^700.',
+						'$:Access Granted.'
 					],
-					// startDelay: 2000,
 					typeSpeed: 50,
 					backSpeed: 0,
 					backDelay: 200,
@@ -481,15 +476,17 @@ $(window).on("load", function() {
 			
 			const contactIntro = new TimelineMax();
 			contactIntro
-				.to('.project-row:last-child', 2, {opacity: 0.1, ease: Power3.easeOut}, 2)
-				.to('.mywork', 5, {opacity: 0.3, ease: Power3.easeOut}, 0)
-				.to('.contact_section', 5, {opacity: 1, ease: Power2.easeIn}, 0)
-				.to('.contact_container h2', 1, {width: "100%", ease: Power2.easeIn}, 2.5)
-				.to('.contact_container p', 1.5, {opacity: 1.0, ease: Power2.easeIn}, 3)
-				.to($('.form_container form').children(), {opacity: 1.0, ease: Power2.easeIn, stagger: 0.4}, 3)
-				.to('.contact_container h3', {opacity: 1.0, ease: Power2.easeIn, stagger: 0.3}, 4)
-				.to('.contact_container li', {opacity: 1.0, ease: Power2.easeIn, stagger: 0.3}, 4)
-				.to('.form_container', 1, {boxShadow: "1px 2px 8px 6px black"}, 4)
+				.to('.project-row:last-child', 6, {opacity: 0.1, ease: Power3.easeOut}, 2)
+				.to('.mywork', 10, {opacity: 0.3, ease: Power3.easeOut}, 0)
+				.to('.contact_section', 8, {opacity: 1, ease: Power2.easeIn}, 0)
+				.to('.info_container h2', 2, {width: "100%", ease: Power2.easeIn}, 3)
+				.to('.form_container h2', 1, {width: "100%", ease: Power2.easeIn}, 7)
+				.to('.contact_container p', 2, {opacity: 1.0, ease: Power2.easeIn}, 3)
+				.to('.contact_container h3', 1, {opacity: 1.0, ease: Power2.easeIn, stagger: 0.7}, 5)
+				.to('.contact_container li', 1, {opacity: 1.0, ease: Power2.easeIn, stagger: 0.7}, 5.3)
+				.to('.form_container', 2, {boxShadow: "1px 2px 8px 6px black", ease: Power2.easeIn}, 7)
+				.to($('.form_container form').children(), 0.5, {opacity: 1.0, ease: Power2.easeIn, stagger: 0.2}, 8.5)
+
 				.to('.contact_section', 1, {
 					onStart: function() {
 						$('.mywork').addClass('no_overflow');
@@ -511,7 +508,7 @@ $(window).on("load", function() {
 			let placehold2 = new ScrollMagic.Scene({
 				triggerElement: '.contact_section',
 				triggerHook: 1,
-				duration: '100%'
+				duration: '120%'
 			})
 			.setTween(contactIntro)
 			.addTo(controller)
