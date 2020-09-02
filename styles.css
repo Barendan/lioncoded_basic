@@ -888,23 +888,32 @@ section.mywork .project-text {
     font-weight: 300;
 }
 
-.project-one {
+.demo-cp {
+    background-image: url(images/3mywork/cp-demo.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    border: 1px dashed #ffb6006e;
+}
+
+.demo-pr {
+    background-image: url(images/3mywork/pr-demo.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    border: 1px dashed #ffb6006e;
+}
+
+.demo-dd {
     background-image: url(images/3mywork/dd-demo.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
+    border: 1px dashed #ffb6006e;
 }
 
-.project_two {
+.demo-hh {
     background-image: url(images/3mywork/24hh-demo.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
-}
-
-.project_three {
-    background-image: url(images/3mywork/fw-demo.png);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    box-shadow: 1px 1px 15px black;
+    border: 1px dashed #ffb6006e;
 }
 
 /*===================================================*/
