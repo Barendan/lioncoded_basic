@@ -635,6 +635,7 @@ section {
     width: 90%;
     margin: 0rem auto;
     font-size: 17.5vw;
+    letter-spacing: -2px;
 }
 
 .br-text3 h1 {
@@ -698,7 +699,6 @@ section {
 }
 
 .bottom_right {
-    background-color: rgba(0, 0, 0, 0.5);
     position: absolute;
     top: 50%;
     right: 0%;
@@ -740,7 +740,7 @@ section {
 .source-viewer code {
     position: absolute;
     font-family: monospace;
-    opacity: .35;
+    opacity: .15;
     left: 0;
     top: -5rem;
     box-sizing: border-box;
@@ -770,7 +770,6 @@ code[class*=language-] {
     -webkit-hyphens: none;
     -ms-hyphens: none;
     hyphens: none;
-    opacity: 0.2;
 }
 code[class*=language-] ::-moz-selection,code[class*=language-]::-moz-selection {
     text-shadow: none;
@@ -1462,7 +1461,6 @@ li svg {
         background-clip: text;
     }
     .bottom_right {
-        background: transparent;
         width: 50%;
         z-index: 10;
     }
@@ -1505,7 +1503,6 @@ li svg {
         font-size: 1rem;
         line-height: 2.3rem;
     }
-
     .typed_container {
         font-size: 5vw;
     }
@@ -1552,7 +1549,6 @@ li svg {
     .project-text p {
         line-height: 1.75rem;
     }
-
     .contact_container {
         display: flex;
         width: 100%;
@@ -1626,11 +1622,73 @@ li svg {
 
 /*// Extra large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) {
-
+    .background-1 {
+        background-size: 145% 120%;
+        background-position: -44vw -3vw;
+    }
+    .background-3 {
+        background-size: 130% 192%;
+        background-position: 98% 20%;
+    }
+    .background-5 {
+        background-size: 140vw 110%;
+        background-position: 130% 1%;
+    }
+    .top_right h1 {
+        font-size: 8rem;
+    }
+    .br-text1 h1 {
+        font-size: 7.8rem;
+    }
+    .top_right p, .doWhat .br-text1 p, .doWhat .br-text2 p {
+        font-size: 0.95rem;
+        letter-spacing: 1px;
+    }
+    .doWhat .br-text3 p {
+        letter-spacing: 0.7px;
+        max-width: 460px;
+    }
+    .br-text2 {
+        top: 45%;
+        left: 55vw;
+        width: 36%;
+        max-width: 500px;
+        padding: 3rem 2rem;
+    }
+    .br-text3 {
+        top: 27%;
+        width: 37%;
+    }
+    .typed_container {
+        font-size: 4vw;
+    }
+    .source-viewer code {
+        margin-left: -4vw;
+    }
+    section.mywork .project-row {
+        max-width: initial;
+    }
+    section.mywork .project-box {
+        width: 69vw;
+        height: 41vw;
+    }
+    .project-border {
+        width: 69vw;
+        height: 41vw;
+    }
+    .contact_container {
+        max-width: 1400px;
+        margin: 10rem auto 5rem;
+    }
+    .info_container { 
+        max-width: 700px;
+    }
+    .form_container {
+        width: 45%;
+        max-width: 580px;
+        margin-right: 5rem;
+    }
 }
-
-
-
 
 
 @keyframes text-flicker {
