@@ -714,8 +714,7 @@ section {
 .doWhat p {
     color: wheat;
     padding: 0.5rem 2rem;
-    line-height: 7vw;
-    /*font-weight: 700;*/
+    line-height: 3.2vh;
     text-align: justify;
 }
 
@@ -1692,7 +1691,7 @@ li svg {
 @media (max-height: 670px) {
     .doWhat p {
         padding-top: 0px;
-        line-height: 5.5vw;
+        line-height: 3vh;
     }
 }
 
