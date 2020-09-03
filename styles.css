@@ -1111,7 +1111,7 @@ li svg {
 @media (min-width: 360px) {
     .lion {
         background-size: 440px 360px;
-        background-position: 6rem 25rem;
+        background-position: 15vw 40vh;
     }
     .doWhat p {
         margin: 0 auto;
@@ -1189,7 +1189,7 @@ li svg {
     }
     .lion {
         background-size: 330px 280px;
-        background-position: 10rem 29rem;
+        background-position: 23vw 55vh;
         z-index: 8;
     }
     .rocks {
@@ -1276,7 +1276,6 @@ li svg {
     }
     .lion {
         background-size: 380px 330px;
-        background-position: 13rem 26rem;
     }
     .background-1 {
         background-size: 140vw 71vh;
@@ -1690,6 +1689,12 @@ li svg {
     }
 }
 
+@media (max-height: 670px) {
+    .doWhat p {
+        padding-top: 0px;
+        line-height: 5.5vw;
+    }
+}
 
 @keyframes text-flicker {
   0% { opacity:  0.5 }
