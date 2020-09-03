@@ -938,7 +938,6 @@ section.mywork .project-text {
     padding: .5rem;
     font-size: 17vw;
     letter-spacing: 0.2rem;
-    letter-spacing: 0;
     font-family: 'ceraBlack', sans-serif;
     overflow:hidden;
 }
@@ -958,7 +957,6 @@ section.mywork .project-text {
 
 .info_container h2 {
     font-size: 16vw;
-    letter-spacing: 0.2rem;
 }
 
 .info_container p {
@@ -990,7 +988,6 @@ section.mywork .project-text {
     font-size: 14vw;
     padding-top: 3rem;
     line-height: 13vw;
-    letter-spacing: 0.2rem;
 }
 
 .contact_form {
@@ -1687,6 +1684,9 @@ li svg {
         width: 45%;
         max-width: 580px;
         margin-right: 5rem;
+    }
+    .contact_container h2 {
+        letter-spacing: 0.5rem;
     }
 }
 
