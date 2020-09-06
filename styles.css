@@ -792,9 +792,8 @@ code[class*=language-] ::selection,code[class*=language-]::selection {
     display: inline-flex;
     padding: 0.5rem 0rem 0.5rem 0.5rem;
     font-size: 8vw;
-    /*letter-spacing: -2px;*/
     font-family: 'Ubuntu Mono', monospace;
-    animation: text-flicker 3s linear 3;
+    animation: text-flicker 3s linear 2;
     opacity: 0.9;
 }
 

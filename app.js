@@ -214,13 +214,13 @@ $(window).on("load", function() {
 					.to(".project-box", {
 					  duration: 0.5,
 					  opacity: 1.0,
-					  delay: 7,
+					  delay: 6,
 					  stagger: 1.5
 					}, 0)
 					.to(".project-text", {
 					  duration: 1,
 					  opacity: 1.0,
-					  delay: 7,
+					  delay: 6,
 					  stagger: 1
 					}, 1)
 				;
@@ -229,20 +229,11 @@ $(window).on("load", function() {
 			function typed() {
 				let typed_text = new Typed('.work-title', {
 					strings:  [
-						'$:Satellite uplink initialized.^700.^700.',
-						'$:Satellite uplink initialized',
-						'$:Satellite uplink initialized.^700.^700.',
-						'$:Satellite uplink initialized',
-						'$:Satellite uplink initialized.^700.^700.',
-						'$:Satellite uplink established.'
-						// '$:Database: Connection Requested.^700.^700.',
-						// '$:Database: Connection Requested',
-						// '$:Database: Connection Requested.^700.^700.',
-						// '$:Database: Connection Requested',
-						// '$:Database: Connection Requested.^700.^700.',
-						// '$:Database: Connection Established.'
+						'$:Satellite link initialized.^700.^700.',
+						'$:Satellite link initialized',
+						'$:Satellite link initialized.^700.^700.',
+						'$:Satellite link established.'
 					],
-					// startDelay: 2000,
 					typeSpeed: 50,
 					backSpeed: 0,
 					backDelay: 200,
@@ -326,16 +317,16 @@ $(window).on("load", function() {
 					repeatDelay: 0,
 					yoyo: true
 				});
-				cloudTL
-					.fromTo(scene_2, 10, {opacity: 0.6}, {opacity: 0.75},0)
-					.fromTo(scene_3, 10, {opacity: 0.6}, {opacity: 0.75},0)
-					.fromTo(scene_7, 10, {opacity: 0.7}, {opacity: 0.85},0)
-					.to(scene_2, 20, {x: '+=50', ease: Power0.easeNone },0)
-					.to(scene_3, 20, {x: '+=50', ease: Power0.easeNone },0)
-					.to(scene_7, 20, {backgroundPosition: '-=20', ease: Power0.easeNone },0)
-					.to(scene_2, 20, {x: '-=50', ease: Power0.easeNone },20)
-					.to(scene_3, 20, {x: '-=50', ease: Power0.easeNone },20)
-					.to(scene_7, 20, {backgroundPosition: '+=20', ease: Power0.easeNone },20);
+				// cloudTL
+				// 	.fromTo(scene_2, 10, {opacity: 0.6}, {opacity: 0.75},0)
+				// 	.fromTo(scene_3, 10, {opacity: 0.6}, {opacity: 0.75},0)
+				// 	.fromTo(scene_7, 10, {opacity: 0.7}, {opacity: 0.85},0)
+				// 	.to(scene_2, 20, {x: '+=50', ease: Power0.easeNone },0)
+				// 	.to(scene_3, 20, {x: '+=50', ease: Power0.easeNone },0)
+				// 	.to(scene_7, 20, {backgroundPosition: '-=20', ease: Power0.easeNone },0)
+				// 	.to(scene_2, 20, {x: '-=50', ease: Power0.easeNone },20)
+				// 	.to(scene_3, 20, {x: '-=50', ease: Power0.easeNone },20)
+				// 	.to(scene_7, 20, {backgroundPosition: '+=20', ease: Power0.easeNone },20);
 			}
 		}
 
@@ -458,13 +449,13 @@ $(window).on("load", function() {
 					.to(".project-box", {
 					  duration: 1,
 					  opacity: 1.0,
-					  delay: 7,
+					  delay: 5,
 					  stagger: 1.5
 					}, 0)
 					.to(".project-text", {
 					  duration: 1,
 					  opacity: 1.0,
-					  delay: 7,
+					  delay: 5,
 					  stagger: 1.7
 					}, 1)
 				;
@@ -473,8 +464,6 @@ $(window).on("load", function() {
 			function typed() {
 				let typed_text = new Typed('.work-title', {
 					strings:  [
-						'$:Accessing archive.^700.^700.',
-						'$:Accessing archive',
 						'$:Accessing archive.^700.^700.',
 						'$:Accessing archive',
 						'$:Accessing archive.^700.^700.',
