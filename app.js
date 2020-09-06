@@ -10,6 +10,7 @@ $(window).on("load", function() {
 		scene_4 = $("#layer4"), // Letters
 		scene_5 = $("#layer5"), // Lion
 		scene_6 = $("#layer6"), // Rocks
+		scene_7 = $("#layer7"), // Clouds3
 		
 		doWhat = $("section.doWhat"),
 		doWhat_backdrop = $("section.doWhat .backdrop"),
@@ -80,9 +81,15 @@ $(window).on("load", function() {
 					yoyo: true
 				});
 				cloudTL
-					.fromTo(scene_2, 10, {opacity: 0.4}, {opacity: 0.7},0)
+					.fromTo(scene_2, 10, {opacity: 0.6}, {opacity: 0.75},0)
+					.fromTo(scene_3, 10, {opacity: 0.6}, {opacity: 0.75},0)
+					.fromTo(scene_7, 10, {opacity: 0.7}, {opacity: 0.85},0)
 					.to(scene_2, 20, {x: '+=50', ease: Power0.easeNone },0)
-					.to(scene_2, 20, {x: '-=50', ease: Power0.easeNone },20);
+					.to(scene_3, 20, {x: '+=50', ease: Power0.easeNone },0)
+					.to(scene_7, 20, {backgroundPosition: '-=25', ease: Power0.easeNone },0)
+					.to(scene_2, 20, {x: '-=50', ease: Power0.easeNone },20)
+					.to(scene_3, 20, {x: '-=50', ease: Power0.easeNone },20)
+					.to(scene_7, 20, {backgroundPosition: '+=25', ease: Power0.easeNone },20);
 			}
 		}
 
@@ -320,9 +327,15 @@ $(window).on("load", function() {
 					yoyo: true
 				});
 				cloudTL
-					.fromTo(scene_2, 10, {opacity: 0.4}, {opacity: 0.7},0)
+					.fromTo(scene_2, 10, {opacity: 0.6}, {opacity: 0.75},0)
+					.fromTo(scene_3, 10, {opacity: 0.6}, {opacity: 0.75},0)
+					.fromTo(scene_7, 10, {opacity: 0.7}, {opacity: 0.85},0)
 					.to(scene_2, 20, {x: '+=50', ease: Power0.easeNone },0)
-					.to(scene_2, 20, {x: '-=50', ease: Power0.easeNone },20);
+					.to(scene_3, 20, {x: '+=50', ease: Power0.easeNone },0)
+					.to(scene_7, 20, {backgroundPosition: '-=20', ease: Power0.easeNone },0)
+					.to(scene_2, 20, {x: '-=50', ease: Power0.easeNone },20)
+					.to(scene_3, 20, {x: '-=50', ease: Power0.easeNone },20)
+					.to(scene_7, 20, {backgroundPosition: '+=20', ease: Power0.easeNone },20);
 			}
 		}
 

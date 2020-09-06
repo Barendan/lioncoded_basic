@@ -517,16 +517,16 @@ section {
 .clouds {
     background-image: url("./images/1welcome/clouds-01.png");
     background-repeat: no-repeat;
-    background-size: 80% 10%;
-    background-position: 100% 15%;
+    background-size: 105% 15%;
+    background-position: 100% -2%;
     z-index: 5;
 }
 
 .clouds2 {
     background-image: url("./images/1welcome/clouds-02.png");
     background-repeat: no-repeat;
-    background-size: 80% 10%;
-    background-position: 45% 10%;
+    background-size: 90% 10%;
+    background-position: 45% 14%;
     opacity: 0.7;
     z-index: 3;
 }
@@ -541,7 +541,7 @@ section {
 }
 
 .landscape {
-    background: url('./images/1welcome/landscape1.png');
+    background: url('./images/1welcome/landscape3.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 20% 10%;
@@ -564,6 +564,15 @@ section {
     background-repeat: no-repeat;
     background-size: 200% 35%;
     background-position: 0% 106%;
+    z-index: 6;
+}
+
+.clouds3 {
+    background: url(./images/1welcome/clouds-04.png);
+    background-repeat: no-repeat;
+    background-size: 150% 30%;
+    background-position: 70% 101%;
+    opacity: 0.7;
     z-index: 6;
 }
 
@@ -1196,6 +1205,9 @@ li svg {
         background-position: 0% 100%;
         z-index: 8;
     }
+    .clouds3 {
+        z-index: 8;
+    }
 
     .background-1 {
         background-size: 145vw 60vh;
@@ -1269,6 +1281,17 @@ li svg {
 
 /*// Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) {
+    .clouds {
+        background-size: 127% 30%;
+        background-position: 25vw -5%;
+    }
+    .clouds2 {
+        background-size: 80% 20%;
+        background-position: 83% 17%;
+    }
+    .clouds3 {
+        background-size: 150% 35%;
+    }
     .letters {
         background-size: 95% 45%;
         background-position: 25% 35%;
@@ -1276,6 +1299,7 @@ li svg {
     .lion {
         background-size: 380px 330px;
     }
+
     .background-1 {
         background-size: 140vw 71vh;
         background-position: 0% 60%;
@@ -1352,14 +1376,6 @@ li svg {
     }
     .desktop-only {
         display: block;
-    }
-    .clouds {
-        background-size: 50% 15%;
-        background-position: 100% 15%;
-    }
-    .clouds2 {
-        background-size: 40% 10%;
-        background-position: 45% 10%;
     }
     .landscape {
         background-size: 100% 100%;
