@@ -39,12 +39,6 @@ $(window).on("load", function() {
 		myWork_section = $("section.mywork")
 		;
 
-	function init() {
-		$('.preload-container').fadeOut();
-		console.log(window.innerWidth);
-		window.innerWidth < 992 ? mobileAnimation() : desktopAnimation();
-	}
-
 	function desktopAnimation() {
 		// Pre-rendering
 		TweenMax.to(scene_4, .1, {y: "-200%"})
@@ -214,13 +208,13 @@ $(window).on("load", function() {
 					.to(".project-box", {
 					  duration: 0.5,
 					  opacity: 1.0,
-					  delay: 6,
+					  delay: 4.5,
 					  stagger: 1.5
 					}, 0)
 					.to(".project-text", {
 					  duration: 1,
 					  opacity: 1.0,
-					  delay: 6,
+					  delay: 4.5,
 					  stagger: 1
 					}, 1)
 				;
@@ -234,7 +228,7 @@ $(window).on("load", function() {
 						'$:Satellite link initialized.^700.^700.',
 						'$:Satellite link established.'
 					],
-					typeSpeed: 50,
+					typeSpeed: 20,
 					backSpeed: 0,
 					backDelay: 200,
 					smartBackspace: true
@@ -517,5 +511,29 @@ $(window).on("load", function() {
 		}
 	}
 
+	function init() {
+		$('.preload-container').fadeOut();
+		console.log(window.innerWidth);
+		window.innerWidth < 992 ? mobileAnimation() : desktopAnimation();
+	}
+
 	init()
 })
+
+// Intercepting Contact Form Submission to prevent redirect
+$(".contact_form").on('submit',function(event) {
+    event.preventDefault()
+    let dataString = $(this).serialize()
+    $.ajax({
+        type: "POST",
+        url: "send_mail.php",
+        data: dataString,
+        success: function(data){
+            $('.contact_form')[0].reset()
+        }
+    }).done(function(data){
+        setTimeout(function () {
+            alert("Your message has been sent.\nThank you.")
+        }, 500);
+    });
+});

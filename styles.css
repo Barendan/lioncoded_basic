@@ -953,7 +953,7 @@ section.mywork .project-text {
 .contact_container h3, 
 .contact_container li,
 .contact_form input,
-#subject {
+.contact_form textarea {
     opacity: 0;
 }
 
@@ -1002,7 +1002,7 @@ section.mywork .project-text {
     overflow: hidden;
 }
 
-input[type=text], select, textarea {
+.contact_form input, select, textarea {
     font-family: 'ceraRegular', sans-serif;
     background-color: #1b1b1b;
     display: block;
