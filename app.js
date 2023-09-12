@@ -208,14 +208,14 @@ $(window).on("load", function() {
 					.to(".project-box", {
 					  duration: 0.5,
 					  opacity: 1.0,
-					  delay: 4.5,
+					  delay: 1,
 					  stagger: 1.5
 					}, 0)
 					.to(".project-text", {
-					  duration: 1,
+					  duration: 0.5,
 					  opacity: 1.0,
-					  delay: 4.5,
-					  stagger: 1
+					  delay: 1.2,
+					  stagger: 1.2
 					}, 1)
 				;
 			}
@@ -223,10 +223,10 @@ $(window).on("load", function() {
 			function typed() {
 				let typed_text = new Typed('.work-title', {
 					strings:  [
-						'$:Satellite link initialized.^700.^700.',
-						'$:Satellite link initialized',
-						'$:Satellite link initialized.^700.^700.',
-						'$:Satellite link established.'
+						'$:Projects package initialized.^300.^300.',
+						'$:Projects package initialized.',
+						'$:Projects package initialized.^300.^300.',
+						'$:Projects package access granted.'
 					],
 					typeSpeed: 20,
 					backSpeed: 0,
