@@ -220,13 +220,29 @@ $(window).on("load", function() {
 				;
 			}
 	
+			// function typed() {
+			// 	let typed_text = new Typed('.work-title', {
+			// 		strings:  [
+			// 			'$:Projects package initialized.^300.^300.',
+			// 			'$:Projects package initialized.',
+			// 			'$:Projects package initialized.^300.^300.',
+			// 			'$:Projects package access granted.'
+			// 		],
+			// 		typeSpeed: 20,
+			// 		backSpeed: 0,
+			// 		backDelay: 200,
+			// 		smartBackspace: true
+			// 	})
+			// }
+
 			function typed() {
 				let typed_text = new Typed('.work-title', {
 					strings:  [
-						'$:Projects package initialized.^300.^300.',
-						'$:Projects package initialized.',
-						'$:Projects package initialized.^300.^300.',
-						'$:Projects package access granted.'
+						'$:Recent Projects initialized.^300.^300.',
+						'$:Recent Projects initialized.',
+						'$:Recent Projects initialized.^300.^300.',
+						'$:Recent Projects access granted.',
+						'$:// Recent Projects'
 					],
 					typeSpeed: 20,
 					backSpeed: 0,
