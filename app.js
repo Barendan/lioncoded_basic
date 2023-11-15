@@ -1,5 +1,19 @@
 $(window).on("load", function() {
 
+	$(document).ready(function() {
+		$(document).delegate('.open', 'click', function(event){
+			$(this).addClass('oppenned');
+			event.stopPropagation();
+		})
+		$(document).delegate('body', 'click', function(event) {
+			$('.open').removeClass('oppenned');
+		})
+		$(document).delegate('.cls', 'click', function(event){
+			$('.open').removeClass('oppenned');
+			event.stopPropagation();
+		});
+	});
+
 	const controller = new ScrollMagic.Controller,
 		welcome = $("section.welcome"),
 		welcome_title = $(".welcome h1"),
