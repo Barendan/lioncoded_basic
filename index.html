@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css?family=Archivo+Black|Chivo:400|Kanit:400|Work+Sans:400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="styles.css" />
+    <script src="js/modernizr.custom.25376.js"></script>
 </head>
 
 <body>
@@ -41,7 +42,7 @@
 </div> -->
 
 <!-- Menu Start -->
-<div class="open">
+<!-- <div class="open">
     <span class="cls"></span>
     <span>
         <ul class="sub-menu ">
@@ -60,391 +61,408 @@
         </ul>
     </span>
     <span class="cls"></span>
-</div>
+</div> -->
 
 
 
 
+<div id="perspective" class="perspective effect-moveleft">
+    <div class="container">
+        <div class="wrapper">
+            <p><button id="showMenu">Show Menu</button></p>
 
 <!-- Menu End -->
 
 
-<div class="app">
+    <div class="app">
 
-    <section class="welcome" id="welcome">
-        <div class="welcome-shadow"></div>
-        <h1>Lion Coded</h1>
-        <div class="scene-container">
-            <div class="landscape scene" id="layer1"></div>
-            <div class="clouds scene" id="layer2"></div>
-            <div class="clouds2 scene" id="layer3"></div>
-            <div class="letters scene" id="layer4"></div>
-            <div class="lion scene" id="layer5"></div>
-            <div class="rocks scene" id="layer6"></div>
-            <div class="clouds3 scene" id="layer7"></div>
-        </div>
-        <div class="arrow bounce">
-            <svg xmlns="http://www.w3.org/2000/svg" class="downward" id="layer8" viewBox="0 0 24 24">
-                <path d="M16 8v-4l8 8-8 8v-4h-5v-8h5zm-7 0h-2v8h2v-8zm-4.014 0h-1.986v8h1.986v-8zm-3.986 0h-1v8h1v-8z"/>
-            </svg>
-        </div>
-    </section>
+        <section class="welcome" id="welcome">
+            <div class="welcome-shadow"></div>
+            <h1>Lion Coded</h1>
+            <div class="scene-container">
+                <div class="landscape scene" id="layer1"></div>
+                <div class="clouds scene" id="layer2"></div>
+                <div class="clouds2 scene" id="layer3"></div>
+                <div class="letters scene" id="layer4"></div>
+                <div class="lion scene" id="layer5"></div>
+                <div class="rocks scene" id="layer6"></div>
+                <div class="clouds3 scene" id="layer7"></div>
+            </div>
+            <div class="arrow bounce">
+                <svg xmlns="http://www.w3.org/2000/svg" class="downward" id="layer8" viewBox="0 0 24 24">
+                    <path d="M16 8v-4l8 8-8 8v-4h-5v-8h5zm-7 0h-2v8h2v-8zm-4.014 0h-1.986v8h1.986v-8zm-3.986 0h-1v8h1v-8z"/>
+                </svg>
+            </div>
+        </section>
 
-    <section class="doWhat" id="doWhat">
-        <div class="backdrop">
-            
-            <div class="container-1">
-                <div class="background background-1"></div>
-                <div class="background-shadow"></div>
-            </div>
-            <div class="container-3">
-                <div class="background background-3"></div>
-                <!-- <h1 class="desktop-only">Mobile Apps</h1> -->
-            </div>
-            <div class="container-5">
-                <div class="background background-5"></div>
-                <!-- <h1 class="desktop-only">Security</h1> -->
-            </div>
-
-            <div class="top_right tr_cont">
-                <h1>Front-end</h1>
-                <p>
-                    Designing a website that people will remember takes finesse.
-                    There are millions of websites out there but few really stand out.
-                    Through an elegant combination of CSS and Javascript, we break away from simple newspaper-like pages and create an immersive experience that people can enjoy.
-                </p>
-            </div>
-
-            <div class="bottom_right br-text1">
-                <div class="desktop-only">
-                    <h1>Back-end</h1>
-                    <p>
-                        Ease-of-use, organization, and efficiency. The things we seldom have but always need. Servers and databases make up the back-end of a website and are typically used when information is required from the user.
-                    </p>
+        <section class="doWhat" id="doWhat">
+            <div class="backdrop">
+                
+                <div class="container-1">
+                    <div class="background background-1"></div>
+                    <div class="background-shadow"></div>
                 </div>
-                <div class="mobile-only">
-                    <h1>Full-Stack</h1>
-                    <p>
-                        From the front-end to the back-end and everything in between. Designing the page, putting together databases, building APIs, and animation are just a few of my specialties. <br>
-                        A deep passion to know my industry, inside and out is my prime motivation. This enables me able to stay ahead of the curve and on top of the latest technologies, like React.
-                    </p>
+                <div class="container-3">
+                    <div class="background background-3"></div>
+                    <!-- <h1 class="desktop-only">Mobile Apps</h1> -->
                 </div>
-            </div>
-
-            <div class="bottom_right br-text2">
-                <h1>Mobile App</h1>
-                <h1 class="mobile-only">Mobile App</h1>
-                <p>
-                    These days, more people have a mobile phone than a computer.
-                    Having your app in the Apple or Android app store shows that you mean business while at the same time, advertising to millions of users.
-                </p>
-            </div>
-
-            <div class="bottom_right br-text3">
-                <div class="desktop-only">
-                    <h1>Security</h1>
-                    <p>
-                        Two things separate an average developer from a professional. Security and Scalability. Protecting your companies information as well as the clients data should be a top priority for all coders.
-                        Adding extra safety measures like input validation and strict typing ensures you don't end up the victim of a malicious hacker.
-                    </p>
+                <div class="container-5">
+                    <div class="background background-5"></div>
+                    <!-- <h1 class="desktop-only">Security</h1> -->
                 </div>
-                <div class="mobile-only">
-                    <h1>Security</h1>
-                    <p>
-                        Two things separate an average developer from the professional. Security and Scalability. Protecting your companies information as well as the clients data should be a top priority for all coders.
-                        <br> 
-                        Building scalable architecture from the start is an investment that saves you time and money later on. Using the smallest screen sizes as a foundation, we build up while preserving the aspect ratio.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <section class="mywork" id="projects">
-        <pre class="source-viewer">    
-            <code class="language-markup" content="
-                <!doctype html>
-                <head>
-                    <title>LionCoded: Bold Designs</title>
-                    <meta charset=utf-8> 
-                    <meta http-equiv=X-UA-Compatible content=IE=edge>
-                    <meta name=viewport content=width=device-width, initial-scale=1>
-
-                    <link href=https://fonts.googleapis.com/css?family=Lato|Montserrat:300,400,600|Open+Sans:400,600|Roboto:300,400&display=swap rel=stylesheet>
-                    <link href=https://fonts.googleapis.com/css?family=Archivo+Black|Chivo:400|Kanit:400|Work+Sans:400&display=swap rel=stylesheet>
-
-                    <link rel=stylesheet type=text/css href=styles.css />
-                </head>
-                <body>
-                <section class=doWhat>
-                    <div class=background>
-                    const aboutStart = new TimelineMax();
-                    aboutStart
-                        .to(scene_2, 10, {y: -300%, ease: Power0.easeIn}, 0)
-                        .to(welcome_title, 5, {y: -300%, ease: Power0.easeIn}, 0)
-                        .to(scene_container, 5, {y: -50%, scale:0.2, ease: Circ.easeIn}, 5)
-                        .to(scene_container, 5, { scale: 0.5, ease: Power1.easeIn }, 5)
-                        .to(welcome, 10, { opacity: 0, ease: Power2.easeOut }, 0)
-
-                        .to(doWhat, 10, { opacity: 1, ease: Power0.easeIn }, 0)
-                        .to(doWhat_background, 1, { opacity: 1, ease: Power0.easeIn }, 0)
-                        
-                        // ENTER SLIDESHOW #1
-                        .fromTo(container_1, 10, {y: '100%'}, {y: '0%', ease: Sine.easeIn}, 5)
-                        .fromTo(background_1, 10, {y: '-100%',opacity: 0}, {y: '0%',opacity: 0.7,ease: Sine.easeIn}, 5)
-
-                        .fromTo(container_2, 10, {x: -103%}, {x: 0%, ease: Sine.easeInOut}, 5)
-                        .fromTo(background_2, 10, {x: 103%,opacity: 0}, {
-                            x: 0%,
-                            opacity: 1,
-                            ease: Sine.easeInOut
-                        }, 5)
-
-                        .fromTo(br_cont1, 3, {opacity: 0 }, {opacity: 1, ease: Power3.easeInOut}, 12)
-                        .fromTo(br_cont1, 5, {y: '-100%' }, {y: '0%', ease: Sine.easeInOut}, 10)
-                    ;
-                    </div>
-                    <div class=background>
-                    const aboutStart = new TimelineMax();
-                    aboutStart
-                        .to(scene_2, 10, {y: -300%, ease: Power0.easeIn}, 0)
-                        .to(welcome_title, 5, {y: -300%, ease: Power0.easeIn}, 0)
-                        .to(scene_container, 5, {y: -50%, scale:0.2, ease: Circ.easeIn}, 5)
-                        .to(scene_container, 5, { scale: 0.5, ease: Power1.easeIn }, 5)
-                        .to(welcome, 10, { opacity: 0, ease: Power2.easeOut }, 0)
-
-                        .to(doWhat, 10, { opacity: 1, ease: Power0.easeIn }, 0)
-                        .to(doWhat_background, 1, { opacity: 1, ease: Power0.easeIn }, 0)
-                        
-                        // ENTER SLIDESHOW #1
-                        .fromTo(container_1, 10, {y: '100%'}, {y: '0%', ease: Sine.easeIn}, 5)
-                        .fromTo(background_1, 10, {y: '-100%',opacity: 0}, {y: '0%',opacity: 0.7,ease: Sine.easeIn}, 5)
-
-                        .fromTo(container_2, 10, {x: -103%}, {x: 0%, ease: Sine.easeInOut}, 5)
-                        .fromTo(background_2, 10, {x: 103%,opacity: 0}, {
-                            x: 0%,
-                            opacity: 1,
-                            ease: Sine.easeInOut
-                        }, 5)
-
-                        .fromTo(br_cont1, 3, {opacity: 0 }, {opacity: 1, ease: Power3.easeInOut}, 12)
-                        .fromTo(br_cont1, 5, {y: '-100%' }, {y: '0%', ease: Sine.easeInOut}, 10)
-                    ;
-
-                    <div class=top_right>
+                <div class="top_right tr_cont">
                     <h1>Front-end</h1>
                     <p>
                         Designing a website that people will remember takes finesse.
-                        There are millions of websites out there but few really stand out in our minds.
-                        Through an elegant combination of CSS and Javascript, I break away from simple newspaper-like pages and create an immersive experience that people can enjoy. By keeping up with the latest technologies and tools, which drastically improve year after year, I am able to deliver a truly unique website that entices people to come back.
+                        There are millions of websites out there but few really stand out.
+                        Through an elegant combination of CSS and Javascript, we break away from simple newspaper-like pages and create an immersive experience that people can enjoy.
                     </p>
-                    </div>
+                </div>
 
-                    <div class=bottom_right br-text1>
-                        <div class=desktop-only>
-                            <h1>Back-end</h1>
-                            <p>
-                                Ease-of-use, organization, and efficiency. The things we seldom have but always want.
-                                Servers and databases make up the back-end of a website and are typically used for websites that want information from the user. With proficiency in two of the most widely used back-end programming languages, Ruby and PHP, I optimize the back-end architecture using either relational or non-relational databases like MongoDB.
-                            </p>
-                        </div>
-                        <div class=mobile-only>
-                            <h1>Full-Stack</h1>
-                            <p>
-                                Front-end ux/ui design, back-end databases, animations, virtual systems, Linux, Agile, versioning tools (Git), test driven development, and the latest libraries like React are what make a full-stack developer truly excel.<br>
-                                My greatest fear is stagnation and curiosity pushes me to discover new technology, new unique website designs, and new ways to create an experience your users will enjoy.
-                            </p>
-                        </div>
+                <div class="bottom_right br-text1">
+                    <div class="desktop-only">
+                        <h1>Back-end</h1>
+                        <p>
+                            Ease-of-use, organization, and efficiency. The things we seldom have but always need. Servers and databases make up the back-end of a website and are typically used when information is required from the user.
+                        </p>
                     </div>
-
-                    <div class=bottom_right br-text2>
-                        <div class=desktop-only>
-                            <p>
-                                No more settling for mobile web apps, HTML5 apps, or a hybrid app.
-                                React Native lets us build mobile apps indistinguishable from an app built using Objective-C/Swift (for Apple) or Java (for Android). It uses the same design as React, which allows for code to be moved from web to mobile efficiently while retaining the same rich user interface.
-                            </p>
-                        </div>
-                        <div class=mobile-only>
-                            <h1>Mobile App</h1>
-                            <p>
-                                These days, more people have a mobile phone than a computer.
-                                The Apple / Android app store is booming with activity and has been the cause of overnight startup success (Uber/AirBnB).<br>
-                                Leveraging modern tools with the help of JavaScript, I can design mobile apps using a lot of the same code I use to create websites.
-                                Thereby, saving you time and money.
-                            </p>
-                        </div>
-                    </div>
-
-                    .welcome-shadow {
-                        background: -moz-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.25) 100%);
-                        background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0.25)));
-                        background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.25) 100%);
-                        background: -o-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.25) 100%);
-                        background: -ms-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.25) 100%);
-                        background: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.25) 100%);
-                        filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);
-                        z-index: 10;
-                    }
+                    <div class="mobile-only">
+                        <h1>Full-Stack</h1>
+                        <p>
+                            From the front-end to the back-end and everything in between. Designing the page, putting together databases, building APIs, and animation are just a few of my specialties. <br>
+                            A deep passion to know my industry, inside and out is my prime motivation. This enables me able to stay ahead of the curve and on top of the latest technologies, like React.
+                        </p>
                     </div>
                 </div>
 
-                <!-- jQuery -->
-                <script src=https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js></script>
-                <!-- ScrollMagic -->
-                <script src=https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js></script>
-                <script src=https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js></script>
-                <!-- GreenSock TweenMax -->
-                <script src=https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/TweenMax.min.js></script>
-                <!-- ScrollMagic GreenSock Plugin -->
-                <script src=https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js></script>
-                <!-- Typed.js -->
-                <script src=https://cdn.jsdelivr.net/npm/typed.js@2.0.9></script>
+                <div class="bottom_right br-text2">
+                    <h1>Mobile App</h1>
+                    <h1 class="mobile-only">Mobile App</h1>
+                    <p>
+                        These days, more people have a mobile phone than a computer.
+                        Having your app in the Apple or Android app store shows that you mean business while at the same time, advertising to millions of users.
+                    </p>
+                </div>
 
-                <script src=app.js></script>
-                ">
-            </code>
-        </pre>
-
-        <div class="typed_container"> 
-            <div class="work-title"></div>
-        </div>
-
-        <div class="project-row">
-            <div class="project-box demo-cp">
-                <a href="https://barendan.github.io/cyberpizza/" target="_blank">
-                    <div class="shadow shadow-right">
+                <div class="bottom_right br-text3">
+                    <div class="desktop-only">
+                        <h1>Security</h1>
+                        <p>
+                            Two things separate an average developer from a professional. Security and Scalability. Protecting your companies information as well as the clients data should be a top priority for all coders.
+                            Adding extra safety measures like input validation and strict typing ensures you don't end up the victim of a malicious hacker.
+                        </p>
                     </div>
-                </a>
-                <div class="project-border"></div>
-            </div>
-
-            <div class="project-text">
-                <h2 class="project-header">Cyber Pizza</h2>
-                <p>
-                    A hole in the wall pizza place that cooks up way more than just pizza. Desserts delivered until 4am was enough to hook me. There's nothing better than home made meals, but a home made website leaves much to be desired.
-                </p>
-            </div>
-        </div>
-
-        <div class="project-row">
-            <div class="project-box demo-pr">
-                <a href="https://primrust.com/" target="_blank">
-                    <div class="shadow shadow-right">
+                    <div class="mobile-only">
+                        <h1>Security</h1>
+                        <p>
+                            Two things separate an average developer from the professional. Security and Scalability. Protecting your companies information as well as the clients data should be a top priority for all coders.
+                            <br> 
+                            Building scalable architecture from the start is an investment that saves you time and money later on. Using the smallest screen sizes as a foundation, we build up while preserving the aspect ratio.
+                        </p>
                     </div>
-                </a>
-                <div class="project-border"></div>
+                </div>
             </div>
+        </section>
 
-            <div class="project-text">
-                <h2 class="project-header">Primitive Rust</h2>
-                <p>
-                    A survival game where you start off naked, smashing your rock against a tree to gather wood in order to craft a bow to take on the wildlife, as well as other players. This game has a great community but needed a website to truly establish it's presence. 
-                </p>
-            </div>
-        </div>
+        <section class="mywork" id="projects">
+            <pre class="source-viewer">    
+                <code class="language-markup" content="
+                    <!doctype html>
+                    <head>
+                        <title>LionCoded: Bold Designs</title>
+                        <meta charset=utf-8> 
+                        <meta http-equiv=X-UA-Compatible content=IE=edge>
+                        <meta name=viewport content=width=device-width, initial-scale=1>
 
-        <div class="project-row">
-            <div class="project-box demo-dd">
-                <a href="https://digitaldesign.com/" target="_blank">
-                    <div class="shadow shadow-right">
+                        <link href=https://fonts.googleapis.com/css?family=Lato|Montserrat:300,400,600|Open+Sans:400,600|Roboto:300,400&display=swap rel=stylesheet>
+                        <link href=https://fonts.googleapis.com/css?family=Archivo+Black|Chivo:400|Kanit:400|Work+Sans:400&display=swap rel=stylesheet>
+
+                        <link rel=stylesheet type=text/css href=styles.css />
+                    </head>
+                    <body>
+                    <section class=doWhat>
+                        <div class=background>
+                        const aboutStart = new TimelineMax();
+                        aboutStart
+                            .to(scene_2, 10, {y: -300%, ease: Power0.easeIn}, 0)
+                            .to(welcome_title, 5, {y: -300%, ease: Power0.easeIn}, 0)
+                            .to(scene_container, 5, {y: -50%, scale:0.2, ease: Circ.easeIn}, 5)
+                            .to(scene_container, 5, { scale: 0.5, ease: Power1.easeIn }, 5)
+                            .to(welcome, 10, { opacity: 0, ease: Power2.easeOut }, 0)
+
+                            .to(doWhat, 10, { opacity: 1, ease: Power0.easeIn }, 0)
+                            .to(doWhat_background, 1, { opacity: 1, ease: Power0.easeIn }, 0)
+                            
+                            // ENTER SLIDESHOW #1
+                            .fromTo(container_1, 10, {y: '100%'}, {y: '0%', ease: Sine.easeIn}, 5)
+                            .fromTo(background_1, 10, {y: '-100%',opacity: 0}, {y: '0%',opacity: 0.7,ease: Sine.easeIn}, 5)
+
+                            .fromTo(container_2, 10, {x: -103%}, {x: 0%, ease: Sine.easeInOut}, 5)
+                            .fromTo(background_2, 10, {x: 103%,opacity: 0}, {
+                                x: 0%,
+                                opacity: 1,
+                                ease: Sine.easeInOut
+                            }, 5)
+
+                            .fromTo(br_cont1, 3, {opacity: 0 }, {opacity: 1, ease: Power3.easeInOut}, 12)
+                            .fromTo(br_cont1, 5, {y: '-100%' }, {y: '0%', ease: Sine.easeInOut}, 10)
+                        ;
+                        </div>
+                        <div class=background>
+                        const aboutStart = new TimelineMax();
+                        aboutStart
+                            .to(scene_2, 10, {y: -300%, ease: Power0.easeIn}, 0)
+                            .to(welcome_title, 5, {y: -300%, ease: Power0.easeIn}, 0)
+                            .to(scene_container, 5, {y: -50%, scale:0.2, ease: Circ.easeIn}, 5)
+                            .to(scene_container, 5, { scale: 0.5, ease: Power1.easeIn }, 5)
+                            .to(welcome, 10, { opacity: 0, ease: Power2.easeOut }, 0)
+
+                            .to(doWhat, 10, { opacity: 1, ease: Power0.easeIn }, 0)
+                            .to(doWhat_background, 1, { opacity: 1, ease: Power0.easeIn }, 0)
+                            
+                            // ENTER SLIDESHOW #1
+                            .fromTo(container_1, 10, {y: '100%'}, {y: '0%', ease: Sine.easeIn}, 5)
+                            .fromTo(background_1, 10, {y: '-100%',opacity: 0}, {y: '0%',opacity: 0.7,ease: Sine.easeIn}, 5)
+
+                            .fromTo(container_2, 10, {x: -103%}, {x: 0%, ease: Sine.easeInOut}, 5)
+                            .fromTo(background_2, 10, {x: 103%,opacity: 0}, {
+                                x: 0%,
+                                opacity: 1,
+                                ease: Sine.easeInOut
+                            }, 5)
+
+                            .fromTo(br_cont1, 3, {opacity: 0 }, {opacity: 1, ease: Power3.easeInOut}, 12)
+                            .fromTo(br_cont1, 5, {y: '-100%' }, {y: '0%', ease: Sine.easeInOut}, 10)
+                        ;
+
+                        <div class=top_right>
+                        <h1>Front-end</h1>
+                        <p>
+                            Designing a website that people will remember takes finesse.
+                            There are millions of websites out there but few really stand out in our minds.
+                            Through an elegant combination of CSS and Javascript, I break away from simple newspaper-like pages and create an immersive experience that people can enjoy. By keeping up with the latest technologies and tools, which drastically improve year after year, I am able to deliver a truly unique website that entices people to come back.
+                        </p>
+                        </div>
+
+                        <div class=bottom_right br-text1>
+                            <div class=desktop-only>
+                                <h1>Back-end</h1>
+                                <p>
+                                    Ease-of-use, organization, and efficiency. The things we seldom have but always want.
+                                    Servers and databases make up the back-end of a website and are typically used for websites that want information from the user. With proficiency in two of the most widely used back-end programming languages, Ruby and PHP, I optimize the back-end architecture using either relational or non-relational databases like MongoDB.
+                                </p>
+                            </div>
+                            <div class=mobile-only>
+                                <h1>Full-Stack</h1>
+                                <p>
+                                    Front-end ux/ui design, back-end databases, animations, virtual systems, Linux, Agile, versioning tools (Git), test driven development, and the latest libraries like React are what make a full-stack developer truly excel.<br>
+                                    My greatest fear is stagnation and curiosity pushes me to discover new technology, new unique website designs, and new ways to create an experience your users will enjoy.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class=bottom_right br-text2>
+                            <div class=desktop-only>
+                                <p>
+                                    No more settling for mobile web apps, HTML5 apps, or a hybrid app.
+                                    React Native lets us build mobile apps indistinguishable from an app built using Objective-C/Swift (for Apple) or Java (for Android). It uses the same design as React, which allows for code to be moved from web to mobile efficiently while retaining the same rich user interface.
+                                </p>
+                            </div>
+                            <div class=mobile-only>
+                                <h1>Mobile App</h1>
+                                <p>
+                                    These days, more people have a mobile phone than a computer.
+                                    The Apple / Android app store is booming with activity and has been the cause of overnight startup success (Uber/AirBnB).<br>
+                                    Leveraging modern tools with the help of JavaScript, I can design mobile apps using a lot of the same code I use to create websites.
+                                    Thereby, saving you time and money.
+                                </p>
+                            </div>
+                        </div>
+
+                        .welcome-shadow {
+                            background: -moz-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.25) 100%);
+                            background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0.25)));
+                            background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.25) 100%);
+                            background: -o-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.25) 100%);
+                            background: -ms-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.25) 100%);
+                            background: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.25) 100%);
+                            filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);
+                            z-index: 10;
+                        }
+                        </div>
                     </div>
-                </a>
-                <div class="project-border"></div>
+
+                    <!-- jQuery -->
+                    <script src=https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js></script>
+                    <!-- ScrollMagic -->
+                    <script src=https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js></script>
+                    <script src=https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js></script>
+                    <!-- GreenSock TweenMax -->
+                    <script src=https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/TweenMax.min.js></script>
+                    <!-- ScrollMagic GreenSock Plugin -->
+                    <script src=https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js></script>
+                    <!-- Typed.js -->
+                    <script src=https://cdn.jsdelivr.net/npm/typed.js@2.0.9></script>
+
+                    <script src=app.js></script>
+                    ">
+                </code>
+            </pre>
+
+            <div class="typed_container"> 
+                <div class="work-title"></div>
             </div>
 
-            <div class="project-text">
-                <h2 class="project-header">Digital Design</h2>
-                <p>
-                    I spend a lot of time browsing the web for new designs. After several hundred bookmarked design ideas, it was time for a more efficient method to categorize, sort, and browse  those ideas. Fortunately, creating a web app is what I'm good at.
-                </p>
-            </div>
-        </div>
-
-        <div class="project-row">
-            <div class="project-box demo-hh">
-                <a href="http://24hourhealth.com/" target="_blank">
-                    <div class="shadow shadow-right">
-                    </div>
-                </a>
-                <div class="project-border"></div>
-            </div>
-
-            <div class="project-text">
-                <h2 class="project-header less-space">24 Hour Health</h2>
-                <p>
-                    Being a health-conscious individual, this was an exciting project to take on. The goal was to make something fun and eye-catching. The target audience being a younger demographic of people who are always on-the-go.
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <section class="contact_section" id="contact">
-        <div class="contact_container">
-            <div class="info_container">
-                <h2>CONTACT</h2>
-                <p> 
-                    Establishing a proper digital presence is essential these days. Let me help you do that in a unique and definitive way. Whether you have some ideas floating around your head or 
-                    you're looking for inspiration, the first step is to reach out.
-                </p>
-                
-                <h3> Current Location: </h3>
-                <li> Miami, Florida, U.S. </li>
-                
-                <h3> Mobile Number:</h3>
-                <li> 786 599 3788 </li>
-                
-                <h3> Email Address: </h3>
-                <li> Barendan@gmail.com </li>
-            </div>
-
-            <div class="form_container">
-                <h2>CONTACT FORM</h2>
-    
-                <form method="post" class="contact_form">
-                    <input type="text" name="name" placeholder="Your name">
-                    <input type="number" name="phone" placeholder="Your phone">
-                    <input type="email" name="email" placeholder="Your e-mail">
-                    <textarea name="message" placeholder="Message" ></textarea>
-                    <input type="submit" value="SEND MESSAGE">
-                </form>
-            </div>
-        </div>
-
-        <div class="social">
-            <ul>
-                <li>   
-                    <a href="https://www.facebook.com/barenboimdaniel" title="Become my friend on Facebook" class="">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="-5 -5 30 30"><path class="fb" id="icons" d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/></svg>
+            <div class="project-row">
+                <div class="project-box demo-cp">
+                    <a href="https://barendan.github.io/cyberpizza/" target="_blank">
+                        <div class="shadow shadow-right">
+                        </div>
                     </a>
-                </li>
-                <li>
-                    <a href="https://www.linkedin.com/in/barendan" title="Read my Linkedin profile" class="">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="-5 -5 30 30"><path class="in" id="icons" d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"/></svg>
+                    <div class="project-border"></div>
+                </div>
+
+                <div class="project-text">
+                    <h2 class="project-header">Cyber Pizza</h2>
+                    <p>
+                        A hole in the wall pizza place that cooks up way more than just pizza. Desserts delivered until 4am was enough to hook me. There's nothing better than home made meals, but a home made website leaves much to be desired.
+                    </p>
+                </div>
+            </div>
+
+            <div class="project-row">
+                <div class="project-box demo-pr">
+                    <a href="https://primrust.com/" target="_blank">
+                        <div class="shadow shadow-right">
+                        </div>
                     </a>
-                </li>
-                <li>
-                    <a href="https://github.com/Barendan" title="Follow me on Github: Barendan" class="">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="-5 -5 30 30"><path class="gh" id="icons" d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                    <div class="project-border"></div>
+                </div>
+
+                <div class="project-text">
+                    <h2 class="project-header">Primitive Rust</h2>
+                    <p>
+                        A survival game where you start off naked, smashing your rock against a tree to gather wood in order to craft a bow to take on the wildlife, as well as other players. This game has a great community but needed a website to truly establish it's presence. 
+                    </p>
+                </div>
+            </div>
+
+            <div class="project-row">
+                <div class="project-box demo-dd">
+                    <a href="https://digitaldesign.com/" target="_blank">
+                        <div class="shadow shadow-right">
+                        </div>
                     </a>
-                </li>
-            </ul>
-        </div>
+                    <div class="project-border"></div>
+                </div>
 
-        <div class="copyright">
-            Designed by LionCoded LLC Copyrighted 2019 &copy;
-        </div>
+                <div class="project-text">
+                    <h2 class="project-header">Digital Design</h2>
+                    <p>
+                        I spend a lot of time browsing the web for new designs. After several hundred bookmarked design ideas, it was time for a more efficient method to categorize, sort, and browse  those ideas. Fortunately, creating a web app is what I'm good at.
+                    </p>
+                </div>
+            </div>
 
-        <div class="glow"></div>
-        <!-- <div class="top-nav">
-            <ul>
-                <li><a href="#welcome">WELCOME</a></li>
-                <li><a href="#doWhat">WHAT I DO</a></li>
-                <li><a href="#projects">PROJECTS</a></li>
-                <li class="active"><a href="#contact">CONTACT</a></li>
-            </ul>
-        </div> -->
-    </section>
+            <div class="project-row">
+                <div class="project-box demo-hh">
+                    <a href="http://24hourhealth.com/" target="_blank">
+                        <div class="shadow shadow-right">
+                        </div>
+                    </a>
+                    <div class="project-border"></div>
+                </div>
 
+                <div class="project-text">
+                    <h2 class="project-header less-space">24 Hour Health</h2>
+                    <p>
+                        Being a health-conscious individual, this was an exciting project to take on. The goal was to make something fun and eye-catching. The target audience being a younger demographic of people who are always on-the-go.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact_section" id="contact">
+            <div class="contact_container">
+                <div class="info_container">
+                    <h2>CONTACT</h2>
+                    <p> 
+                        Establishing a proper digital presence is essential these days. Let me help you do that in a unique and definitive way. Whether you have some ideas floating around your head or 
+                        you're looking for inspiration, the first step is to reach out.
+                    </p>
+                    
+                    <h3> Current Location: </h3>
+                    <li> Miami, Florida, U.S. </li>
+                    
+                    <h3> Mobile Number:</h3>
+                    <li> 786 599 3788 </li>
+                    
+                    <h3> Email Address: </h3>
+                    <li> Barendan@gmail.com </li>
+                </div>
+
+                <div class="form_container">
+                    <h2>CONTACT FORM</h2>
+        
+                    <form method="post" class="contact_form">
+                        <input type="text" name="name" placeholder="Your name">
+                        <input type="number" name="phone" placeholder="Your phone">
+                        <input type="email" name="email" placeholder="Your e-mail">
+                        <textarea name="message" placeholder="Message" ></textarea>
+                        <input type="submit" value="SEND MESSAGE">
+                    </form>
+                </div>
+            </div>
+
+            <div class="social">
+                <ul>
+                    <li>   
+                        <a href="https://www.facebook.com/barenboimdaniel" title="Become my friend on Facebook" class="">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="-5 -5 30 30"><path class="fb" id="icons" d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/></svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/barendan" title="Read my Linkedin profile" class="">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="-5 -5 30 30"><path class="in" id="icons" d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"/></svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/Barendan" title="Follow me on Github: Barendan" class="">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="-5 -5 30 30"><path class="gh" id="icons" d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="copyright">
+                Designed by LionCoded LLC Copyrighted 2019 &copy;
+            </div>
+
+            <div class="glow"></div>
+            <!-- <div class="top-nav">
+                <ul>
+                    <li><a href="#welcome">WELCOME</a></li>
+                    <li><a href="#doWhat">WHAT I DO</a></li>
+                    <li><a href="#projects">PROJECTS</a></li>
+                    <li class="active"><a href="#contact">CONTACT</a></li>
+                </ul>
+            </div> -->
+        </section>
+
+    </div>
+
+    </div><!-- wrapper -->
+    </div><!-- /container -->
+
+    <nav class="outer-nav right vertical">
+            <a href="#welcome" title="home" class="menu_text">Home</a>
+            <a href="#doWhat" title="skills" class="menu_text">What We Do</a>
+            <a href="#projects" title="projects" class="menu_text">Recent Projects</a>
+            <a href="#contact" title="contact" class="menu_text">Contact Us</a>
+    </nav>
+
+<!-- </div> -->
 </div>
 
 <!-- jQuery -->
@@ -457,8 +475,10 @@
 <!-- ScrollMagic GreenSock Plugin -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script>
 <!-- Typed.js -->
-<script src="./typed.js/lib/typed.js"></script>
-<script src="app.js"></script>
+<script src="./js/typed.js/lib/typed.js"></script>
+<script src="js/app.js"></script>
+<script src="js/classie.js"></script>
+<script src="js/menu.js"></script>
 </body>
 
 </html>

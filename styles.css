@@ -1938,3 +1938,356 @@ li svg {
   70% { opacity: 0.4 }
   100% { opacity: 0.7 }
 }
+
+
+
+
+
+
+
+
+
+
+
+.wrapper p button {
+    width: 80px;
+    height: 50px;
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    z-index: 100;
+    font-size: 75%;
+    background: #ed8151;
+}
+
+.perspective {
+	background: #aaa;
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+.container {
+	background: #fff;
+	min-height: 100%;
+	position: relative;
+	outline: 1px solid rgba(0,0,0,0);
+	z-index: 10;
+}
+.container.transform {
+	-webkit-transform: translateZ(0) translateX(0) rotateY(0deg); /* reset transforms (Chrome bug) */
+	transform: translateZ(0) translateX(0) rotateY(0deg);
+}
+.container::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 0px;
+	opacity: 0;
+	background: rgba(0,0,0,0.2);
+	/* the transition delay of the height needs to be synced with the container transition time */
+	-webkit-transition: opacity 0.4s, height 0s 0.4s;
+	transition: opacity 0.4s, height 0s 0.4s;
+}
+
+.wrapper {
+	position: relative;
+}
+
+.effect-moveleft {
+	background: #00315522;
+}
+
+.effect-moveleft .container {
+	transition: transform 0.8s;
+	transform-origin: 20% 50%;
+}
+
+.effect-moveleft .container::after {
+	background: rgba(255,255,255,0.6);
+}
+
+.effect-moveleft.animate .container {
+	transform: translateX(-20%) rotateY(70deg) translateZ(250px);
+}
+
+/* Fallback */
+.no-csstransforms3d .effect-moveleft.animate .container {
+	left: -75%;
+}
+
+
+
+/* Navigation */
+.effect-moveleft .outer-nav a {
+	color: #cd9e28;
+	opacity: 0;
+	transform: translateX(100px) translateZ(-1000px);
+	transition: transform 0.4s, opacity 0.4s;
+}
+
+.effect-moveleft .outer-nav a:hover {
+	color: #333;
+}
+
+.effect-moveleft.animate .outer-nav a {
+	opacity: 1;
+	transform: translateX(0) translateZ(0);
+}
+
+.effect-moveleft.animate .outer-nav a:nth-child(2) {
+	transition-delay: 0.04s;
+}
+
+.effect-moveleft.animate .outer-nav a:nth-child(3) {
+	transition-delay: 0.08s;
+}
+
+.effect-moveleft.animate .outer-nav a:nth-child(4) {
+	transition-delay: 0.12s;
+}
+
+.effect-moveleft.animate .outer-nav a:nth-child(5) {
+	transition-delay: 0.16s;
+}
+
+.effect-moveleft.animate .outer-nav a:nth-child(6) {
+	transition-delay: 0.2s;
+}
+
+.effect-moveleft.animate .outer-nav a:nth-child(7) {
+	transition-delay: 0.24s;
+}
+
+
+.perspective.modalview {
+	position: fixed;
+	-webkit-perspective: 1500px;
+	perspective: 1500px;
+}
+
+.modalview .container {
+	/* position: absolute; */
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+	cursor: pointer;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.modalview .wrapper {
+	-webkit-transform: translateZ(-1px); /* solves a rendering bug in Chrome on Windows */
+}
+
+.animate .container::after {
+	opacity: 1;
+	height: 101%;
+	-webkit-transition: opacity 0.3s;
+	transition: opacity 0.3s;
+}
+
+
+
+
+
+
+/* Outer Nav */
+.outer-nav {
+	position: absolute;
+	height: auto;
+	font-size: 3em;
+}
+
+.outer-nav.vertical {
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+	-webkit-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+}
+
+.outer-nav.horizontal {
+	left: 50%;
+	width: 75%;
+	max-width: 1000px;
+	text-align: center;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+}
+
+.outer-nav.left {
+	left: 25%;
+}
+
+.outer-nav.right {
+	right: 25%;
+}
+
+.outer-nav.top {
+	top: 25%;
+}
+
+.outer-nav.bottom {
+	bottom: 25%;
+}
+
+.outer-nav a {
+	display: inline-block;
+	white-space: nowrap;
+	font-weight: 300;
+	margin: 0 0 70px 0;
+	color: #000;
+	-webkit-transition: color 0.3s;
+	transition: color 0.3s;
+	-webkit-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+    text-decoration: none;
+    outline: none;
+}
+
+.outer-nav a:hover {
+	color: #ffdccd;
+}
+
+.outer-nav.vertical a {
+	display: block;
+}
+
+.outer-nav.horizontal a {
+	margin: 15px 20px;
+}
+
+.outer-nav a::before {
+	display: inline-block;
+	font-family: 'typicons';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	margin-right: 10px;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+
+
+
+
+
+
+
+@import url(https://fonts.googleapis.com/css?family=Francois+One);
+
+.menu {
+    box-shadow: 2px 2px 2px 2px hsla(0,0%,0%,0.2);
+    border-radius:3px;
+    transition:all 2s ease;
+}
+
+#menu_inbox {
+  background-color: hsla(14, 75%, 55%, .1);
+  position: absolute;
+  width: 225px;
+  height: 150px;
+  top:150px;
+  left: 0px;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color:  hsla(14, 75%, 55%, .1);
+
+}
+#inbox_glow {
+  position: absolute;
+  width: 5px;
+  height: 150px;
+  outline: none;
+  background-color:  hsla(14, 75%, 55%, .7);
+  border-color:  hsla(14, 75%, 55%, .5);
+  box-shadow: 0 0 5px  hsla(14, 75%, 55%, .2);
+  display: inline;
+}
+#menu_messages {
+  background-color:  hsla(14, 75%, 55%, .1);
+  position: absolute;
+  width: 225px;
+  height: 150px;
+  top:300px;
+  left: 0px;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color:  hsla(14, 75%, 55%, .1);
+
+}
+#messages_glow {
+
+  position: absolute;
+  width: 5px;
+  height: 150px;
+  outline: none;
+  background-color:  hsla(14, 75%, 55%, .7);
+  border-color:  hsla(14, 75%, 55%, .5);
+  box-shadow: 0 0 5px  hsla(14, 75%, 55%, .2);
+  display: inline;
+}
+#menu_outbox {
+  background-color: hsla(14, 75%, 55%, .1);
+  position: absolute;
+  width: 225px;
+  height: 150px;
+  top:450px;
+  left: 0px;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color:  hsla(14, 75%, 55%, .1);
+
+}
+#outbox_glow {
+
+  position: absolute;
+  width: 5px;
+  height: 150px;
+  outline: none;
+  background-color:  hsla(14, 75%, 55%, .7);
+  border-color:  hsla(14, 75%, 55%, .5);
+  box-shadow: 0 0 5px  hsla(14, 75%, 55%, .2);
+  display: inline;
+}
+#menu_tasks {
+  background-color: hsla(14, 75%, 55%, .1);
+  position: absolute;
+  width: 225px;
+  height: 150px;
+  top:600px;
+  left: 0px;
+
+
+}
+#tasks_glow {
+  position: absolute;
+  width: 5px;
+  height: 150px;
+  outline: none;
+  background-color:  hsla(14, 75%, 55%, .7);
+  border-color:  hsla(14, 75%, 55%, .5);
+  box-shadow: 0 0 5px  hsla(14, 75%, 55%, .2);
+  display: inline;
+}
+
+.menu_text {
+  /* color: hsla(195, 85%, 95%, 1); */
+  /* font-size:2em; */
+  /* position: absolute; */
+  /* top: 60px;
+  left:90px; */
+}
+.menu_glow_text {
+  text-shadow: -3px -3px 3px hsla(14, 75%, 55%, .5);
+}
+       
