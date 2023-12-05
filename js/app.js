@@ -252,11 +252,11 @@ $(window).on("load", function() {
 			function typed() {
 				let typed_text = new Typed('.work-title', {
 					strings:  [
-						'$:Recent Projects initialized.^300.^300.',
-						'$:Recent Projects initialized.',
-						'$:Recent Projects initialized.^300.^300.',
-						'$:Recent Projects access granted.',
-						'$:// Recent Projects'
+						'C:/Creative_Lab/:link initialized.^300.^300.',
+						'C:/Creative_Lab/:link initialized.',
+						'C:/Creative_Lab/:link initialized.^300.^300.',
+						'C:/Creative_Lab/:access granted.^200.^100.',
+						'C:/Creative_Lab/Latest_Projects'
 					],
 					typeSpeed: 20,
 					backSpeed: 0,

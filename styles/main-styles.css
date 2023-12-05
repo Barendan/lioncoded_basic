@@ -1073,7 +1073,7 @@ li svg {
         background-clip: text;
     }
     .bottom_right {
-        background: #004d5857;
+        background: #00367b87;
         /* background: #0d0a35d6; */
         width: 40%;
         height: 45%;
@@ -1241,8 +1241,8 @@ li svg {
 /*// Extra large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) {
     .background-1 {
-        background-size: 150% 106%;
-        background-position: -3vw -2vw;
+        background-size: 160% 105%;
+        background-position: -4vw -1vw;
     }
     .background-3 {
         background-size: 100% 100%;
@@ -1307,7 +1307,7 @@ li svg {
 
 
     .typed_container {
-        font-size: 4vw;
+        font-size: 4.5vw;
     }
     .source-viewer code {
         margin-left: -4vw;
