@@ -2,14 +2,14 @@ $(window).on("load", function() {
 
 	$(document).ready(function() {
 		$(document).delegate('.open', 'click', function(event){
-			$(this).addClass('oppenned');
+			$(this).addClass('opened');
 			event.stopPropagation();
 		})
 		$(document).delegate('body', 'click', function(event) {
-			$('.open').removeClass('oppenned');
+			$('.open').removeClass('opened');
 		})
 		$(document).delegate('.cls', 'click', function(event){
-			$('.open').removeClass('oppenned');
+			$('.open').removeClass('opened');
 			event.stopPropagation();
 		});
 	});

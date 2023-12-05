@@ -521,7 +521,7 @@ span:nth-child(3) {
     transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 .sub-menu li:first-child {
-    margin-top: 180px;
+    margin-top: 190px;
 }
 .sub-menu li:nth-child(1) {
     -webkit-transition-delay: 0.05s;
@@ -547,39 +547,59 @@ span:nth-child(3) {
     display: block;
     float: left;
     line-height: 40px;
+    text-decoration: none;
 }
 
-.oppenned .sub-menu {
-    opacity: 1;
-    height: 400px;
-    width: 400px;
+.sub-menu li a:hover {
+    font-weight: bold;
 }
-.oppenned span:nth-child(2) {
+
+.sub-menu li a svg {
+    display: none;
+    width: 25px;
+    height: 25px;
+    margin-right: 5px;
+}
+
+.sub-menu li a:hover svg {
+    display: inline;
+}
+
+
+.opened .sub-menu {
+    opacity: 1;
+    height: 440px;
+    width: 420px;
+}
+.opened span:nth-child(2) {
     overflow: visible;
 }
-.oppenned span:nth-child(1),
-.oppenned span:nth-child(3) {
+.opened span:nth-child(1),
+.opened span:nth-child(3) {
     z-index: 100;
     transform: rotate(45deg);
 }
-.oppenned span:nth-child(1) {
+.opened span:nth-child(1) {
     transform: rotate(45deg) translateY(12px) translateX(12px);
 }
-.oppenned span:nth-child(2) {
-    height: 400px;
-    width: 400px;
+.opened span:nth-child(2) {
+    height: 420px;
+    width: 410px;
     right: -160px;
     top: -160px;
     border-radius: 50%;
     background-color: rgba(38, 84, 133, 0.54);
 }
-.oppenned span:nth-child(3) {
+.opened span:nth-child(3) {
     transform: rotate(-45deg) translateY(-10px) translateX(10px);
 }
-.oppenned li {
+.opened li {
     margin-right: 168px;
 }
 
+.experimental { 
+    color: #cb60b8 !important;
+}
 
 /* 
 .button {
@@ -1949,6 +1969,8 @@ li svg {
 
 
 
+
+/* Button  */
 .wrapper p button {
     width: 80px;
     height: 50px;
@@ -1960,11 +1982,19 @@ li svg {
     background: #ed8151;
 }
 
+
+/* Menu perspective scene */
 .perspective {
-	background: #aaa;
+	background: #bc7c1d59;
 	position: relative;
 	width: 100%;
 	height: 100%;
+    /* background-image: url(./images/1welcome/dlion.png);
+    background-repeat: no-repeat;
+    background-size: 80% 80%;
+    background-position: 180% 30%;
+    background-color: rgba(255,255,255,0.8);
+    background-blend-mode: soft-light; */
 }
 
 .container {
@@ -1996,13 +2026,41 @@ li svg {
 	position: relative;
 }
 
-.effect-moveleft {
-	background: #00315522;
+.perspective.modalview {
+	position: fixed;
+	-webkit-perspective: 1500px;
+	perspective: 1500px;
 }
 
+.modalview .container {
+	/* position: absolute; */
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+	cursor: pointer;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.modalview .wrapper {
+	-webkit-transform: translateZ(-1px); /* solves a rendering bug in Chrome on Windows */
+}
+
+.animate .container::after {
+	opacity: 1;
+	height: 101%;
+	-webkit-transition: opacity 0.3s;
+	transition: opacity 0.3s;
+}
+
+/* Effect start */
+/* .effect-moveleft {
+	background: #00315522;
+} */
+
 .effect-moveleft .container {
-	transition: transform 0.8s;
-	transform-origin: 20% 50%;
+	transition: transform 0.6s;
+	transform-origin: -20% 50%;
 }
 
 .effect-moveleft .container::after {
@@ -2010,7 +2068,7 @@ li svg {
 }
 
 .effect-moveleft.animate .container {
-	transform: translateX(-20%) rotateY(70deg) translateZ(250px);
+	transform: translateX(-10%) rotateY(65deg) translateZ(400px);
 }
 
 /* Fallback */
@@ -2028,9 +2086,9 @@ li svg {
 	transition: transform 0.4s, opacity 0.4s;
 }
 
-.effect-moveleft .outer-nav a:hover {
+/* .effect-moveleft .outer-nav a:hover {
 	color: #333;
-}
+} */
 
 .effect-moveleft.animate .outer-nav a {
 	opacity: 1;
@@ -2062,33 +2120,6 @@ li svg {
 }
 
 
-.perspective.modalview {
-	position: fixed;
-	-webkit-perspective: 1500px;
-	perspective: 1500px;
-}
-
-.modalview .container {
-	/* position: absolute; */
-	overflow: hidden;
-	width: 100%;
-	height: 100%;
-	cursor: pointer;
-	-webkit-backface-visibility: hidden;
-	backface-visibility: hidden;
-}
-
-.modalview .wrapper {
-	-webkit-transform: translateZ(-1px); /* solves a rendering bug in Chrome on Windows */
-}
-
-.animate .container::after {
-	opacity: 1;
-	height: 101%;
-	-webkit-transition: opacity 0.3s;
-	transition: opacity 0.3s;
-}
-
 
 
 
@@ -2098,24 +2129,15 @@ li svg {
 .outer-nav {
 	position: absolute;
 	height: auto;
-	font-size: 3em;
 }
 
 .outer-nav.vertical {
 	top: 50%;
+    /* height: 500px; */
 	-webkit-transform: translateY(-50%);
 	transform: translateY(-50%);
 	-webkit-transform-style: preserve-3d;
 	transform-style: preserve-3d;
-}
-
-.outer-nav.horizontal {
-	left: 50%;
-	width: 75%;
-	max-width: 1000px;
-	text-align: center;
-	-webkit-transform: translateX(-50%);
-	transform: translateX(-50%);
 }
 
 .outer-nav.left {
@@ -2123,44 +2145,36 @@ li svg {
 }
 
 .outer-nav.right {
-	right: 25%;
-}
-
-.outer-nav.top {
-	top: 25%;
-}
-
-.outer-nav.bottom {
-	bottom: 25%;
+	right: 20%;
 }
 
 .outer-nav a {
 	display: inline-block;
 	white-space: nowrap;
-	font-weight: 300;
-	margin: 0 0 70px 0;
-	color: #000;
+	font-weight: 600;
 	-webkit-transition: color 0.3s;
 	transition: color 0.3s;
 	-webkit-transform-style: preserve-3d;
 	transform-style: preserve-3d;
+	font-size: 4rem;
     text-decoration: none;
-    outline: none;
+    /* border-bottom: 1px solid black; */
+    /* outline: none; */
 }
 
-.outer-nav a:hover {
+/* .outer-nav a:hover {
 	color: #ffdccd;
-}
+} */
 
-.outer-nav.vertical a {
+/* .outer-nav.vertical a {
 	display: block;
-}
+} */
 
-.outer-nav.horizontal a {
+/* .outer-nav.horizontal a {
 	margin: 15px 20px;
-}
+} */
 
-.outer-nav a::before {
+/* .outer-nav a::before {
 	display: inline-block;
 	font-family: 'typicons';
 	speak: none;
@@ -2174,7 +2188,7 @@ li svg {
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;
-}
+} */
 
 
 
@@ -2186,17 +2200,26 @@ li svg {
 @import url(https://fonts.googleapis.com/css?family=Francois+One);
 
 .menu {
+    /* border-radius: 3px; */
+    transition: all 1s ease;
+    width: 20rem;
+    height: 5rem;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+}
+
+.menu:hover { 
     box-shadow: 2px 2px 2px 2px hsla(0,0%,0%,0.2);
-    border-radius:3px;
-    transition:all 2s ease;
 }
 
 #menu_inbox {
   background-color: hsla(14, 75%, 55%, .1);
   position: absolute;
-  width: 225px;
-  height: 150px;
-  top:150px;
+  width: 300px;
+  height: 80px;
+  /* top:150px; */
   left: 0px;
   border-bottom-style: solid;
   border-bottom-width: 1px;
@@ -2208,17 +2231,17 @@ li svg {
   width: 5px;
   height: 150px;
   outline: none;
-  background-color:  hsla(14, 75%, 55%, .7);
+  /* background-color:  hsla(14, 75%, 55%, .7); */
   border-color:  hsla(14, 75%, 55%, .5);
   box-shadow: 0 0 5px  hsla(14, 75%, 55%, .2);
   display: inline;
 }
 #menu_messages {
-  background-color:  hsla(14, 75%, 55%, .1);
+  /* background-color:  hsla(14, 75%, 55%, .1); */
   position: absolute;
   width: 225px;
   height: 150px;
-  top:300px;
+  /* top:300px; */
   left: 0px;
   border-bottom-style: solid;
   border-bottom-width: 1px;
@@ -2226,12 +2249,11 @@ li svg {
 
 }
 #messages_glow {
-
   position: absolute;
   width: 5px;
   height: 150px;
   outline: none;
-  background-color:  hsla(14, 75%, 55%, .7);
+  /* background-color:  hsla(14, 75%, 55%, .7); */
   border-color:  hsla(14, 75%, 55%, .5);
   box-shadow: 0 0 5px  hsla(14, 75%, 55%, .2);
   display: inline;
@@ -2241,7 +2263,7 @@ li svg {
   position: absolute;
   width: 225px;
   height: 150px;
-  top:450px;
+  /* top:450px; */
   left: 0px;
   border-bottom-style: solid;
   border-bottom-width: 1px;
@@ -2249,32 +2271,29 @@ li svg {
 
 }
 #outbox_glow {
-
   position: absolute;
   width: 5px;
   height: 150px;
   outline: none;
-  background-color:  hsla(14, 75%, 55%, .7);
+  /* background-color:  hsla(14, 75%, 55%, .7); */
   border-color:  hsla(14, 75%, 55%, .5);
   box-shadow: 0 0 5px  hsla(14, 75%, 55%, .2);
   display: inline;
 }
 #menu_tasks {
-  background-color: hsla(14, 75%, 55%, .1);
+  /* background-color: hsla(14, 75%, 55%, .1); */
   position: absolute;
   width: 225px;
   height: 150px;
-  top:600px;
+  /* top:600px; */
   left: 0px;
-
-
 }
 #tasks_glow {
   position: absolute;
   width: 5px;
   height: 150px;
   outline: none;
-  background-color:  hsla(14, 75%, 55%, .7);
+  /* background-color:  hsla(14, 75%, 55%, .7); */
   border-color:  hsla(14, 75%, 55%, .5);
   box-shadow: 0 0 5px  hsla(14, 75%, 55%, .2);
   display: inline;
