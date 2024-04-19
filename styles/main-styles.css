@@ -10,23 +10,13 @@ html {
 
 a { color: inherit; }
 
-@font-face {
-    font-family: ceraBlack;
-    src: url(./fonts/CeraPro/CeraPro-Black.ttf);
-}
-@font-face {
-    font-family: ceraLight;
-    src: url(./fonts/CeraPro/CeraPro-Light.ttf);
-}
-@font-face {
-    font-family: ceraRegular;
-    src: url(./fonts/CeraPro/CeraPro-Regular.ttf);
-}
-
 .app {
+    overflow: hidden;
     background-color: black;
     font-family: 'Montserrat', sans-serif;
-    overflow: hidden;
+    /* font-weight: 400; */
+
+    /* font-family: "Jersey 10 Charted", sans-serif; */
 }
 
 section {
@@ -53,25 +43,6 @@ section {
     z-index: 1;
 }
 
-.welcome h1 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: 2rem auto;
-    font-size: 30vw;
-    line-height: 25vw;
-    font-family: 'ceraBlack', sans-serif;
-    color: #bc7c1d;
-    z-index: 7;
-
-    text-shadow: 0px 4px 4px rgb(0 0 0);
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    background-clip: text;
-}
-
 .welcome-shadow {
     position: absolute;
     width: 100%;
@@ -88,6 +59,39 @@ section {
     background: -ms-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.75) 100%);
     background: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.75) 100%);
     filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);
+}
+
+.title-container {
+    z-index: 10;
+    background-color: #00000022;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 6vh 2rem;
+}
+
+.welcome h1 {
+    font-size: 24vw;
+    line-height: 7rem;
+    color: #bc7c1d;
+    text-align: left;
+    font-weight: 800;
+    padding-bottom: 1rem;
+
+    text-shadow: 0px 4px 4px rgb(0 0 0);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+}
+
+.welcome h2 {
+    color: white;
+    padding-left: 1rem;
+    font-family: "Lato";
+    font-weight: 300;
+    letter-spacing: 1px;
 }
 
 .scene-container {
@@ -147,9 +151,10 @@ section {
 .lion {
     background: url('../images/1welcome/dlion.png');
     background-repeat: no-repeat;
-    background-size: 125% 45%;
+    background-size: 120% 45%;
     background-position: -50% 80%;
-    z-index: 7;
+    z-index: 8;
+    opacity: 0.8;
 }
 
 /* .rocks {
@@ -211,47 +216,24 @@ section {
     display: none;
 }
 
+.pattern {
+    position: absolute;
+    width: 100%;
+    height: 110%;
+
+    background: url("../images/2doWhat/pattern-back1.png");
+    background-repeat: repeat-y;
+    background-size: 170% 50%;
+    background-position: bottom;
+    opacity: 0.7;
+}
+
 .doWhat .backdrop {
+    background: linear-gradient(to bottom right, #02497f, #350035);
+
     position: absolute;
     width: 100%;
     height: 100%;
-}
-
-.doWhat h1 {
-    font-family: ceraRegular;
-    background: -webkit-linear-gradient(45deg, #00d2fc,#ff0aef 110%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-
-    text-shadow: 0px 5px 4px rgb(0 0 0 / 50%);
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    background-clip: text;
-}
-
-.br-text1 h1 {
-    width: fit-content;
-    margin: 0rem auto;
-    font-size: 19vw;
-}
-
-.br-text2 h1 {
-    width: 90%;
-    margin: 0rem auto;
-    font-size: 17.5vw;
-    letter-spacing: -2px;
-}
-
-.br-text3 h1 {
-    width: fit-content;
-    margin: 0rem auto;
-    font-size: 7vw;
-    background: -webkit-linear-gradient(45deg, #00d2fc,#0a93ff 110%);
-    text-shadow: 2px 4px 25px rgb(17 96 133);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-background-clip: text;
-    background-clip: text;
 }
 
 .background {
@@ -260,19 +242,32 @@ section {
     left: 0px;
     width: 100%;
     height: 100%;
+    border-radius: 70px;
+    box-shadow: 2px 2px 5px 3px #3b5998;
+}
+
+.background-shadow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #00000033;
+    width: 100%;
+    height: 100%;
+    border-radius: 75px;
 }
 
 .container-1, .container-3, .container-5 {
+    z-index: 10;
     position: absolute;
-    top: 0rem;
-    left: 0rem;
-    width: 100%;
-    height: 50%;
-    z-index:5;
+
+    top: 15%;
+    left: 12.5%;
+    width: 75%;
+    height: 30%;
 }
 
 .container-3, .container-5 {
-    background-color: #000000;
+    /* background-color: #000000; */
     -webkit-transform: translate3d(0%, 100%, 0);
     transform: translate3d(0%, 100%, 0);
     opacity: 0;
@@ -280,22 +275,18 @@ section {
 
 .background-1 {
     background-image: url(../images/2doWhat/fullstack2_1.jpg);
-    background-size: 240% 60vh;
-    background-position: 16% 44%;
     background-repeat: no-repeat;
+    background-size: 140% 100%;
 }
 .background-3 {
     background-image: url(../images/2doWhat/mobile3.png);
-    background-size: 170% 70vh;
-    background-position: 60% 50%;
     background-repeat: no-repeat;
+    background-size: 100% 100%;
 }
 .background-5 {
     background-image: url(../images/2doWhat/security1.jpg);
-    background-size: 135vw 50vh;
-    background-position: 110% 50%;
     background-repeat: no-repeat;
-    box-sizing: border-box;
+    background-size: 110% 100%;
 }
 
 .top_right {
@@ -309,23 +300,50 @@ section {
 }
 
 .bottom_right {
-    position: absolute;
-    top: 50%;
-    right: 0%;
-    width: 100%;
-    height: 50%;
     z-index: 5;
+    position: absolute;
+
+    top: 30%;
+    right: 5%;
+    width: 90%;
+    height: 100vw;
+    min-height: 390px;
+    max-height: 420px;
+    border-radius: 35px;
+    background: linear-gradient(to bottom right, #0b1c43, #8967b547);
+
+}
+
+.services-container {
+    padding: 12vh 3rem 0rem 3rem;
+}
+
+.doWhat h1 {
+    background: -webkit-linear-gradient(45deg, #00d2fc,#ff0aef 110%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    padding-bottom: 2px;
+    font-size: 8vw;
+    letter-spacing: -1px;
+    text-align: left;
+
+    /* text-shadow: 0px 5px 4px rgb(0 0 0 / 50%); */
+    /* -webkit-background-clip: text; */
+    /* -moz-background-clip: text; */
+    /* background-clip: text; */
 }
 
 .br-text1, .br-text2, .br-text3 {
     opacity: 0;
+    /* font-family: "Lato"; */
+    font-weight: 600;
 }
 
 .doWhat p {
-    color: wheat;
-    padding: 0.5rem 2rem;
-    line-height: 3.2vh;
-    text-align: justify;
+    color: white;
+    line-height: 22px;
+    font-weight: lighter;
 }
 
 /*===================================================*/
@@ -403,19 +421,6 @@ code[class*=language-] ::selection,code[class*=language-]::selection {
     opacity: 0 !important;
 }
 
-section.mywork .project-row {
-    padding: 6rem .5rem;
-}
-
-section.mywork .project-box {
-    position: relative;
-    width: 21rem;
-    height: 13rem;
-    margin: 0 auto;
-    transition: all .5s;
-    cursor: pointer;
-}
-
 .shadow {
     width: 100%;
     height: 100%;
@@ -450,6 +455,25 @@ section.mywork .project-box {
     filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);
 }
 
+
+section.mywork .project-row {
+    padding: 6rem .5rem;
+}
+
+section.mywork .project-box {
+    position: relative;
+    /* width: 21rem; for desktop */
+    /* height: 13rem; for desktop */
+    margin: 0 auto;
+    transition: all .5s;
+    cursor: pointer;
+    
+    width: 69vw;
+    height: 41vw;
+    min-width: 21rem;
+    min-height: 13rem;
+}
+
 .project-box, .project-text {
     opacity: 0;
 }
@@ -466,17 +490,23 @@ section.mywork .project-box {
 .project-border {
     background-color: transparent;
     position: absolute;
-    width: 21rem;
-    height: 13rem;
+    /* width: 21rem; */
+    /* height: 13rem; */
     margin: -1.5rem 0.5rem;
     border: 2px solid goldenrod;
     opacity: 0.9;
     z-index: -1;
     transition: all .5s;
+
+    width: 69vw;
+    height: 41vw;
+    min-width: 21rem;
+    min-height: 13rem;
 }
 
 section.mywork .project-text {
-    max-width: 20rem;
+    max-width: 300px;
+    width: 67vw;
     margin: 1rem auto;
 }
 
@@ -484,15 +514,20 @@ section.mywork .project-text {
     color: antiquewhite !important;
     padding-bottom: 0.5rem;
     text-align: center;
-    font-size: 2rem;
+    font-size: 7vw;
 }
 
 .project-text p {
-    color: bisque;
-    padding-left: 2px;
+    /* color: bisque; */
+    color: white;
     font-size: 0.9rem;
+    padding-left: 2px;
     line-height: 1.5rem;
     font-weight: 300;
+}
+
+.less-space {
+    letter-spacing: -2px;
 }
 
 .demo-cp {
@@ -523,17 +558,18 @@ section.mywork .project-text {
     border: 1px dashed #ffb6006e;
 }
 
+
+
+
 /*===================================================*/
 /*===================================================*/
 .contact_section {
-    /* background-color: #111; */
-    background-color: #00488f52;
+    z-index: 1;
+    background: linear-gradient(to bottom right, #000000, #0a2259);
     width: 100%;
-    color: darkgrey;
-    font-family: 'ceraLight', sans-serif;
     font-size: 1.3rem;
     opacity: 0;
-    z-index: 1;
+    color: #ddd;
 }
 
 .contact_container {
@@ -541,14 +577,16 @@ section.mywork .project-text {
 }
 
 .contact_container h2 {
-    color: oldlace;
-    width: 0%;
+    /* width: 0%; */
     text-align: center;
-    padding: .5rem;
+    padding-top: 5rem;
     font-size: 17vw;
     letter-spacing: 0.2rem;
-    font-family: 'ceraBlack', sans-serif;
     overflow:hidden;
+
+    background: -webkit-linear-gradient(45deg, #00d2fca3, #ff0aef6b 65%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .contact_container p,
@@ -560,43 +598,48 @@ section.mywork .project-text {
 }
 
 .info_container {
-    margin: 0 auto;
-    text-align: center;
+    width: 85vw;
+    max-width: 420px;
+    margin: 3rem auto 4rem;
+    /* text-align: center; */
 }
 
-.info_container h2 {
-    font-size: 16vw;
+.contact-header {
+    font-size: 14vw;
 }
 
 .info_container p {
-    width: 85%;
-    margin: 1rem auto 4rem;
-    font-size: 1.1rem;
+    margin: 1rem 0rem 4rem;
     line-height: 2rem;
+    
+    font-size: 1.2rem;
+    text-align: justify;
 }
 
 .info_container h3 {
     color: oldlace;
-    margin-bottom:.5rem;
-    font-family: 'ceraRegular', sans-serif;
+    font-weight: 500;
+    margin-bottom: .5rem;
 }
 
 .info_container li {
     display: block;
-    padding-bottom: 3rem;
+    padding-bottom: 1rem;
     line-height: 1.2rem;
 }
 
 .form_container {
     width: 85vw;
-    max-width: 400px;
-    margin: 0 auto;
+    max-width: 420px;
+    margin: 3rem auto 4rem;
+
+    background: linear-gradient(to bottom right, #180029, #0e4181);
 }
 
 .form_container h2 {
-    font-size: 14vw;
-    padding-top: 3rem;
-    line-height: 13vw;
+    font-size: 10vw;
+    padding-top: 2rem;
+    line-height: 9vw;
 }
 
 .contact_form {
@@ -605,15 +648,13 @@ section.mywork .project-text {
 }
 
 .contact_form input, select, textarea {
-    font-family: 'ceraRegular', sans-serif;
-    background-color: #1b1b1b;
+    background-color: #1d1c7700;
     display: block;
-    width: 80%;
+    width: 70%;
     padding: 12px;
     margin: 0 auto 2rem;
     border: 0;
     border-bottom: 1px solid #444;
-    color: darkgoldenrod;
 }
 
 #subject {
@@ -621,14 +662,12 @@ section.mywork .project-text {
 }
   
 input[type=submit] {
+    background: linear-gradient(to bottom right, #000, #0e4181);
     color: darkgrey;
-    background-color: #1b1b1b;
     display: block;
     padding: 1.3rem 3.5rem;
     margin: 3rem auto;
     border: 0;
-    font-size: 1.3rem;
-    font-family: 'ceraRegular', sans-serif;
     box-shadow: 2px 2px 1px 1px #000;
     cursor: pointer;
 }
@@ -703,7 +742,6 @@ li svg {
     display: block;
     padding-right: 3rem;
     font-size: .85rem;
-    font-family: 'ceraRegular';
     letter-spacing: 0.2rem;
     text-shadow: 2px 2px 2px black;
 }
@@ -712,125 +750,55 @@ li svg {
     color: white;
 }
 
+
+
+
+
+
+
+
+
 /*===================================================*/
 /*===================================================*/
             /*RESPONSIVE INITIATED*/
 
-/*// X-Small devices (Galaxy S8 phones, 360px and up)*/
-@media (min-width: 360px) {
-    .lion {
-        background-size: 440px 360px;
-        background-position: 15vw 40vh;
+
+@media (max-width: 359px) {
+    html {
+        font-size: 10px;
+    }
+    .container-1, .container-3, .container-5 {
+        top: 12%;
+    }
+    .services-container {
+        padding: 8vh 3rem 0rem 3rem;
+    }
+    .bottom_right {
+        min-height: 330px;
     }
     .doWhat p {
-        margin: 0 auto;
-        padding: 0.5rem 2rem;
-        line-height: 2rem;
+        line-height: 16px;
     }
-    .br-text2 h1 {
-        width: fit-content;
-        letter-spacing: -2px;
-    }
-    section.mywork .project-box {
-        width: 69vw;
-        height: 41vw;
-        min-width: 21rem;
-        min-height: 13rem;
-    }
-    .project-border {
-        width: 69vw;
-        height: 41vw;
-        min-width: 21rem;
-        min-height: 13rem;
-    }
-    section.mywork .project-text {
-        max-width: 300px;
-        width: 67vw;
-        margin: 1rem auto;
-    }
-    .project-header {
-        font-size: 7vw;
-    }
-    .less-space {
-        letter-spacing: -2px;
-    }
-    .project-text p {
-        font-size: 0.9rem;
-        padding-left: 2px;
-    }
-    .info_container p {
-        font-size: 1.2rem;
-        max-width: 350px;
-    }
+    
 }
+
+/*// X-Small devices (Galaxy S8 phones, 360px and up)*/
 
 /*// Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) {
     html {
         font-size: 14px;
     }
-    .welcome-shadow {
-        background: -moz-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.25) 100%);
-        background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0.25)));
-        background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.25) 100%);
-        background: -o-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.25) 100%);
-        background: -ms-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.25) 100%);
-        background: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.25) 100%);
-        filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);
-        z-index: 10;
+
+    .container-1, .container-3, .container-5 {
+        left: 20%;
+        max-width: 60vw;
     }
-    .welcome h1 {
-        display: none;
-        font-size: 12rem;
-        line-height: 10rem;
-        max-width: 520px;
-    }
-    .arrow {
-        display: none;
-    }
-    .letters {
-        display: block;
-        background: url(../images/1welcome/letters1.png);
-        background-repeat: no-repeat;
-        background-size: 95% 40%;
-        background-position: 25% 41%;
-        z-index: 7;
-    }
-    .lion {
-        background-size: 330px 280px;
-        background-position: 23vw 55vh;
-        z-index: 8;
-    }
-    .rocks {
-        background-size: 105% 40%;
-        background-position: 0% 100%;
-        z-index: 8;
-    }
-    .clouds3 {
-        z-index: 8;
+    .bottom_right {
+        right: 7.5%;
+        max-width: 85vw;
     }
 
-    .background-1 {
-        background-size: 145vw 60vh;
-        background-position: 10% 33%;
-    }
-    .background-3 {
-        background-size: 130vw 80vh;
-        background-position: 90% 50%;
-    }
-    .br-text1 h1 {
-        font-size: 7.5rem;
-    }
-    .br-text2 h1 {
-        font-size: 7.5rem;
-        letter-spacing: -2px;
-    }
-    .br-text3 h1 {
-        font-size: 8rem;
-    }
-    .doWhat p {
-        max-width: 40rem;
-    }
     .typed_container {
         font-size: 8vw;
         letter-spacing: initial;
@@ -858,84 +826,60 @@ li svg {
         font-size: 0.9rem;
         padding-left: 1rem;
     }
-    .info_container h2 {
+
+    .contact_container h2 {
         font-size: 7rem;
     }
-    .info_container p {
-        max-width: 450px;
-    }
-    .form_container {
-        width: 85vw;
-        max-width: 500px;
-        margin: 3rem auto 5rem;
-        box-shadow: 1px 2px 8px 6px black;
-    }
     .form_container h2 {
-        font-size: 5.5rem;
-        padding: 2rem 0;
-        line-height: 5rem;
-    }
-    .contact_form {
-        margin: 2rem 4rem;
+        font-size: 4rem;
     }
 }
 
+
+
 /*// Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) {
-    .clouds {
-        background-size: 127% 30%;
-        background-position: 25vw -5%;
+    .title-container {
+        padding: 6vh 5rem;
     }
-    .clouds2 {
-        background-size: 80% 20%;
-        background-position: 83% 17%;
-    }
-    .clouds3 {
-        background-size: 150% 35%;
-    }
-    .letters {
-        background-size: 95% 45%;
-        background-position: 25% 35%;
+    .welcome h1 {
+        font-size: 18vw;
+        line-height: 9rem;
     }
     .lion {
-        background-size: 380px 330px;
+        background-size: 110% 50%;
+        background-position: -60% 85%;
     }
 
-    .background-1 {
-        background-size: 140vw 71vh;
-        background-position: 0% 60%;
-    }
-    .background-3 {
-        background-size: 101vw 80vh;
-        background-position: 5% 50%;
-    }
-    .background-5 {
-        background-size: 110vw 50vh;
-        background-position: 110% 50%;
-    }
-    .br-text2 {
+
+    /* .br-text2 {
         top: 48%;
         background-color: transparent;
     }
     .br-text3 {
         top: 45%;
         background-color: transparent; 
+    } */
+    .container-1, .container-3, .container-5 {
+        top: 10%;
+        left: 25%;
+        width: 50vw;
+        height: 40%;
     }
-    .br-text1 h1,
-    .br-text2 h1 {
-        font-size: 8.5rem;
-        letter-spacing: -2px;
+    .bottom_right {
+        max-height: 440px;
     }
-    .br-text3 h1 {
-        font-size: 7rem;
-        line-height: 6rem;
-        padding: 2rem 0rem 0 0;
+    .services-container {
+        padding: 18vh 4rem 0rem;
+    }
+    .doWhat h1 {
+        font-size: 3.5rem;
     }
     .doWhat p {
-        max-width: 620px;
-        padding-top: 0;
-        font-size: 1.1rem;
+        line-height: 24px;
     }
+
+
     section.mywork .project-text {
         max-width: 480px;
         width: 50vw;
@@ -947,18 +891,19 @@ li svg {
         font-size: 1rem;
         padding-left: 1rem;
     }
+    
 
-    .info_container h2 {
-        font-size: 9rem;
-    }
-    .info_container p {
-        max-width: 520px;
-        font-size: 1.3rem;
-    }
-    .form_container {
+    .info_container, .form_container {
         max-width: 540px;
-        margin: 5rem auto;
     }
+    .form_container h2 {
+        line-height: 7vw;
+        font-size: 5rem;
+    }
+    .contact_form input, select, textarea {
+        width: 65%;
+    }
+
     .social li {
         padding-right: 1rem;
         padding-bottom: 1rem;
@@ -1020,6 +965,7 @@ li svg {
     }
     .container-5 {
         z-index: 9;
+        border: 1px dashed #00d2fc59;
     }
     .background-1 {
         background-size: 150vw 105vh;
@@ -1117,10 +1063,12 @@ li svg {
         /*-webkit-text-fill-color: transparent;*/
     }
     .br-text3 {
-        background-color: #2ac2c71f !important;
+        background-color: #ffffff14 !important;
         top: 25%;
         width: 50%;
         height: 100%;
+        border: 1px dashed teal;
+        border-left: 0;
     }
     .doWhat .br-text3 p {
         max-width: 410px;
@@ -1193,7 +1141,7 @@ li svg {
         margin-left: 2rem;
         box-shadow: none;
     }
-    .info_container h2 {
+    .contact-header {
         font-size: 4rem;
         padding: 2rem 0rem 1rem;
     }
@@ -1354,12 +1302,12 @@ li svg {
 
 
 
-@media (max-height: 670px) {
+/* @media (max-height: 670px) {
     .doWhat p {
         padding-top: 0px;
         line-height: 3vh;
     }
-}
+} */
 
 @keyframes text-flicker {
   0% { opacity:  0.5 }

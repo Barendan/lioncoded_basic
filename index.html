@@ -6,9 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
-    <link href="https://fonts.googleapis.com/css?family=Lato|Montserrat:300,400,600|Open+Sans:400,600|Roboto:300,400&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Archivo+Black|Chivo:400|Kanit:400|Work+Sans:400&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;900&family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
     
     <link rel="stylesheet" type="text/css" href="./styles/main-styles.css" />
     <link rel="stylesheet" type="text/css" href="./styles/menu-styles.css" />
@@ -92,7 +92,12 @@
 
             <section class="welcome" id="welcome">
                 <div class="welcome-shadow"></div>
-                <h1>Lion Coded</h1>
+
+                <div class="title-container">
+                    <h1>Lion Coded</h1>
+                    <h2>Where Digital Dreams Begin</h2>
+                </div>
+
                 <div class="scene-container">
                     <div class="landscape scene" id="layer1"></div>
                     <div class="clouds scene" id="layer2"></div>
@@ -100,8 +105,9 @@
                     <div class="letters scene" id="layer4"></div>
                     <div class="lion scene" id="layer5"></div>
                     <div class="rocks scene" id="layer6"></div>
-                    <div class="clouds3 scene" id="layer7"></div>
+                    <!-- <div class="clouds3 scene" id="layer7"></div> -->
                 </div>
+
                 <div class="arrow bounce">
                     <svg xmlns="http://www.w3.org/2000/svg" class="downward" id="layer8" viewBox="0 0 24 24">
                         <path d="M16 8v-4l8 8-8 8v-4h-5v-8h5zm-7 0h-2v8h2v-8zm-4.014 0h-1.986v8h1.986v-8zm-3.986 0h-1v8h1v-8z"/>
@@ -109,8 +115,12 @@
                 </div>
             </section>
 
+
+            
             <section class="doWhat" id="doWhat">
                 <div class="backdrop">
+
+                    <div class="pattern"></div>
                     
                     <div class="container-1">
                         <div class="background background-1"></div>
@@ -134,43 +144,53 @@
                     </div>
 
                     <div class="bottom_right br-text1">
+
+<!--                         
                         <div class="desktop-only">
-                            <!-- <h1>Evolve</h1> -->
                             <p>
                                 Our commitment is to elevate your online presence and operational efficiency through the artistry of code.
                                 In a rapidly evolving digital landscape, staying ahead of the curve is imperative. Our team of talented designers and developers is well-versed in the latest industry trends and technologies. We leverage this knowledge to build websites that are not only aesthetically pleasing but also responsive, scalable, and optimized for performance.
                             </p>
-                        </div>
-                        <div class="mobile-only">
+                        </div> -->
+
+
+                        <div class="mobile-only services-container">
                             <h1>Full-Stack</h1>
                             <p>
-                                From the front-end to the back-end and everything in between. Designing the page, putting together databases, building APIs, and animation are just a few of my specialties. <br>
-                                A deep passion to know my industry, inside and out is my prime motivation. This enables me able to stay ahead of the curve and on top of the latest technologies, like React.
+                                From the front-end to the back-end and everything in between. Designing the page, putting together databases, building APIs, and animations are just a few of my specialties.<br/>
+                                It starts with a focus on the foundation, then implementing the latest tech tools, and together we build upwards to the moon.
                             </p>
                         </div>
                     </div>
 
                     <div class="bottom_right br-text2">
-                        <h1>UI / UX Design</h1>
-                        <h1 class="mobile-only">UI / UX Design</h1>
-                        <p>
-                            We specialize in the delicate art of User Interface(UI) and User Experience(UX) design. Our process begins with a deep understanding of your vision and objectives. Then, with a focus on user-centric design, we create websites and apps that are not just visually stunning but also highly intuitive, ensuring seamless navigation for your visitors. <br/> 
-                            With an unparalleled level of attention to detail, every element in our design serves a purpose, from the placement of buttons to the choice of colors and typography.
-                        </p>
+
+                        <div class="services-container">
+                            
+                            <h1>UI / UX Design</h1>
+                            <p>
+                                Specializing in the delicate art of User Interface (UI) and Experience(UX), we create websites and apps that are visually stunning and highly intuitive, ensuring seamless navigation for your visitors. <br/>
+                                An unparalleled level of attention to detail, every element in our design serves a purpose, from the placement of buttons to the choice of colors and typography.
+                            </p>
+                        </div>  
                     </div>
 
                     <div class="bottom_right br-text3">
+
+<!--                         
                         <div class="desktop-only">
                             <h1>Security Scalability Reliability</h1>
                             <p>
                                 We're your strategic partners in building a future-proof digital empire and pride ourselves on delivering websites that not only meet but exceed your expectations.<br/>
                                 We plan several steps ahead with things like, fortifying your web and mobile applications with layers of security, harnessing the power of AWS services, and orchestrating seamless scalability for when your business starts seeing a surge in traffic or is planning for expansion. Our goal is to enable your applications to scale effortlessly and efficiently.
                             </p>
-                        </div>
-                        <div class="mobile-only">
-                            <h1>Security</h1>
+                        </div> -->
+
+
+                        <div class="mobile-only services-container">
+                            <h1>Scalable / Secure</h1>
                             <p>
-                                Two things separate an average developer from the professional. Security and Scalability. Protecting your companies information as well as the clients data should be a top priority for all coders.
+                                Going from half built to completely secure. Protecting your companies information as well as the clients data should be a top priority for all coders.
                                 <br> 
                                 Building scalable architecture from the start is an investment that saves you time and money later on. Using the smallest screen sizes as a foundation, we build up while preserving the aspect ratio.
                             </p>
@@ -178,6 +198,10 @@
                     </div>
                 </div>
             </section>
+
+
+
+
 
             <section class="mywork" id="projects">
                 <pre class="source-viewer">    
@@ -399,8 +423,8 @@
 
             <section class="contact_section" id="contact">
                 <div class="contact_container">
+                    <h2 class="contact-header">CONTACT</h2>
                     <div class="info_container">
-                        <h2>CONTACT</h2>
                         <p> 
                             Establishing a proper digital presence is essential these days. Let us help you do that in a unique and definitive way. Whether you have some ideas floating around your head or 
                             you're looking for inspiration, the first step is to reach out.

@@ -304,6 +304,12 @@ $(window).on("load", function() {
 		}
 	}
 
+
+
+
+
+
+
 	function mobileAnimation() {
 		// Pre-rendering
 		TweenMax.to(welcome_title, .1, {y: "-200%"})
@@ -365,13 +371,13 @@ $(window).on("load", function() {
 				.to(scene_4, 5, {scaleY: "0.5", ease: Power0.easeIn}, 1)
 				.to(welcome_title, 5, {scaleY: "0.5", ease: Power0.easeIn}, 1)
 				.to(scene_5, 7, {x: "-10%", scaleY: "0.7"}, 4)
-				.to('.arrow', 3, {top: "25%"}, 6)
+				// .to('.arrow', 3, {top: "25%"}, 6)
 				.to(scene_container, 4, {y: "-25%", scale: 0.5, ease: Circ.easeIn}, 5)
 
 				// Enter DoWhat: Part1
 				.to(doWhat, 6, { opacity: 1, ease: Power0.easeIn }, 5)
 				.to(doWhat, 6, { scale: 1, ease: Circ.easeIn }, 4)
-				.to(container_1, 6, {opacity: 0.7, ease: Power1.easeOut}, 4)
+				.to(container_1, 6, {opacity: 1, ease: Power1.easeOut}, 4)
 
 				.fromTo(br_cont1, 7, {y: "50%"}, {y: "0%"}, 4)
 				.fromTo(br_cont1, 7, {opacity: 0 }, {opacity: 1, ease: Power3.easeInOut}, 4)
@@ -471,16 +477,16 @@ $(window).on("load", function() {
 				const staggerEntry = new TimelineMax();
 				staggerEntry
 					.to(".project-box", {
-					  duration: 1,
+					  duration: 0.7,
 					  opacity: 1.0,
-					  delay: 5,
-					  stagger: 1.5
+					  delay: 2,
+					  stagger: 1
 					}, 0)
 					.to(".project-text", {
-					  duration: 1,
+					  duration: 0.5,
 					  opacity: 1.0,
-					  delay: 5,
-					  stagger: 1.7
+					  delay: 2,
+					  stagger: 1
 					}, 1)
 				;
 			}
@@ -488,14 +494,14 @@ $(window).on("load", function() {
 			function typed() {
 				let typed_text = new Typed('.work-title', {
 					strings:  [
-						'$:Accessing archive.^700.^700.',
+						'$:Accessing archive.^400.^400.',
 						'$:Accessing archive',
-						'$:Accessing archive.^700.^700.',
+						'$:Accessing archive.^200.^200.',
 						'$:Access Granted.'
 					],
-					typeSpeed: 50,
+					typeSpeed: 25,
 					backSpeed: 0,
-					backDelay: 200,
+					backDelay: 50,
 					smartBackspace: true
 				})
 			}
