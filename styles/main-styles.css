@@ -96,7 +96,6 @@ section {
     font-size: 1.5rem;
     font-weight: 500;
     letter-spacing: -1px;
-    /* line-height: 3rem; */
 
     background: -webkit-linear-gradient(45deg, #ffffff,#00d2fc 110%);
     -webkit-background-clip: text;
@@ -166,7 +165,7 @@ section {
     background: url('../images/1welcome/dlion.png');
     background-repeat: no-repeat;
     background-size: 120% 45%;
-    background-position: -50% 80%;
+    background-position: -50% 72%;
     z-index: 8;
     opacity: 0.8;
 }
@@ -191,6 +190,7 @@ section {
 }
 
 .arrow {
+    display: block;
     position: absolute;
     left: 0;
     bottom: 0;
@@ -866,11 +866,17 @@ li svg {
         font-size: 18vw;
         line-height: 9rem;
     }
+    .welcome h2 {
+        font-size: 1.7rem;
+        letter-spacing: 0px;
+    }
     .lion {
         background-size: 110% 50%;
         background-position: -60% 85%;
     }
-
+    .arrow {
+        display: none;
+    }
 
     /* .br-text2 {
         top: 48%;
@@ -1132,6 +1138,11 @@ li svg {
 
 /*// Extra large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) {
+    .welcome h1 {
+        font-size: 13vw;
+        line-height: 12rem;
+    }
+
     .services-container {
         padding: 15rem 20% 0rem 21%;
     }
