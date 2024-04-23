@@ -234,33 +234,17 @@ $(window).on("load", function() {
 				;
 			}
 	
-			// function typed() {
-			// 	let typed_text = new Typed('.work-title', {
-			// 		strings:  [
-			// 			'$:Projects package initialized.^300.^300.',
-			// 			'$:Projects package initialized.',
-			// 			'$:Projects package initialized.^300.^300.',
-			// 			'$:Projects package access granted.'
-			// 		],
-			// 		typeSpeed: 20,
-			// 		backSpeed: 0,
-			// 		backDelay: 200,
-			// 		smartBackspace: true
-			// 	})
-			// }
-
 			function typed() {
 				let typed_text = new Typed('.work-title', {
 					strings:  [
-						'C:/Creative_Lab/:link initialized.^300.^300.',
-						'C:/Creative_Lab/:link initialized.',
-						'C:/Creative_Lab/:link initialized.^300.^300.',
-						'C:/Creative_Lab/:access granted.^200.^100.',
-						'C:/Creative_Lab/Latest_Projects'
+						'$:Projects package initialized.^200.^200.',
+						'$:Projects package initialized.',
+						'$:Projects package initialized.^150.^150.',
+						'$:Projects package access granted.'
 					],
 					typeSpeed: 20,
 					backSpeed: 0,
-					backDelay: 200,
+					backDelay: 100,
 					smartBackspace: true
 				})
 			}
@@ -489,7 +473,7 @@ $(window).on("load", function() {
 			function typed() {
 				let typed_text = new Typed('.work-title', {
 					strings:  [
-						'$:Accessing archive.^400.^400.',
+						'$:Accessing archive.^300.^300.',
 						'$:Accessing archive',
 						'$:Accessing archive.^200.^200.',
 						'$:Access Granted.'
