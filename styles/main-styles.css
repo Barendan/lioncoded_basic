@@ -418,6 +418,11 @@ code[class*=language-] ::selection,code[class*=language-]::selection {
     font-family: 'Ubuntu Mono', monospace;
     animation: text-flicker 2s linear 2;
     opacity: 0.9;
+
+
+    background: -webkit-linear-gradient(45deg, #00d2fc,#0f0064 110%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .typed-cursor {
@@ -466,16 +471,22 @@ section.mywork .project-row {
 
 section.mywork .project-box {
     position: relative;
-    /* width: 21rem; for desktop */
-    /* height: 13rem; for desktop */
     margin: 0 auto;
-    transition: all .5s;
+    transition: all .150s;
     cursor: pointer;
     
     width: 69vw;
     height: 41vw;
     min-width: 21rem;
     min-height: 13rem;
+}
+
+
+.project-box {
+    border: 1px dashed #7087ed;
+}
+.project-box:hover {
+    border: 1px dashed transparent;
 }
 
 .project-box, .project-text {
@@ -494,13 +505,11 @@ section.mywork .project-box {
 .project-border {
     background-color: transparent;
     position: absolute;
-    /* width: 21rem; */
-    /* height: 13rem; */
     margin: -1.5rem 0.5rem;
-    border: 2px solid goldenrod;
+    border: 2px solid #7087ed;
     opacity: 0.9;
     z-index: -1;
-    transition: all .5s;
+    transition: all .150s;
 
     width: 69vw;
     height: 41vw;
@@ -538,28 +547,24 @@ section.mywork .project-text {
     background-image: url(../images/3mywork/cp-demo.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    border: 1px dashed #ffb6006e;
 }
 
 .demo-pr {
     background-image: url(../images/3mywork/pr-demo.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    border: 1px dashed #ffb6006e;
 }
 
 .demo-dd {
     background-image: url(../images/3mywork/dd-demo.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    border: 1px dashed #ffb6006e;
 }
 
 .demo-hh {
     background-image: url(../images/3mywork/24hh-demo.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    border: 1px dashed #ffb6006e;
 }
 
 
