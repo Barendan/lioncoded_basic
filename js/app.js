@@ -305,11 +305,6 @@ $(window).on("load", function() {
 	}
 
 
-
-
-
-
-
 	function mobileAnimation() {
 		// Pre-rendering
 		TweenMax.to(welcome_title, .1, {y: "-200%"})
@@ -546,6 +541,8 @@ $(window).on("load", function() {
 			.addTo(controller)
 		}
 	}
+
+
 
 	function init() {
 		$('.preload-container').fadeOut();

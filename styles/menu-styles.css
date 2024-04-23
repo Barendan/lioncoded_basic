@@ -35,14 +35,14 @@ h1 {
     overflow: hidden;
     transition: all 0.4s ease;
 }
-span:nth-child(1) {
+.open span:nth-child(1) {
     margin-top: 10px;
     z-index: 9;
 }
-span:nth-child(2) {
+.open span:nth-child(2) {
     margin-top: 25px;
 }
-span:nth-child(3) {
+.open span:nth-child(3) {
     margin-top: 40px;
 }
 
