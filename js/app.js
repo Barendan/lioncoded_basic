@@ -29,27 +29,27 @@ $(window).on("load", function() {
 		// scene_7 = $("#layer7"), // Clouds3
 		
 		doWhat = $("section.doWhat"),
-		doWhat_backdrop = $("section.doWhat .backdrop"),
+		// doWhat_backdrop = $("section.doWhat .backdrop"),
 		container_1 = $(".container-1"),
-		background_1 = $(".container-1 .background-1"),
-		top_right = $(".top_right"),
-		tr_cont = $(".tr_cont"),
-		tr_cont_title = $(".tr_cont h1"),
-		tr_cont_text = $(".tr_cont p"),
+		// background_1 = $(".container-1 .background-1"),
+		// top_right = $(".top_right"),
+		// tr_cont = $(".tr_cont"),
+		// tr_cont_title = $(".tr_cont h1"),
+		// tr_cont_text = $(".tr_cont p"),
 		br_cont1 = $(".br-text1"),
 		br_cont1_title = $(".br-text1 h1"),
 		br_cont1_text = $(".br-text1 p"),
 
 		container_3 = $(".container-3"),
-		background_3 = $(".container-3 .background-3"),
+		// background_3 = $(".container-3 .background-3"),
 		br_cont2 = $(".br-text2"),
-		br_cont2_title = $(".container-3 h1"),
+		br_cont2_title = $(".br-text2 h1"),
 		br_cont2_text = $(".br-text2 p"),
 		
 		container_5 = $(".container-5"),
-		background_5 = $(".container-5 .background-5"),
+		// background_5 = $(".container-5 .background-5"),
 		br_cont3 = $(".br-text3"),
-		br_cont3_title = $(".container-5 h1"),
+		br_cont3_title = $(".br-text3 h1"),
 		br_cont3_text = $(".br-text3 p"),
 		
 		myWork_section = $("section.mywork")
@@ -66,7 +66,6 @@ $(window).on("load", function() {
 		TweenMax.to(scene_5, .1, {scaleY: "0.5"})
 		TweenMax.to(doWhat, .1, {scale: 0.50})
 		TweenMax.to(container_1, .1, {autoAlpha: 0})
-		// TweenMax.to(doWhat, .1, {y: "-10%"})
 
 		// Start animation
 		TweenMax.to(welcome, 1.5, {
@@ -100,6 +99,7 @@ $(window).on("load", function() {
 					repeatDelay: 0,
 					yoyo: true
 				});
+
 				cloudTL
 					.fromTo(scene_2, 10, {opacity: 0.6}, {opacity: 0.85},0)
 					.fromTo(scene_3, 10, {opacity: 0.6}, {opacity: 0.85},0)
@@ -118,7 +118,6 @@ $(window).on("load", function() {
 		function doStart() {
 			const doStartTL = new TimelineMax();
 
-
 			doStartTL
 				// Exit Scene
 				.to(welcome, 8, { opacity: 0, ease: Power1.easeOut }, 1)
@@ -135,62 +134,68 @@ $(window).on("load", function() {
 
 				// Enter DoWhat: Part1
 				.to(doWhat, 5, { opacity: 1, ease: Power1.easeIn }, 2)
-				.to(doWhat, 6, { scale: 1, ease: Circ.easeIn }, 2)
-				// .to(doWhat, 0.05, { y: "0%" }, 10)
-				.to(container_1, 2, {autoAlpha: 1, ease: Power1.easeIn}, 7)
+				.to(doWhat, 4.7, { scale: 1, ease: Circ.easeIn }, 2)
+
+				.to(container_1, 3.5, {autoAlpha: 1, ease: Power1.easeIn}, 5)
+				.fromTo(container_1, 2, {y: "140%"}, {y: "0%", ease: Power1.easeIn}, 6)
 				
-				.fromTo(container_1, 2, {y: "100%"}, {y: "0%", ease: Power1.easeIn}, 7)
-				.fromTo(br_cont1, 1, {y: "120%"}, {y: "0%"}, 9)
-				.fromTo(br_cont1, 4, {opacity: 0 }, {opacity: 1, ease: Power3.easeInOut}, 6)
-				.fromTo(br_cont1_text, 1, {y: "120%"}, {y: "0%"}, 9.5)
+				.fromTo(br_cont1, 2, {y: "120%"}, {y: "0%"}, 7)
+				.fromTo(br_cont1, 3, {opacity: 0 }, {opacity: 1, ease: Power3.easeInOut}, 7)
+				.fromTo(br_cont1_text, 3, {opacity: 0 }, {opacity: 1, ease: Power3.easeInOut}, 7)
+				.fromTo(br_cont1_text, 1, {y: "120%"}, {y: "0%"}, 7.3)
 			;
 
 				
 			const doEndTL = new TimelineMax();
+			
 			doEndTL
 				// Exit DoWhat: Part1
-				.to(container_1, 3, {opacity: 0, ease: Power2.easeInOut}, 2)
-				.to(container_1, 3, {y: '-50%', ease: Power2.easeIn}, 2)
+				.to(container_1, 1.5, {opacity: 0, ease: Power2.easeInOut}, 2)
+				.to(container_1, 1, {y: '-100%', ease: Power2.easeIn}, 2)
 
-				.to(br_cont1, 2, {opacity: 0, ease: Power2.easeInOut}, 2.2)
-				.to(br_cont1_title, 1.5, {y: "-300%", ease: Power2.easeIn}, 2.2)
-				.to(br_cont1_text, 1.5, {y: "-200%", ease: Power2.easeIn}, 2.2)
+				.to(br_cont1, 2, {opacity: 0, ease: Power2.easeInOut}, 2)
+				.to(br_cont1, 2, {y: '-100%', ease: Power2.easeInOut}, 2.2)
+				.to(br_cont1_title, 1, {y: "-300%", ease: Power2.easeIn}, 2.2)
+				.to(br_cont1_text, 1.2, {y: "-200%", ease: Power2.easeIn}, 2.2)
+				
 
 				// Enter DoWhat: Part2
-				.to(container_3, 2, {opacity: 1,ease: Sine.easeInOut}, 3)
-				.fromTo(container_3, 2, {y: "100%"}, {y: "0%",ease: Sine.easeInOut}, 3)
-				.fromTo(background_3, 2, {y: "-95%", opacity: .5}, {y: "0%",opacity: 1,ease: Sine.easeInOut}, 3)
-
-				.to(br_cont2, 1, {opacity: 1, ease: Power2.easeIn}, 4)
-
-
+				.to(container_3, 2, {opacity: 1, ease: Sine.easeInOut}, 3)
+				.fromTo(container_3, 2, {y: "140%"}, {y: "0%", ease: Sine.easeInOut}, 3)
 				
-				// Exit DoWhat: Part2
-				.to(background_3, 2.5, {opacity: 0, ease: Power2.easeInOut}, 7)
-				.to(background_3, 4, {x: "100%", ease: Power2.easeInOut}, 7)
+				.fromTo(br_cont2, 3, {y: "120%"}, {y: "0%"}, 3)
+				.fromTo(br_cont2, 3, {opacity: 0 }, {opacity: 1, ease: Power3.easeInOut}, 3)
+				.fromTo(br_cont2_title, 0.5, {y: "120%"}, {y: "0%"}, 4)
+				.fromTo(br_cont2_text, 3, {opacity: 0 }, {opacity: 1, ease: Power3.easeInOut}, 4)
+				.fromTo(br_cont2_text, 1, {y: "120%"}, {y: "0%"}, 4)
 
-				.to(br_cont2_title, 1.5, {opacity: 0, ease: Power2.easeInOut}, 7)
-				.to(br_cont2_title, 2, {x: "100%", ease: Power2.easeInOut}, 7)
-				.to(br_cont2, 1.5, {opacity: 0, ease: Power2.easeIn}, 7)
-				.to(br_cont2, 3, {y: "-200%", ease: Power2.easeInOut}, 7)
+
+				// Exit DoWhat: Part2
+				.to(container_3, 1, {opacity: 0, ease: Power2.easeInOut}, 8)
+				.to(container_3, 1, {y: '-100%', ease: Power2.easeIn}, 8)
+			
+				.to(br_cont2, 2, {y: '-100%', opacity: 0, ease: Power2.easeInOut}, 8.2)
+				.to(br_cont2_title, 2, {opacity: 0, ease: Power2.easeInOut}, 8.2)
+				.to(br_cont2_title, 1, {y: "-300%", ease: Power2.easeIn}, 8.2)
+				.to(br_cont2_text, 2, {y: "-200%", ease: Power2.easeIn}, 8.2)
+				.to(br_cont2_text, 1, {opacity: 0, ease: Power2.easeIn}, 8.2)
+
 
 				// Enter DoWhat: Part3
-				.to(container_5, 3, {opacity: 1,ease: Power2.easeInOut}, 8)
-				.fromTo(container_5, 3, {y: "100%"}, {y: "0%",ease: Power2.easeInOut}, 8)
-				.fromTo(background_5, 3, {y: "-95%",opacity: 0.5}, {y: "0%",opacity: 1.0,ease: Power2.easeInOut}, 8)
-				
-				.to(br_cont3, 3, {opacity: 1, ease: Power2.easeInOut}, 9)
-				.fromTo(br_cont3_title, 3, {opacity: 0}, {opacity: 1}, 8)
-				.fromTo(br_cont3_text, 3, {y: "-50%"}, { y: "0%" }, 9)
+				.to(container_5, 2, {opacity: 1, ease: Power2.easeInOut}, 9)
+				.fromTo(container_5, 2, {y: "100%"}, {y: "0%",ease: Power2.easeInOut}, 9)
 
-				.to(br_cont3_text, 2, {
-					y: "0%",
-					delay: 2,
-					onComplete: function() {
-						// myWork()
-					}
-				}, 12)
-			;
+				.fromTo(br_cont3, 2, {opacity: 0 }, {opacity: 1, ease: Power3.easeInOut}, 9.5)
+				.fromTo(br_cont3, 2, {y: "120%"}, {y: "0%"}, 9.5)
+
+				.fromTo(br_cont3_title, 0.5,  {y: "120%"}, {y: "0%"}, 10)
+				.fromTo(br_cont3_text, 3, {opacity: 0 }, {opacity: 1, ease: Power3.easeInOut}, 9)
+				.fromTo(br_cont3_text, 1, {y: "120%"}, {y: "0%"}, 10)
+
+
+				// Exit DoWhat: Part3
+				.to(container_5, 1, {y: '0%', onComplete: function() { myWork() }, ease: Power2.easeIn}, 13)
+
 
 			let enterWho = new ScrollMagic.Scene({
 				triggerElement: '.doWhat',
@@ -210,106 +215,145 @@ $(window).on("load", function() {
 			.addTo(controller);
 		}
 
+
 		// Exit DoWhat ; Enter MyWork
-		// function myWork() {
-		// 	const paraCodeTween = new TimelineMax();
-		// 	paraCodeTween
-		// 		// Exit DoWhat: Part3
-		// 		.to(doWhat, 0.3, {autoAlpha: 0, ease: Power3.easeOut, 
-		// 			onStart: function() {
-		// 				$('.bottom_right').addClass('overflow_allow');
-		// 			},
-		// 			onReverseComplete: function() {
-		// 				$('.bottom_right').removeClass('overflow_allow');
-		// 			}
-		// 		}, 0)
+		function myWork() {
+			const paraCodeTween = new TimelineMax();
 
-		// 		.fromTo(br_cont3_title, 0.1, {y: '0%'}, {y: '-150%', ease: Power2.easeIn}, 0)
-		// 		.fromTo(br_cont3_text, 0.2, {y: '0%'}, {y: '-150%', ease: Power2.easeIn}, 0)
-		// 		.fromTo(doWhat, 0.2, {y:'0%', scale: .98},{y: "-35%", scale: 0.75, ease: Power2.easeIn}, 0)
+			paraCodeTween				
+				.to(doWhat, 0.5, {autoAlpha: 0, ease: Power3.easeOut, 
+					onStart: function() {
+						$('.bottom_right').addClass('overflow_allow');
+					},
+					onReverseComplete: function() {
+						$('.bottom_right').removeClass('overflow_allow');
+					}
+				}, 0)
 
-		// 		// ENTER MYWORK SECTION
-		// 		.to(myWork_section, 0.2, {
-		// 			autoAlpha: 1, 
-		// 			ease: Power2.easeIn,
-		// 			onStart: function() { typed() },
-		// 			onComplete: function() { projectPop() }
-		// 		}, 0)
-		// 		.to('.language-markup', 1, { y: '-40%'}, 0);
-		// 	;
+				// ENTER MYWORK SECTION
+				.to(myWork_section, 0.2, {
+					autoAlpha: 1, 
+					ease: Power2.easeIn,
+					onStart: function() { typed() },
+					onComplete: function() { projectPop() }
+				}, 0)
+				.to('.language-markup', 1, { y: '-40%'}, 0);
+			;
 
-		// 	function projectPop() {
-		// 		const staggerEntry = new TimelineMax();
-		// 		staggerEntry
-		// 			.to(".project-box", {
-		// 			  duration: 0.7,
-		// 			  opacity: 1.0,
-		// 			  delay: 2,
-		// 			  stagger: 1
-		// 			}, 0)
-		// 			.to(".project-text", {
-		// 			  duration: 0.5,
-		// 			  opacity: 1.0,
-		// 			  delay: 2,
-		// 			  stagger: 1
-		// 			}, 1)
-		// 		;
-		// 	}
+			function projectPop() {
+				const staggerEntry = new TimelineMax();
+				staggerEntry
+					.to(".project-box", {
+					  duration: 0.7,
+					  opacity: 1.0,
+					  delay: 2,
+					  stagger: 1
+					}, 0)
+					.to(".project-text", {
+					  duration: 0.5,
+					  opacity: 1.0,
+					  delay: 2,
+					  stagger: 1
+					}, 1)
+				;
+			}
 	
-		// 	function typed() {
-		// 		let typed_text = new Typed('.work-title', {
-		// 			strings:  [
-		// 				'$:Accessing archive.^300.^300.',
-		// 				'$:Accessing archive',
-		// 				'$:Accessing archive.^200.^200.',
-		// 				'$:Access Granted.'
-		// 			],
-		// 			typeSpeed: 25,
-		// 			backSpeed: 0,
-		// 			backDelay: 50,
-		// 			smartBackspace: true
-		// 		})
-		// 	}
+			function typed() {
+				let typed_text;
+
+				window.innerWidth < 992 ? 
+					typed_text = new Typed('.work-title', {
+						strings:  [
+							'$:Accessing projects.^200.^200.',
+							'$:Accessing projects',
+							'$:Accessing projects.^100.^100.',
+							'$:Projects accessed'
+						],
+						typeSpeed: 50,
+						backSpeed: 0,
+						backDelay: 50,
+						smartBackspace: true
+					})
+				: typed_text = new Typed('.work-title', {
+					strings:  [
+						'$:Accessing projects archive.^200.^200.',
+						'$:Accessing projects archive',
+						'$:Accessing projects archive.^100.^100.',
+						'$:Projects archive accessed'
+					],
+					typeSpeed: 50,
+					backSpeed: 0,
+					backDelay: 100,
+					smartBackspace: true
+				})
+			}
 			
-		// 	const contactIntro = new TimelineMax();
-		// 	contactIntro
-		// 		.to('.project-row:last-child', 6, {opacity: 0.1, ease: Power3.easeOut}, 2)
-		// 		.to('.mywork', 10, {opacity: 0.3, ease: Power3.easeOut}, 0)
-		// 		.to('.contact_section', 8, {opacity: 1, ease: Power2.easeIn}, 0)
-		// 		.to('.info_container h2', 2, {width: "100%", ease: Power2.easeIn}, 3)
-		// 		.to('.form_container h2', 1, {width: "100%", ease: Power2.easeIn}, 7)
-		// 		.to('.contact_container p', 2, {opacity: 1.0, ease: Power2.easeIn}, 3)
-		// 		.to('.contact_container h3', 1, {opacity: 1.0, ease: Power2.easeIn, stagger: 0.7}, 5)
-		// 		.to('.contact_container li', 1, {opacity: 1.0, ease: Power2.easeIn, stagger: 0.7}, 5.3)
-		// 		.to('.form_container', 2, {boxShadow: "1px 2px 8px 6px black", ease: Power2.easeIn}, 7)
-		// 		.to($('.form_container form').children(), 0.5, {opacity: 1.0, ease: Power2.easeIn, stagger: 0.2}, 8.5)
 
-		// 		.to('.contact_section', 1, {
-		// 			onStart: function() {
-		// 				$('.mywork').addClass('no_overflow');
-		// 			},
-		// 			onReverseComplete: function() {
-		// 				$('.mywork').removeClass('no_overflow');
-		// 			}
-		// 		}, 2)
-		// 	;
+			
+			const contactIntro = new TimelineMax();
+
+			window.innerWidth < 992 ? 
+				contactIntro
+					.to('.project-row:last-child', 2, {opacity: 0, ease: Power3.easeOut}, 3)
+					.to('.mywork', 5, {opacity: 0.3, ease: Power3.easeOut}, 3)
+
+					.to('.contact_section', 3, {opacity: 1, ease: Power2.easeIn}, 2)
+					// .to('.info_container h2', 2, {width: "100%", ease: Power2.easeIn}, 2)
+					.fromTo('.info_container h2', 2, {width: "0%"}, {width: "100%", ease: Power2.easeIn}, 2)
+					.fromTo('.form_container h2', 2,{x: "-100%"}, {x: "0%", ease: Power2.easeIn}, 3.5)
+					.to('.contact_container p', 1.5, {opacity: 1.0, ease: Power2.easeIn}, 2.5)
+					.to('.contact_container h3', 1, {opacity: 1.0, ease: Power2.easeIn, stagger: 0.7}, 3)
+					.to('.contact_container li', 1, {opacity: 1.0, ease: Power2.easeIn, stagger: 0.7}, 3.1)
+					.to('.form_container', 3, {boxShadow: "1px 2px 8px 6px black", ease: Power2.easeIn}, 3.5)
+					.to($('.form_container form').children(), 0.5, {opacity: 1.0, ease: Power2.easeIn, stagger: 0.2}, 5.5)
+
+					.to('.contact_section', 1, {
+						onStart: function() {
+							$('.mywork').addClass('no_overflow');
+						},
+						onReverseComplete: function() {
+							$('.mywork').removeClass('no_overflow');
+						}
+					}, 2)
+			: contactIntro
+					.to('.project-row:last-child', 2, {opacity: 0.1, ease: Power3.easeOut}, 3)
+					.to('.mywork', 10, {opacity: 0.3, ease: Power3.easeOut}, 0)
+
+					.to('.contact_section', 6, {opacity: 1, ease: Power2.easeIn}, 2)
+					.to('.info_container h2', 2, {width: "100%", ease: Power2.easeIn}, 2)
+					.to('.form_container h2', 1, {width: "100%", ease: Power2.easeIn}, 5)
+					.to('.contact_container p', 2, {opacity: 1.0, ease: Power2.easeIn}, 3)
+					.to('.contact_container h3', 1, {opacity: 1.0, ease: Power2.easeIn, stagger: 0.7}, 5)
+					.to('.contact_container li', 1, {opacity: 1.0, ease: Power2.easeIn, stagger: 0.7}, 5.3)
+					.to('.form_container', 2, {boxShadow: "1px 2px 8px 6px black", ease: Power2.easeIn}, 6)
+					.to($('.form_container form').children(), 0.5, {opacity: 1.0, ease: Power2.easeIn, stagger: 0.2}, 6)
+
+					.to('.contact_section', 1, {
+						onStart: function() {
+							$('.mywork').addClass('no_overflow');
+						},
+						onReverseComplete: function() {
+							$('.mywork').removeClass('no_overflow');
+						}
+					}, 2)
+		;
+
+			let paraCodeSlide = new ScrollMagic.Scene({
+				triggerElement: '.mywork',
+				triggerHook: 1,
+				duration: '400%'
+			})
+			.setTween(paraCodeTween)
+			.addTo(controller)
 	
-		// 	let paraCodeSlide = new ScrollMagic.Scene({
-		// 		triggerElement: '.mywork',
-		// 		triggerHook: 1,
-		// 		duration: '400%'
-		// 	})
-		// 	.setTween(paraCodeTween)
-		// 	.addTo(controller)
-	
-		// 	let placehold2 = new ScrollMagic.Scene({
-		// 		triggerElement: '.contact_section',
-		// 		triggerHook: 1,
-		// 		duration: '120%'
-		// 	})
-		// 	.setTween(contactIntro)
-		// 	.addTo(controller)
-		// }
+			let placehold2 = new ScrollMagic.Scene({
+				triggerElement: '.contact_section',
+				triggerHook: 1,
+				duration: '120%'
+			})
+			.setTween(contactIntro)
+			.addTo(controller)
+		}
 
 	}
 

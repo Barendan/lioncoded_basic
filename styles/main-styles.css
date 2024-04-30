@@ -63,7 +63,7 @@ section {
 
 .title-container {
     z-index: 10;
-    background-color: #00000022;
+    /* background-color: #00000022; */
     position: absolute;
     top: 0;
     left: 0;
@@ -422,6 +422,7 @@ code[class*=language-] ::selection,code[class*=language-]::selection {
 }
 
 .typed_container {
+    color: #00d2fc;
     display: inline-flex;
     padding: 0.5rem 0rem 0.5rem 0.5rem;
     font-size: 8vw;
@@ -430,7 +431,7 @@ code[class*=language-] ::selection,code[class*=language-]::selection {
     opacity: 0.9;
 
 
-    background: -webkit-linear-gradient(45deg, #00d2fc,#0f0064 110%);
+    background: -webkit-linear-gradient(45deg, #00d2fc, #c960ff 110%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -493,7 +494,7 @@ section.mywork .project-box {
 
 
 .project-box {
-    border: 1px dashed #7087ed;
+    border: 1px dashed #009ebd;
 }
 .project-box:hover {
     border: 1px dashed transparent;
@@ -516,7 +517,7 @@ section.mywork .project-box {
     background-color: transparent;
     position: absolute;
     margin: -1.5rem 0.5rem;
-    border: 2px solid #7087ed;
+    border: 2px solid #009ebd;
     opacity: 0.9;
     z-index: -1;
     transition: all .150s;
@@ -668,6 +669,7 @@ section.mywork .project-text {
 }
 
 .contact_form input, select, textarea {
+    color: white;
     background-color: #1d1c7700;
     display: block;
     width: 70%;
@@ -967,6 +969,14 @@ li svg {
         background-size: 70% 75%;
         background-position: 152% 70%;
     }
+    .clouds {
+        background-size: 70% 20%;
+        background-position: 120% -5%;
+    }
+    .clouds2 {
+        background-size: 90% 15%;
+        background-position: 45% 15%;
+    }
 
 
     .pattern {
@@ -1145,6 +1155,10 @@ li svg {
 
     .services-container {
         padding: 15rem 20% 0rem 21%;
+    }
+    .doWhat p {
+        line-height: 32px;
+        font-size: 1.15rem; 
     }
 
     .typed_container {
