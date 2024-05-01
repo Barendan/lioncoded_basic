@@ -250,7 +250,7 @@ $(window).on("load", function() {
 					  stagger: 1
 					}, 0)
 					.to(".project-text", {
-					  duration: 0.5,
+					  duration: 0.7,
 					  opacity: 1.0,
 					  delay: 2,
 					  stagger: 1
